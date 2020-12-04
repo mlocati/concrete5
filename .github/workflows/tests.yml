@@ -1,0 +1,100 @@
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - 8.5.x
+    paths:
+      - "**.php"
+  push:
+    branches:
+      - 8.5.x
+    tags-ignore:
+      - "**"
+    paths:
+      - "**.php"
+
+jobs:
+  php-unit:
+    env:
+      MYSQL_PWD: root
+      CODE_COVERAGE: n
+      EXTRA_COMPOSER_INSTALL_OPTIONS: ""
+      EXTRA_PHPUNUIT_OPTIONS: "--stop-on-error --stop-on-failure"
+      TESTS_CAN_FAIL: n
+    strategy:
+      matrix:
+        operating-system:
+          - ubuntu-20.04
+        php-version:
+          - "5.5"
+          #- "5.6"
+          #- "7.0"
+          #- "7.1"
+          #- "7.2"
+          #- "7.3"
+        include:
+          - operating-system: ubuntu-20.04
+            php-version: "7.4"
+            env:
+              TESTS_CAN_FAIL: y
+          #- operating-system: windows-latest
+          #  php-version: "5.5"
+          #- operating-system: windows-latest
+          #  php-version: "7.4"
+          #- operating-system: ubuntu-20.04
+          #  php-version: "7.1"
+          #  env:
+          #    EXTRA_COMPOSER_INSTALL_OPTIONS: "--prefer-lowest"
+          #- operating-system: ubuntu-20.04
+          #  php-version: "7.2"
+          #  env:
+          #    EXTRA_PHPUNUIT_OPTIONS: "--group docker"
+    name: PHP ${{ matrix.php-version }} on ${{ matrix.operating-system }}
+    runs-on: ${{ matrix.operating-system }}
+    steps:
+      - name: Start MySQL
+        if: startsWith(matrix.operating-system, 'ubuntu')
+        run: sudo systemctl start mysql.service
+      - name: Configure MySQL
+        run: |
+          mysql --user=root -e "CREATE USER 'concrete5_tester'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345';"
+          mysql --user=root -e "GRANT ALL PRIVILEGES ON *.* TO 'concrete5_tester'@'localhost' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+      - name: Set code coverage
+        if: matrix.php-version == '7.2' && startsWith(matrix.operating-system, 'ubuntu')
+        run: printf 'CODE_COVERAGE=y\n' >> "$GITHUB_ENV"
+      - name: Install system tools
+        if: startsWith(matrix.operating-system, 'ubuntu')
+        run: sudo apt-get install -qy gettext
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          ini-values: short_open_tag=On
+          tools: composer:v1,prestissimo
+          extensions: dom,fileinfo,gd,iconv,intl,json,mbstring,pdo,pdo_mysql,xml
+          coverage: none
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Composer packages - merger
+        run: composer --no-interaction --ansi --optimize-autoloader $EXTRA_COMPOSER_INSTALL_OPTIONS update
+      - name: Install Composer packages - merged
+        run: composer --no-interaction --ansi --optimize-autoloader $EXTRA_COMPOSER_INSTALL_OPTIONS update
+      - name: Run tests
+        run: |
+          if test "$CODE_COVERAGE" = 'y'; then
+            RUNME="phpdbg -qrr ./concrete/vendor/phpunit/phpunit/phpunit --coverage-clover=coverage.clover $EXTRA_PHPUNUIT_OPTIONS"
+          else
+            RUNME="composer test -- $EXTRA_PHPUNUIT_OPTIONS"
+          fi
+          if ! $RUNME; then
+            if "$TESTS_CAN_FAIL" != 'y'; then
+              exit 1
+            fi
+            echo "::error file=tests.yml,line=1,col=1::Tests failed (but failure is allowed)"
+          fi
+      - name: Upload code coverage results
+        if: env.CODE_COVERAGE == 'y'
+        run: |
+          wget --tries=5 https://scrutinizer-ci.com/ocular.phar
+          php ocular.phar code-coverage:upload --format=php-clover coverage.clover
