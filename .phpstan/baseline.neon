@@ -2953,56 +2953,8 @@ parameters:
 			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
 
 		-
-			message: '#^Generator expects value type string, array\<string, int\|string\> given\.$#'
-			identifier: generator.valueType
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Generator expects value type string, array\<string, mixed\> given\.$#'
-			identifier: generator.valueType
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Offset ''host'' does not exist on string\.$#'
-			identifier: offsetAccess.notFound
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Offset ''password'' on string in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Offset ''path'' does not exist on string\.$#'
-			identifier: offsetAccess.notFound
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Offset ''port'' on string in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Offset ''timeout'' on string in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
 			message: '#^Parameter \#2 \$opts of class RedisArray constructor expects array\<string, string\>, array\<string, mixed\> given\.$#'
 			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Strict comparison using \!\=\= between null and null will always evaluate to false\.$#'
-			identifier: notIdentical.alwaysFalse
 			count: 1
 			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
 
@@ -6979,62 +6931,8 @@ parameters:
 			path: ../concrete/src/Service/Detector/HTTP/NginxDetector.php
 
 		-
-			message: '#^Generator expects value type string, array\<string, int\|string\> given\.$#'
-			identifier: generator.valueType
-			count: 1
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Generator expects value type string, array\<string, mixed\> given\.$#'
-			identifier: generator.valueType
-			count: 2
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Offset ''host'' does not exist on string\.$#'
-			identifier: offsetAccess.notFound
-			count: 1
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Offset ''password'' on string in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Offset ''path'' does not exist on string\.$#'
-			identifier: offsetAccess.notFound
-			count: 1
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Offset ''port'' on string in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Offset ''timeout'' on string in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Parameter \#1 \$array of function array_get expects array\|ArrayAccess, string given\.$#'
+			message: '#^Parameter \#2 \$opts of class RedisArray constructor expects array\<string, string\>, array\<string, int\|string\> given\.$#'
 			identifier: argument.type
-			count: 3
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Parameter \#2 \$opts of class RedisArray constructor expects array\<string, string\>, array\<string, int\> given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Strict comparison using \!\=\= between null and null will always evaluate to false\.$#'
-			identifier: notIdentical.alwaysFalse
 			count: 1
 			path: ../concrete/src/Session/SessionFactory.php
 
