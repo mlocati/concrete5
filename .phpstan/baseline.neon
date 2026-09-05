@@ -5401,18 +5401,6 @@ parameters:
 			path: ../concrete/src/Localization/Service/AddressFormat.php
 
 		-
-			message: '#^Offset ''html_attributes'' on array\{locale\?\: string, subdivision_names\?\: mixed, html\: true, html_tag\: ''div''\} in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Localization/Service/AddressFormat.php
-
-		-
-			message: '#^Offset ''html_tag'' on array\{locale\?\: string, subdivision_names\?\: mixed, html\: true\} in isset\(\) does not exist\.$#'
-			identifier: isset.offset
-			count: 1
-			path: ../concrete/src/Localization/Service/AddressFormat.php
-
-		-
 			message: '#^Parameter \#3 \$onlyCodes of static method Punic\\Territory\:\:getLanguages\(\) expects string, true given\.$#'
 			identifier: argument.type
 			count: 1
