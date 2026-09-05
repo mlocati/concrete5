@@ -113,7 +113,7 @@ class AddGroup extends DashboardPageController
             // update existing roles and remove removed items
             foreach ($g->getRoles() as $role) {
                 if (in_array($role->getId(), array_keys($updateRoleIds))) {
-                    $updateData = $this->request->request->get("roles")[$role->getId()];
+                    $updateData = $this->request->request->all("roles")[$role->getId()];
                     $role->setName($updateData["name"]);
                     $role->setIsManager(isset($updateData["manager"]));
 
