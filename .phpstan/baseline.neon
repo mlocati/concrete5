@@ -3025,7 +3025,7 @@ parameters:
 			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
 
 		-
-			message: '#^Offset ''ttl'' on string in isset\(\) does not exist\.$#'
+			message: '#^Offset ''timeout'' on string in isset\(\) does not exist\.$#'
 			identifier: isset.offset
 			count: 1
 			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
@@ -7051,7 +7051,7 @@ parameters:
 			path: ../concrete/src/Session/SessionFactory.php
 
 		-
-			message: '#^Offset ''ttl'' on string in isset\(\) does not exist\.$#'
+			message: '#^Offset ''timeout'' on string in isset\(\) does not exist\.$#'
 			identifier: isset.offset
 			count: 1
 			path: ../concrete/src/Session/SessionFactory.php
