@@ -2221,12 +2221,6 @@ parameters:
 			path: ../concrete/src/Authentication/Type/OAuth/GenericOauthTypeController.php
 
 		-
-			message: '#^Left side of && is always true\.$#'
-			identifier: booleanAnd.leftAlwaysTrue
-			count: 1
-			path: ../concrete/src/Authentication/Type/OAuth/GenericOauthTypeController.php
-
-		-
 			message: '#^Parameter \#1 \$stack of function array_shift is passed by reference, so it expects variables only\.$#'
 			identifier: argument.byRef
 			count: 5
@@ -2567,12 +2561,6 @@ parameters:
 			identifier: notIdentical.alwaysTrue
 			count: 1
 			path: ../concrete/src/Cache/OpCache.php
-
-		-
-			message: '#^Left side of && is always true\.$#'
-			identifier: booleanAnd.leftAlwaysTrue
-			count: 1
-			path: ../concrete/src/Cache/Page/FilePageCache.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Calendar\\CalendarEventVersionRepetition\:\:getRepetitionObject\(\)\.$#'
@@ -3493,12 +3481,6 @@ parameters:
 			path: ../concrete/src/Entity/OAuth/RefreshToken.php
 
 		-
-			message: '#^Left side of && is always true\.$#'
-			identifier: booleanAnd.leftAlwaysTrue
-			count: 1
-			path: ../concrete/src/Entity/OAuth/UserRepository.php
-
-		-
 			message: '#^Call to function is_numeric\(\) with int will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -4331,12 +4313,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Foundation/ModifiedPsr4ClassLoader.php
-
-		-
-			message: '#^Left side of && is always true\.$#'
-			identifier: booleanAnd.leftAlwaysTrue
-			count: 1
-			path: ../concrete/src/Foundation/Repetition/AbstractRepetition.php
 
 		-
 			message: '#^Call to an undefined static method Concrete\\Core\\Http\\Request\:\:setTrustedHeaderName\(\)\.$#'
@@ -6555,12 +6531,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Doctrine\\DBAL\\Connection\:\:tableExists\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Site/Service.php
-
-		-
-			message: '#^Left side of && is always true\.$#'
-			identifier: booleanAnd.leftAlwaysTrue
 			count: 1
 			path: ../concrete/src/Site/Service.php
 

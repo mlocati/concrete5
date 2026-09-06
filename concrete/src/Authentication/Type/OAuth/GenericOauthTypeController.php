@@ -215,7 +215,7 @@ abstract class GenericOauthTypeController extends AuthenticationTypeController
         }
 
         if ($extractor->supportsEmail() && $user = \UserInfo::getByEmail($extractor->getEmail())) {
-            if ($user && !$user->isError()) {
+            if (!$user->isError()) {
                 throw new Exception('A user account already exists for this email, please log in and attach from your account page.');
             }
         }
