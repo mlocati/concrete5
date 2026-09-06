@@ -21,9 +21,9 @@ class Sets extends BackendInterfaceFileController
 
     public function submit()
     {
-        $requestSets = array();
-        if (is_array($this->request->request->get('fsID'))) {
-            $requestSets = $this->request->request->get('fsID');
+        $requestSets = $this->request->request->all()['fsID'] ?? null;
+        if (!is_array($requestSets)) {
+            $requestSets = array();
         }
         $fsp = \FilePermissions::getGlobal();
         if ($this->validateAction()) {

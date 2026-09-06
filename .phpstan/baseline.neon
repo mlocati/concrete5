@@ -13,36 +13,6 @@ parameters:
 			path: ../concrete/controllers/backend/attribute/action.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/backend/attribute/set/update_order.php
-
-		-
-			message: '#^Parameter \#1 \$array \(array\) to function array_filter contains falsy values only, the result will always be an empty array\.$#'
-			identifier: arrayFilter.alwaysEmpty
-			count: 1
-			path: ../concrete/controllers/backend/attribute/set/update_order.php
-
-		-
-			message: '#^Parameter \#1 \$array \(array\{\}\) to function array_values is empty, call has no effect\.$#'
-			identifier: arrayValues.empty
-			count: 1
-			path: ../concrete/controllers/backend/attribute/set/update_order.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between array\{\} and array\{\} will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/backend/attribute/set/update_order.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/backend/attribute/set/update_order.php
-
-		-
 			message: '#^Call to an undefined static method Concrete\\Core\\Attribute\\Key\\UserKey\:\:updateAttributesDisplayOrder\(\)\.$#'
 			identifier: staticMethod.notFound
 			count: 1
@@ -67,30 +37,6 @@ parameters:
 			path: ../concrete/controllers/backend/dashboard/get_image_data.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/backend/dashboard/sitemap_update.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/backend/dashboard/sitemap_update.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/backend/express/entry.php
-
-		-
-			message: '#^Comparison operation "\>" between 1 and 0 is always true\.$#'
-			identifier: greater.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/backend/express/entry.php
-
-		-
 			message: '#^Instanceof between Concrete\\Core\\Entity\\Express\\Entity and Concrete\\Core\\Entity\\Express\\Entity will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
 			count: 1
@@ -100,12 +46,6 @@ parameters:
 			message: '#^Call to function is_array\(\) with bool\|float\|int\|null will always evaluate to false\.$#'
 			identifier: function.impossibleType
 			count: 2
-			path: ../concrete/controllers/backend/file.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
 			path: ../concrete/controllers/backend/file.php
 
 		-
@@ -153,30 +93,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Block\\BlockController\:\:getOriginalBlockID\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/backend/page/arrange_blocks.php
-
-		-
-			message: '#^Call to function in_array\(\) with arguments int, array\{\} and true will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/backend/page/arrange_blocks.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/backend/page/arrange_blocks.php
-
-		-
-			message: '#^Parameter \#1 \$array \(array\) to function array_filter contains falsy values only, the result will always be an empty array\.$#'
-			identifier: arrayFilter.alwaysEmpty
-			count: 1
-			path: ../concrete/controllers/backend/page/arrange_blocks.php
-
-		-
-			message: '#^Parameter \#1 \$array \(array\{\}\) to function array_values is empty, call has no effect\.$#'
-			identifier: arrayValues.empty
 			count: 1
 			path: ../concrete/controllers/backend/page/arrange_blocks.php
 
@@ -259,12 +175,6 @@ parameters:
 			path: ../concrete/controllers/dialog/board/custom_slot.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/dialog/editor/settings/preview.php
-
-		-
 			message: '#^Method Concrete\\Controller\\Dialog\\Event\\AdvancedSearch\:\:getSearchProvider\(\) should return Concrete\\Core\\Search\\ProviderInterface but returns false\.$#'
 			identifier: return.type
 			count: 1
@@ -343,12 +253,6 @@ parameters:
 			path: ../concrete/controllers/dialog/file/replace.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/dialog/file/sets.php
-
-		-
 			message: '#^Strict comparison using \=\=\= between Concrete\\Core\\Entity\\File\\File and null will always evaluate to false\.$#'
 			identifier: identical.alwaysFalse
 			count: 1
@@ -399,12 +303,6 @@ parameters:
 		-
 			message: '#^Call to Concrete\\Core\\Controller\\AbstractController\:\:on_start\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
-			count: 1
-			path: ../concrete/controllers/dialog/page/bulk/permissions.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
 			count: 1
 			path: ../concrete/controllers/dialog/page/bulk/permissions.php
 
@@ -503,18 +401,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/dialog/tree/node/file_folder/edit.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/dialog/tree/node/group_folder/add.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/dialog/tree/node/group_folder/edit.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:getByID\(\)\.$#'
@@ -625,30 +511,6 @@ parameters:
 			path: ../concrete/controllers/frontend/conversations/add_message.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/frontend/conversations/add_message.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/frontend/conversations/add_message.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/frontend/conversations/update_message.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/frontend/conversations/update_message.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Job\\JobQueue\:\:count\(\)\.$#'
 			identifier: method.notFound
 			count: 3
@@ -671,12 +533,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/frontend/stylesheet.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/install.php
 
 		-
 			message: '#^Call to preg_quote\(\) uses invalid delimiter %% while pattern uses /\.$#'
@@ -727,12 +583,6 @@ parameters:
 			path: ../concrete/controllers/panel/detail/page/attributes.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 2
-			path: ../concrete/controllers/panel/detail/page/attributes.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Asset\\Asset will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -745,21 +595,9 @@ parameters:
 			path: ../concrete/controllers/panel/detail/page/attributes.php
 
 		-
-			message: '#^Comparison operation "\>" between \*NEVER\* and 0 results in an error\.$#'
-			identifier: greater.invalid
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/attributes.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
 			identifier: method.notFound
 			count: 1
-			path: ../concrete/controllers/panel/detail/page/location.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 2
 			path: ../concrete/controllers/panel/detail/page/location.php
 
 		-
@@ -769,27 +607,9 @@ parameters:
 			path: ../concrete/controllers/panel/detail/page/location.php
 
 		-
-			message: '#^Loose comparison using \=\= between bool\|float\|int\|string\|null and \*NEVER\* will always evaluate to false\.$#'
-			identifier: equal.alwaysFalse
-			count: 2
-			path: ../concrete/controllers/panel/detail/page/location.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\Entity\\Entity\:\:getGroupObject\(\)\.$#'
 			identifier: method.notFound
 			count: 2
-			path: ../concrete/controllers/panel/detail/page/permissions.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 2
-			path: ../concrete/controllers/panel/detail/page/permissions.php
-
-		-
-			message: '#^Empty array passed to foreach\.$#'
-			identifier: foreach.emptyArray
-			count: 1
 			path: ../concrete/controllers/panel/detail/page/permissions.php
 
 		-
@@ -797,24 +617,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/panel/detail/page/seo.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/versions.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/versions.php
-
-		-
-			message: '#^Variable \$versions in empty\(\) always exists and is always falsy\.$#'
-			identifier: empty.variable
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/versions.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Customizations\\ManagerInterface\:\:getCustomStyleObjectForPage\(\)\.$#'
@@ -871,21 +673,9 @@ parameters:
 			path: ../concrete/controllers/panel/page/versions.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/panel/page/versions.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Collection\\Version\\Version will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 2
-			path: ../concrete/controllers/panel/page/versions.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Page\\Collection\\Version\\EditResponse and Concrete\\Core\\Page\\Collection\\Version\\EditResponse will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
 			path: ../concrete/controllers/panel/page/versions.php
 
 		-
@@ -943,30 +733,6 @@ parameters:
 			path: ../concrete/controllers/permissions/categories/task_handlers/user.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/permissions/set/clipboard.php
-
-		-
-			message: '#^Result of \|\| is always true\.$#'
-			identifier: booleanOr.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/permissions/set/clipboard.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between \*NEVER\* and array\{\} will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/permissions/set/clipboard.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/permissions/set/clipboard.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Controller\\Dialog\\Search\\AdvancedSearch\:\:setEntityID\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1021,34 +787,10 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/blocks/stacks.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/blocks/stacks.php
-
-		-
 			message: '#^Instanceof between Concrete\\Core\\Block\\BlockController and Concrete\\Core\\Block\\BlockController will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/blocks/stacks.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/blocks/stacks.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/blocks/types.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/blocks/types.php
 
 		-
 			message: '#^Parameter \#1 \$templateIDs of method Concrete\\Core\\Board\\Command\\EnableCustomSlotTemplatesCommand\:\:setTemplateIDs\(\) expects array, float\|int\<min, \-1\>\|int\<1, max\>\|string\|true given\.$#'
@@ -1177,30 +919,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/pages/themes.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/pages/themes/inspect.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/pages/themes/inspect.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/pages/types/add.php
-
-		-
-			message: '#^Loose comparison using \=\= between 0 and 0 will always evaluate to true\.$#'
-			identifier: equal.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/pages/types/add.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1261,12 +979,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/basics/name.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/calendar/permissions.php
-
-		-
 			message: '#^Parameter \#1 \$stack of function array_pop is passed by reference, so it expects variables only\.$#'
 			identifier: argument.byRef
 			count: 1
@@ -1309,24 +1021,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/files/external_file_provider.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/files/thumbnails.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between null and false will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/files/thumbnails.php
-
-		-
-			message: '#^Variable \$receivedFileSetIDs in empty\(\) always exists and is always falsy\.$#'
-			identifier: empty.variable
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/files/thumbnails.php
-
-		-
 			message: '#^Variable \$sectionID in isset\(\) always exists and is not nullable\.$#'
 			identifier: isset.variable
 			count: 1
@@ -1351,24 +1045,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/notification/events.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/optimization/jobs.php
-
-		-
-			message: '#^Empty array passed to foreach\.$#'
-			identifier: foreach.emptyArray
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/optimization/jobs.php
-
-		-
-			message: '#^Parameter \#1 \$array \(array\) to function array_filter contains falsy values only, the result will always be an empty array\.$#'
-			identifier: arrayFilter.alwaysEmpty
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/optimization/jobs.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Captcha\\Controller\:\:saveOptions\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1379,12 +1055,6 @@ parameters:
 			identifier: method.notFound
 			count: 4
 			path: ../concrete/controllers/single_page/dashboard/system/permissions/site.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/permissions/trusted_proxies.php
 
 		-
 			message: '#^Instanceof between Concrete\\Core\\Workflow\\Type and Concrete\\Core\\Workflow\\Type will always evaluate to true\.$#'
@@ -1399,34 +1069,10 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/registration/authentication.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/system/registration/password_requirements.php
-
-		-
 			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(\)\: void given\.$#'
 			identifier: argument.type
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/system/registration/password_requirements.php
-
-		-
-			message: '#^Result of && is always false\.$#'
-			identifier: booleanAnd.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/registration/password_requirements.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between \*NEVER\* and \*NEVER\* will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/registration/password_requirements.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/seo/searchindex.php
 
 		-
 			message: '#^Anonymous function has an unused use \$globalConfig\.$#'
@@ -1453,22 +1099,10 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/users/add.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/add_group.php
-
-		-
 			message: '#^Parameter \#3 \$parentFolder of static method Concrete\\Core\\User\\Group\\Group\:\:addBeneathFolder\(\) expects Concrete\\Core\\Tree\\Node\\Type\\GroupFolder\|false\|null, Concrete\\Core\\Tree\\Node\\Node\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/users/add_group.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/group_types.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setCurrentFolder\(\)\.$#'
@@ -3547,12 +3181,6 @@ parameters:
 			path: ../concrete/src/Database/Schema/MySqlSchemaManager.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Editor/CkeditorEditor.php
-
-		-
 			message: '#^Call to function is_object\(\) with simplehtmldom_1_5\\simple_html_dom will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 3
@@ -4035,12 +3663,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Form/Control/SaveHandler/ManyAssociationSaveHandler.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
 			count: 1
 			path: ../concrete/src/Express/Form/Control/SaveHandler/ManyAssociationSaveHandler.php
 
@@ -6959,12 +6581,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Site/Type/OptionsFormController.php
-
-		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 2
-			path: ../concrete/src/StyleCustomizer/Inline/StyleSet.php
 
 		-
 			message: '#^Access to protected property Less_Parser\|Less_Tree_Ruleset\:\:\$rules\.$#'

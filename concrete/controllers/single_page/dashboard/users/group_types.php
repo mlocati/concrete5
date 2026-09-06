@@ -103,7 +103,7 @@ class GroupTypes extends DashboardPageController
     {
         $hasManagerRole = false;
 
-        if (is_array($this->request->request->get("roles"))) {
+        if (is_array($this->request->request->all()["roles"] ?? null)) {
             foreach ($this->request->request->all("roles") as $roleId => $role) {
                 if (strlen($role["name"]) === 0) {
                     $this->error->add(t("You need to enter a role name."));

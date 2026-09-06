@@ -27,7 +27,7 @@ class AddGroup extends DashboardPageController
         if ((bool)$this->request->request->get('gOverrideGroupTypeSettings')) {
             $hasManagerRole = false;
 
-            if (is_array($this->request->request->get("roles"))) {
+            if (is_array($this->request->request->all()["roles"] ?? null)) {
                 foreach ($this->request->request->all("roles") as $roleId => $role) {
                     if (strlen($role["name"]) === 0) {
                         $errorList->add(t("You need to enter a role name."));
@@ -99,7 +99,7 @@ class AddGroup extends DashboardPageController
             $defaultRole = null;
 
             if ($typeWasInherited) {
-                $newRoles = $this->request->request->get("roles");
+                $newRoles = $this->request->request->all("roles");
             } else {
                 foreach ($this->request->request->all("roles") as $roleId => $role) {
                     if (substr($roleId, 0, 1) === "_") {

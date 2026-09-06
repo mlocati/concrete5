@@ -566,7 +566,7 @@ class File extends Controller
     protected function getRequestFiles($permissionKey = 'view_file_in_file_manager', $checkUUID = false)
     {
         $files = [];
-        $fID = $this->request->request->get('fID', $this->request->query->get('fID'));
+        $fID = $this->request->request->all()['fID'] ?? $this->request->query->all()['fID'] ?? null;
         if (is_array($fID)) {
             $fileIDs = $fID;
         } else {
