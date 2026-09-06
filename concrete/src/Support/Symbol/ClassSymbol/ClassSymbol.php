@@ -51,7 +51,7 @@ class ClassSymbol
     /**
      * The class's docblock.
      *
-     * @var string
+     * @var string|false false if the class doesn't have a docblock
      */
     protected $comment;
 
