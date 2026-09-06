@@ -1429,18 +1429,6 @@ parameters:
 			path: ../concrete/src/Api/OAuth/Controller.php
 
 		-
-			message: '#^Instanceof between Lcobucci\\JWT\\Token and Lcobucci\\JWT\\Token will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Api/OAuth/Server/IdTokenResponse.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/src/Api/OAuth/Server/IdTokenResponse.php
-
-		-
 			message: '#^Call to an undefined method League\\OAuth2\\Server\\AuthorizationValidators\\AuthorizationValidatorInterface\:\:setEncryptionKey\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2743,12 +2731,6 @@ parameters:
 			path: ../concrete/src/Console/Command/InstallPackageCommand.php
 
 		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/src/Console/Command/RunSchedulerInForegroundCommand.php
-
-		-
 			message: '#^Call to an undefined method Gettext\\Translations\:\:toPoFile\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2957,12 +2939,6 @@ parameters:
 			identifier: constructor.unusedParameter
 			count: 1
 			path: ../concrete/src/Database/CharacterSetCollation/Exception/NoCharacterSetCollationDefinedException.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
-			path: ../concrete/src/Database/Connection/Connection.php
 
 		-
 			message: '#^Variable \$args in isset\(\) always exists and is not nullable\.$#'
@@ -4591,21 +4567,9 @@ parameters:
 			path: ../concrete/src/Legacy/PageList.php
 
 		-
-			message: '#^Call to function is_callable\(\) with ''random_bytes'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Legacy/PasswordHash.php
-
-		-
 			message: '#^Loose comparison using \=\= between 1 and 1 will always evaluate to true\.$#'
 			identifier: equal.alwaysTrue
 			count: 2
-			path: ../concrete/src/Legacy/PasswordHash.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
-			count: 1
 			path: ../concrete/src/Legacy/PasswordHash.php
 
 		-
@@ -4633,20 +4597,8 @@ parameters:
 			path: ../concrete/src/Localization/Locale/Service.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Localization\\Translator\\TranslatorAdapterInterface will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Localization/Localization.php
-
-		-
 			message: '#^Ternary operator condition is always true\.$#'
 			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/src/Localization/Localization.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
 			count: 1
 			path: ../concrete/src/Localization/Localization.php
 
