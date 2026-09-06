@@ -259,18 +259,6 @@ parameters:
 			path: ../concrete/controllers/dialog/board/custom_slot.php
 
 		-
-			message: '#^Offset ''collection'' does not exist on bool\|float\|int\|string\.$#'
-			identifier: offsetAccess.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/board/custom_slot.php
-
-		-
-			message: '#^Offset ''template'' does not exist on bool\|float\|int\|string\.$#'
-			identifier: offsetAccess.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/board/custom_slot.php
-
-		-
 			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
 			identifier: function.impossibleType
 			count: 1
@@ -325,18 +313,6 @@ parameters:
 			path: ../concrete/controllers/dialog/file/bulk/sets.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/dialog/file/bulk/sets.php
-
-		-
-			message: '#^Offset \*NEVER\* does not exist on bool\|float\|int\|string\.$#'
-			identifier: offsetAccess.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/file/bulk/sets.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Controller\\AbstractController\:\:on_start\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
 			count: 1
@@ -369,12 +345,6 @@ parameters:
 		-
 			message: '#^Call to function is_array\(\) with bool\|float\|int\|string\|null will always evaluate to false\.$#'
 			identifier: function.impossibleType
-			count: 2
-			path: ../concrete/controllers/dialog/file/sets.php
-
-		-
-			message: '#^Offset \*NEVER\* does not exist on bool\|float\|int\|string\.$#'
-			identifier: offsetAccess.notFound
 			count: 1
 			path: ../concrete/controllers/dialog/file/sets.php
 

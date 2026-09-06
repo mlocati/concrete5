@@ -119,7 +119,7 @@ protected function validateCustomSlotToken()
         $entityManager = $this->app->make(EntityManager::class);
         $serializer = $this->app->make(JsonSerializer::class);
 
-        $data = $this->request->request->get('selectedTemplateOption');
+        $data = $this->request->request->all('selectedTemplateOption');
         $template = $entityManager->find(SlotTemplate::class, $data['template']['id']);
         $collection = $serializer->serialize($data['collection'], 'json');
 

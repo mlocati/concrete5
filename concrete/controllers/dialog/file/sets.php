@@ -41,13 +41,13 @@ class Sets extends BackendInterfaceFileController
             }
         }
 
-        $fsNew = $this->request->request->get('fsNew');
-        $fsNewShare = $this->request->request->get('fsNewShare');
+        $fsNew = $this->request->request->all('fsNew');
+        $fsNewShare = $this->request->request->all('fsNewShare');
 
-        if (is_array($fsNew)) {
+        if ($fsNew !== []) {
             foreach ($fsNew as $i => $name) {
                 if ($name) {
-                    $type = ($fsNewShare !== null && $fsNewShare[$i] == 1) ? Set::TYPE_PUBLIC : Set::TYPE_PRIVATE;
+                    $type = (isset($fsNewShare[$i]) && $fsNewShare[$i] == 1) ? Set::TYPE_PUBLIC : Set::TYPE_PRIVATE;
                     $fs = Set::createAndGetSet($fsNew[$i], $type);
                     $fs->addFileToSet($this->file);
                 }
