@@ -93,8 +93,9 @@ class ObjectManager
     }
 
     /**
-     * @param $publicIdentifier
-     * @return object
+     * @param string $publicIdentifier
+     *
+     * @return \Concrete\Core\Entity\Express\Entry|null
      */
     public function getEntryByPublicIdentifier($publicIdentifier)
     {

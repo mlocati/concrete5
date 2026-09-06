@@ -1297,12 +1297,6 @@ parameters:
 			path: ../concrete/src/Api/Controller/Express.php
 
 		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Api/Controller/Express.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\NodeType\:\:move\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2611,12 +2605,6 @@ parameters:
 			path: ../concrete/src/Console/Command/CompareSchemaCommand.php
 
 		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Console/Command/Express/ExportCommand.php
-
-		-
 			message: '#^Strict comparison using \=\=\= between array\|string and null will always evaluate to false\.$#'
 			identifier: identical.alwaysFalse
 			count: 1
@@ -3211,18 +3199,6 @@ parameters:
 			path: ../concrete/src/Entity/OAuth/Client.php
 
 		-
-			message: '#^Call to an undefined method League\\OAuth2\\Server\\Entities\\ClientEntityInterface\:\:getClientSecret\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Entity/OAuth/ClientRepository.php
-
-		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Entity/OAuth/ClientRepository.php
-
-		-
 			message: '#^Method Concrete\\Core\\Entity\\OAuth\\RefreshToken\:\:getExpiryDateTime\(\) should return DateTimeImmutable but returns DateTime\.$#'
 			identifier: return.type
 			count: 1
@@ -3539,12 +3515,6 @@ parameters:
 			identifier: empty.variable
 			count: 1
 			path: ../concrete/src/Express/Search/ColumnSet/DefaultSet.php
-
-		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Express/Search/Index/EntityIndex.php
 
 		-
 			message: '#^Variable \$key in PHPDoc tag @var does not exist\.$#'
@@ -5207,12 +5177,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Page/Search/Field/Field/VersionStatusField.php
-
-		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Page/Search/Index/PageIndex.php
 
 		-
 			message: '#^Instanceof between Concrete\\Core\\Page\\Collection\\Collection and Concrete\\Core\\Page\\Collection\\Collection will always evaluate to true\.$#'

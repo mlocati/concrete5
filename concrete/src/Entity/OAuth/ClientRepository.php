@@ -27,7 +27,6 @@ class ClientRepository extends EntityRepository implements ClientRepositoryInter
      */
     public function getClientEntity($clientIdentifier, $grantType = null, $clientSecret = null, $mustValidateSecret = true)
     {
-        /** @var ClientEntityInterface $client */
         $client = $this->findOneBy(['clientKey' => $clientIdentifier]);
 
         // Handle client not found
@@ -52,7 +51,6 @@ class ClientRepository extends EntityRepository implements ClientRepositoryInter
      */
     public function validateClient($clientIdentifier, $clientSecret, $grantType)
     {
-        /** @var ClientEntityInterface $client */
         $client = $this->findOneBy(['clientKey' => $clientIdentifier]);
 
         // Probably need to add grant type validation
