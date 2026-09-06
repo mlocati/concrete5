@@ -3241,22 +3241,10 @@ parameters:
 			path: ../concrete/src/Console/Command/InstallPackageCommand.php
 
 		-
-			message: '#^Variable \$value in isset\(\) always exists and is not nullable\.$#'
-			identifier: isset.variable
-			count: 1
-			path: ../concrete/src/Console/Command/InstallPackageCommand.php
-
-		-
 			message: '#^Unreachable statement \- code above always terminates\.$#'
 			identifier: deadCode.unreachable
 			count: 1
 			path: ../concrete/src/Console/Command/RunSchedulerInForegroundCommand.php
-
-		-
-			message: '#^Variable \$value in isset\(\) always exists and is not nullable\.$#'
-			identifier: isset.variable
-			count: 1
-			path: ../concrete/src/Console/Command/ServiceCommand.php
 
 		-
 			message: '#^Call to an undefined method Gettext\\Translations\:\:toPoFile\(\)\.$#'
