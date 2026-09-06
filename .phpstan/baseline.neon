@@ -1747,12 +1747,6 @@ parameters:
 			path: ../concrete/src/Area/SubArea.php
 
 		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
-			count: 1
-			path: ../concrete/src/Asset/AssetInterface.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getGenericValue\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3301,12 +3295,6 @@ parameters:
 			path: ../concrete/src/Entity/File/Version.php
 
 		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
-			count: 1
-			path: ../concrete/src/Entity/File/Version.php
-
-		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\FileCategory\:\:getAttributeValue\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\FileKey, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
 			identifier: argument.type
 			count: 1
@@ -3757,12 +3745,6 @@ parameters:
 			path: ../concrete/src/File/Document/Xml/Sanitizer.php
 
 		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
-			count: 1
-			path: ../concrete/src/File/File.php
-
-		-
 			message: '#^Call to function is_object\(\) with int will always evaluate to false\.$#'
 			identifier: function.impossibleType
 			count: 1
@@ -3982,12 +3964,6 @@ parameters:
 			message: '#^Offset ''size'' on array\{name\: string, index\: int, crc\: int, size\: int, mtime\: int, comp_size\: int, comp_method\: int, encryption_method\: int\} in isset\(\) always exists and is not nullable\.$#'
 			identifier: isset.offset
 			count: 1
-			path: ../concrete/src/File/Service/Zip.php
-
-		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
-			count: 3
 			path: ../concrete/src/File/Service/Zip.php
 
 		-
@@ -4405,12 +4381,6 @@ parameters:
 			path: ../concrete/src/Http/Client/Client.php
 
 		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
-			count: 1
-			path: ../concrete/src/Http/Client/Factory.php
-
-		-
 			message: '#^Method Concrete\\Core\\Http\\DefaultDispatcher\:\:filterRouteCollectionForPath\(\) is unused\.$#'
 			identifier: method.unused
 			count: 1
@@ -4767,12 +4737,6 @@ parameters:
 		-
 			message: '#^Dead catch \- Error is never thrown in the try block\.$#'
 			identifier: catch.neverThrown
-			count: 1
-			path: ../concrete/src/Localization/Translation/Local/Factory.php
-
-		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
 			count: 1
 			path: ../concrete/src/Localization/Translation/Local/Factory.php
 
@@ -5263,12 +5227,6 @@ parameters:
 			path: ../concrete/src/Page/Collection/Collection.php
 
 		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
-			count: 2
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
 			message: '#^Parameter \#1 \$c of static method Concrete\\Core\\Area\\Area\:\:get\(\) expects Concrete\\Core\\Page\\Page, \$this\(Concrete\\Core\\Page\\Collection\\Collection\) given\.$#'
 			identifier: argument.type
 			count: 1
@@ -5428,12 +5386,6 @@ parameters:
 			message: '#^Negated boolean expression is always true\.$#'
 			identifier: booleanNot.alwaysTrue
 			count: 1
-			path: ../concrete/src/Page/Page.php
-
-		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
-			count: 3
 			path: ../concrete/src/Page/Page.php
 
 		-
@@ -5727,12 +5679,6 @@ parameters:
 		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Page/Type/Type.php
-
-		-
-			message: '#^PHPDoc tag @var above a method has no effect\.$#'
-			identifier: varTag.misplaced
 			count: 1
 			path: ../concrete/src/Page/Type/Type.php
 
