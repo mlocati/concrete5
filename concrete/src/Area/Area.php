@@ -46,7 +46,7 @@ class Area extends ConcreteObject implements \Concrete\Core\Permission\ObjectInt
     public $maximumBlocks = -1; //
 
     /**
-     * @var bool
+     * @var bool|-1 -1 if not set (in which case the controls are displayed when the page is in edit mode)
      */
     protected $showControls = -1;
 

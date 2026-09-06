@@ -1657,24 +1657,6 @@ parameters:
 			path: ../concrete/src/Area/Area.php
 
 		-
-			message: '#^Property Concrete\\Core\\Area\\Area\:\:\$showControls \(bool\) does not accept default value of type int\.$#'
-			identifier: property.defaultValue
-			count: 1
-			path: ../concrete/src/Area/Area.php
-
-		-
-			message: '#^Result of \|\| is always true\.$#'
-			identifier: booleanOr.alwaysTrue
-			count: 1
-			path: ../concrete/src/Area/Area.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between false and false will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Area/Area.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\StyleCustomizer\\Inline\\StyleSet will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 3
@@ -2665,12 +2647,6 @@ parameters:
 			path: ../concrete/src/Config/ConfigStore.php
 
 		-
-			message: '#^Parameter \#3 \$namespace \(null\) of method Concrete\\Core\\Config\\CoreFileLoader\:\:load\(\) should be compatible with parameter \$namespace \(string\) of method Concrete\\Core\\Config\\LoaderInterface\:\:load\(\)$#'
-			identifier: method.childParameterType
-			count: 1
-			path: ../concrete/src/Config/CoreFileLoader.php
-
-		-
 			message: '#^Call to an undefined static method Concrete\\Core\\Support\\Facade\\Database\:\:executeQuery\(\)\.$#'
 			identifier: staticMethod.notFound
 			count: 1
@@ -2693,30 +2669,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Config/Driver/Redis/RedisSaver.php
-
-		-
-			message: '#^Loose comparison using \=\= between \*NEVER\* and '''' will always evaluate to false\.$#'
-			identifier: equal.alwaysFalse
-			count: 1
-			path: ../concrete/src/Config/FileLoader.php
-
-		-
-			message: '#^Parameter \#3 \$namespace \(null\) of method Concrete\\Core\\Config\\FileLoader\:\:load\(\) should be compatible with parameter \$namespace \(string\) of method Concrete\\Core\\Config\\LoaderInterface\:\:load\(\)$#'
-			identifier: method.childParameterType
-			count: 1
-			path: ../concrete/src/Config/FileLoader.php
-
-		-
-			message: '#^Result of \|\| is always true\.$#'
-			identifier: booleanOr.alwaysTrue
-			count: 1
-			path: ../concrete/src/Config/FileLoader.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between null and null will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Config/FileLoader.php
 
 		-
 			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
