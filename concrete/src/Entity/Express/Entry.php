@@ -447,7 +447,7 @@ class Entry implements \JsonSerializable, PermissionObjectInterface, AttributeOb
     }
 
     /**
-     * @return \DateTime
+     * @return \DateTime|null
      */
     public function getDateModified()
     {
