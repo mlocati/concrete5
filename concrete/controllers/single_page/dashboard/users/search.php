@@ -311,7 +311,10 @@ class Search extends DashboardPageController
         }
 
         if ($this->canEditAvatar) {
-            $result = [];
+            $result = [
+                'success' => false,
+                'avatar' => null,
+            ];
             $file = $this->request->files->get('file');
             if ($file !== null) {
 
