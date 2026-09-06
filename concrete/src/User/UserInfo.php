@@ -1163,6 +1163,10 @@ class UserInfo extends ConcreteObject implements AttributeObjectInterface, Permi
 
     /**
      * @deprecated use app(\Concrete\Core\User\UserInfoRepository::class)->getByID()
+     *
+     * @param int $uID
+     *
+     * @return \Concrete\Core\User\UserInfo|null
      */
     public static function getByID($uID)
     {
@@ -1171,6 +1175,10 @@ class UserInfo extends ConcreteObject implements AttributeObjectInterface, Permi
 
     /**
      * @deprecated use app(\Concrete\Core\User\UserInfoRepository::class)->getByName()
+     *
+     * @param string $uName
+     *
+     * @return \Concrete\Core\User\UserInfo|null
      */
     public static function getByUserName($uName)
     {
@@ -1179,6 +1187,10 @@ class UserInfo extends ConcreteObject implements AttributeObjectInterface, Permi
 
     /**
      * @deprecated use app(\Concrete\Core\User\UserInfoRepository::class)->getByEmail()
+     *
+     * @param string $uEmail
+     *
+     * @return \Concrete\Core\User\UserInfo|null
      */
     public static function getByEmail($uEmail)
     {
@@ -1187,6 +1199,11 @@ class UserInfo extends ConcreteObject implements AttributeObjectInterface, Permi
 
     /**
      * @deprecated use app(\Concrete\Core\User\UserInfoRepository::class)->getByValidationHash()
+     *
+     * @param string $uHash
+     * @param bool $unredeemedHashesOnly
+     *
+     * @return \Concrete\Core\User\UserInfo|null
      */
     public static function getByValidationHash($uHash, $unredeemedHashesOnly = true)
     {
