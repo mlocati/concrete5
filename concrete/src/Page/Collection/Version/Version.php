@@ -1093,7 +1093,7 @@ class Version extends ConcreteObject implements PermissionObjectInterface, Attri
         if ($endDate != null) {
             // This collection version is published until $endDate:
             // set the initial date/time of the other collection versions that start and end at or before $endDate
-            $minOthersStartDate = $endDate ? $dh->toDB(strtotime($endDate) + 1) : null;
+            $minOthersStartDate = $dh->toDB(strtotime($endDate) + 1);
             $qb = clone $qbBase;
             $changes[] = $qb
                 ->set('cv.cvPublishDate', $qb->createNamedParameter($minOthersStartDate))
@@ -1112,7 +1112,7 @@ class Version extends ConcreteObject implements PermissionObjectInterface, Attri
         if ($startDate !== null) {
             // This collection version is published from $startDate
             // set the final date/time of the other collection versions that end at or after $startDate
-            $maxOthersEndDate = $startDate ? $dh->toDB(strtotime($startDate) - 1) : null;
+            $maxOthersEndDate = $dh->toDB(strtotime($startDate) - 1);
             $qb = clone $qbBase;
             $changes[] = $qb
                 ->set('cv.cvPublishEndDate', $qb->createNamedParameter($maxOthersEndDate))

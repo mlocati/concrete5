@@ -61,12 +61,6 @@ parameters:
 			path: ../concrete/controllers/backend/file.php
 
 		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/backend/file.php
-
-		-
 			message: '#^Instanceof between Concrete\\Core\\Entity\\File\\Version and Concrete\\Core\\Entity\\File\\Version will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
 			count: 1
@@ -2185,12 +2179,6 @@ parameters:
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportSiteTypeSkeletonsRoutine.php
 
 		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter/ValueInspector/Item/FileItem.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3217,12 +3205,6 @@ parameters:
 			path: ../concrete/src/Entity/Site/Skeleton.php
 
 		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 5
-			path: ../concrete/src/Entity/StyleCustomizer/Inline/StyleSet.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Error\\ErrorList\\Error\\ErrorInterface\:\:getField\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -3329,12 +3311,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Express/Entry/Formatter/LabelFormatter.php
-
-		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/src/Express/Export/EntryList/CsvWriter.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAttributeKey\(\)\.$#'
@@ -4435,12 +4411,6 @@ parameters:
 			path: ../concrete/src/Localization/Locale/Service.php
 
 		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/src/Localization/Localization.php
-
-		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -4972,12 +4942,6 @@ parameters:
 			message: '#^Method Concrete\\Core\\Page\\Collection\\Version\\Version\:\:avoidApprovalOverlapping\(\) is unused\.$#'
 			identifier: method.unused
 			count: 1
-			path: ../concrete/src/Page/Collection/Version/Version.php
-
-		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 2
 			path: ../concrete/src/Page/Collection/Version/Version.php
 
 		-
@@ -6569,18 +6533,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Url/Resolver/RouterUrlResolver.php
-
-		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/src/Url/Validation/RemoteUrlRequestOptionsBuilder.php
-
-		-
-			message: '#^Ternary operator condition is always true\.$#'
-			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/src/Url/Validation/ValidatedRemoteUrl.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\File\\StorageLocation\\StorageLocation\:\:getConfigurationObject\(\)\.$#'
