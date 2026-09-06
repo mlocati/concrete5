@@ -157,12 +157,6 @@ parameters:
 			path: ../concrete/controllers/calendar_feed.php
 
 		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/dialog/area/edit.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
