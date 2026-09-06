@@ -4873,20 +4873,8 @@ parameters:
 			path: ../concrete/src/Messenger/MessageBusAwareTrait.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Site\\Locale will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Multilingual/Page/Section/Section.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Multilingual/Page/Section/Section.php
-
-		-
-			message: '#^Unreachable statement \- code above always terminates\.$#'
-			identifier: deadCode.unreachable
 			count: 1
 			path: ../concrete/src/Multilingual/Page/Section/Section.php
 
