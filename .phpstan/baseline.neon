@@ -937,12 +937,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/reports/forms.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Tree\\Node\\Node\|null and Concrete\\Core\\Tree\\Type\\ExpressEntryResults will always evaluate to false\.$#'
-			identifier: instanceof.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/reports/forms.php
-
-		-
 			message: '#^Comparison operation "\>" between int\<1, max\> and 0 is always true\.$#'
 			identifier: greater.alwaysTrue
 			count: 1
