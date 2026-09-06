@@ -1027,12 +1027,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/multisite/types.php
 
 		-
-			message: '#^Variable \$subscriber in PHPDoc tag @var does not match assigned variable \$event\.$#'
-			identifier: varTag.differentVariable
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/notification/events.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Captcha\\Controller\:\:saveOptions\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1401,12 +1395,6 @@ parameters:
 		-
 			message: '#^Ternary operator condition is always true\.$#'
 			identifier: ternary.alwaysTrue
-			count: 1
-			path: ../concrete/src/Api/Fractal/Transformer/ExpressEntryTransformer.php
-
-		-
-			message: '#^Variable \$entry in PHPDoc tag @var does not match any variable in the foreach loop\: \$attribute$#'
-			identifier: varTag.differentVariable
 			count: 1
 			path: ../concrete/src/Api/Fractal/Transformer/ExpressEntryTransformer.php
 
@@ -1803,12 +1791,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Key\\SearchIndexer\\SearchIndexerInterface\:\:refreshSearchIndexKeyColumns\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/SearchIndexer/StandardSearchIndexer.php
-
-		-
-			message: '#^PHPDoc tag @var with type Concrete\\Core\\Attribute\\Category\\SearchIndexer\\StandardSearchIndexerInterface is not subtype of native type Concrete\\Core\\Attribute\\Category\\CategoryInterface\.$#'
-			identifier: varTag.nativeType
 			count: 1
 			path: ../concrete/src/Attribute/Category/SearchIndexer/StandardSearchIndexer.php
 
@@ -3649,12 +3631,6 @@ parameters:
 			path: ../concrete/src/Express/ObjectBuilder/FieldsetBuilder.php
 
 		-
-			message: '#^Variable \$fieldset in PHPDoc tag @var does not match assigned variable \$position\.$#'
-			identifier: varTag.differentVariable
-			count: 1
-			path: ../concrete/src/Express/ObjectBuilder/FormBuilder.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
@@ -3717,12 +3693,6 @@ parameters:
 		-
 			message: '#^Instanceof between Concrete\\Core\\File\\Image\\Thumbnail\\Type\\Version and Concrete\\Core\\File\\Image\\Thumbnail\\Type\\Version will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/File/Command/GenerateThumbnailCommandHandler.php
-
-		-
-			message: '#^Variable \$f in PHPDoc tag @var does not match assigned variable \$fileEntity\.$#'
-			identifier: varTag.differentVariable
 			count: 1
 			path: ../concrete/src/File/Command/GenerateThumbnailCommandHandler.php
 
@@ -4999,12 +4969,6 @@ parameters:
 			path: ../concrete/src/Navigation/NavigationFactory.php
 
 		-
-			message: '#^Variable \$driver in PHPDoc tag @var does not match any variable in the foreach loop\: \$filter$#'
-			identifier: varTag.differentVariable
-			count: 1
-			path: ../concrete/src/Notification/Alert/Filter/FilterListFactory.php
-
-		-
 			message: '#^Instanceof between Lcobucci\\JWT\\Token and Lcobucci\\JWT\\Token will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
 			count: 1
@@ -5105,12 +5069,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Package/ItemCategory/AbstractCategory.php
-
-		-
-			message: '#^PHPDoc tag @var with type Concrete\\Core\\Package\\ItemCategory\\ItemInterface is not subtype of native type array\.$#'
-			identifier: varTag.nativeType
-			count: 1
-			path: ../concrete/src/Package/ItemCategory/Manager.php
 
 		-
 			message: '#^Access to undefined constant Concrete\\Core\\Package\\Offline\\Exception\:\:ERRORCODE_NOPARSERSFOUND\.$#'
@@ -5983,12 +5941,6 @@ parameters:
 			path: ../concrete/src/Permission/Response/AreaResponse.php
 
 		-
-			message: '#^Variable \$area in PHPDoc tag @var does not match assigned variable \$page\.$#'
-			identifier: varTag.differentVariable
-			count: 1
-			path: ../concrete/src/Permission/Response/AreaResponse.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:isMasterCollection\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -6035,12 +5987,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Permission/Response/CalendarResponse.php
-
-		-
-			message: '#^Variable \$entry in PHPDoc tag @var does not match assigned variable \$entity\.$#'
-			identifier: varTag.differentVariable
-			count: 1
-			path: ../concrete/src/Permission/Response/ExpressEntityResponse.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Response\\PageResponse\:\:canAddSubpage\(\)\.$#'
@@ -6351,12 +6297,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Doctrine\\DBAL\\Connection\:\:tableExists\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Site/Service.php
-
-		-
-			message: '#^Variable \$manager in PHPDoc tag @var does not match assigned variable \$request\.$#'
-			identifier: varTag.differentVariable
 			count: 1
 			path: ../concrete/src/Site/Service.php
 
@@ -6867,12 +6807,6 @@ parameters:
 		-
 			message: '#^Instanceof between Concrete\\Core\\Entity\\Attribute\\Type and Concrete\\Core\\Entity\\Attribute\\Type will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20200523051311.php
-
-		-
-			message: '#^Variable \$db in PHPDoc tag @var does not match any variable in the foreach loop\: \$entity$#'
-			identifier: varTag.differentVariable
 			count: 1
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20200523051311.php
 
