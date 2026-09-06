@@ -2203,12 +2203,6 @@ parameters:
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportAttributesRoutine.php
 
 		-
-			message: '#^Strict comparison using \!\=\= between string and null will always evaluate to true\.$#'
-			identifier: notIdentical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportBoardSlotTemplatesRoutine.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Express\\Association will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -2237,12 +2231,6 @@ parameters:
 			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportSiteTypeSkeletonsRoutine.php
-
-		-
-			message: '#^Strict comparison using \!\=\= between string and null will always evaluate to true\.$#'
-			identifier: notIdentical.alwaysTrue
-			count: 2
-			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportSummaryTemplatesRoutine.php
 
 		-
 			message: '#^Ternary operator condition is always true\.$#'
@@ -2461,12 +2449,6 @@ parameters:
 			path: ../concrete/src/Cache/OpCache.php
 
 		-
-			message: '#^Strict comparison using \!\=\= between string\|false and 0 will always evaluate to true\.$#'
-			identifier: notIdentical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Cache/OpCache.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Calendar\\CalendarEventVersionRepetition\:\:getRepetitionObject\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2639,24 +2621,6 @@ parameters:
 			identifier: identical.alwaysFalse
 			count: 3
 			path: ../concrete/src/Config/FileLoader.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Config/FileSaver.php
-
-		-
-			message: '#^Result of method Illuminate\\Filesystem\\Filesystem\:\:replace\(\) \(void\) is used\.$#'
-			identifier: method.void
-			count: 1
-			path: ../concrete/src/Config/FileSaver.php
-
-		-
-			message: '#^Strict comparison using \!\=\= between null and false will always evaluate to true\.$#'
-			identifier: notIdentical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Config/FileSaver.php
 
 		-
 			message: '#^Call to an undefined method Symfony\\Component\\Console\\Application\:\:getConcrete\(\)\.$#'
@@ -6349,12 +6313,6 @@ parameters:
 			path: ../concrete/src/Support/i18n.php
 
 		-
-			message: '#^Strict comparison using \!\=\= between string and null will always evaluate to true\.$#'
-			identifier: notIdentical.alwaysTrue
-			count: 1
-			path: ../concrete/src/System/Info.php
-
-		-
 			message: '#^Call to function is_int\(\) with int will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -6439,12 +6397,6 @@ parameters:
 			path: ../concrete/src/Tree/Node/Type/FileFolder.php
 
 		-
-			message: '#^Strict comparison using \!\=\= between Concrete\\Core\\User\\User and null will always evaluate to true\.$#'
-			identifier: notIdentical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/FileFolder.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeGroup\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -6477,12 +6429,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setSelectedGroupTypes\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/GroupFolder.php
-
-		-
-			message: '#^Strict comparison using \!\=\= between Concrete\\Core\\User\\User and null will always evaluate to true\.$#'
-			identifier: notIdentical.alwaysTrue
 			count: 1
 			path: ../concrete/src/Tree/Node/Type/GroupFolder.php
 
