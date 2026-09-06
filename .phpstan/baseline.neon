@@ -55,12 +55,6 @@ parameters:
 			path: ../concrete/controllers/backend/file.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Tree\\Node\\Type\\FileFolder\|null and Concrete\\Core\\Tree\\Node\\Type\\File will always evaluate to false\.$#'
-			identifier: instanceof.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/backend/file.php
-
-		-
 			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(string\)\: bool\)\|null, ''strlen'' given\.$#'
 			identifier: argument.type
 			count: 1
@@ -3290,12 +3284,6 @@ parameters:
 
 		-
 			message: '#^Method Concrete\\Core\\Entity\\File\\File\:\:getDetailsURL\(\) should return Concrete\\Core\\Url\\UrlInterface but returns League\\Url\\UrlInterface\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Entity/File/File.php
-
-		-
-			message: '#^Method Concrete\\Core\\Entity\\File\\File\:\:getFileFolderObject\(\) should return Concrete\\Core\\Tree\\Node\\Type\\FileFolder\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
 			identifier: return.type
 			count: 1
 			path: ../concrete/src/Entity/File/File.php
