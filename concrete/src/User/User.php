@@ -82,7 +82,7 @@ class User extends ConcreteObject
     /**
      * @param int $uID
      *
-     * @return User
+     * @return User|null
      */
     public static function loginByUserID($uID)
     {
