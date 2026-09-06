@@ -3061,12 +3061,6 @@ parameters:
 			path: ../concrete/src/Editor/LinkAbstractor.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between null and null will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Editor/LinkAbstractor.php
-
-		-
 			message: '#^Parameter \#1 \$asset of method Concrete\\Core\\Asset\\AssetGroup\:\:addAsset\(\) expects Concrete\\Core\\Asset\\Asset, Concrete\\Core\\Asset\\AssetInterface given\.$#'
 			identifier: argument.type
 			count: 1
@@ -3823,12 +3817,6 @@ parameters:
 			path: ../concrete/src/File/Import/FileImporter.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between false and false will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
-			count: 1
-			path: ../concrete/src/File/ImportProcessor/ConstrainImageProcessor.php
-
-		-
 			message: '#^Strict comparison using \!\=\= between ''jpeg'' and null will always evaluate to true\.$#'
 			identifier: notIdentical.alwaysTrue
 			count: 1
@@ -4143,12 +4131,6 @@ parameters:
 		-
 			message: '#^Call to function is_int\(\) with int will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Foundation/Environment/User.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between null and null will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
 			count: 1
 			path: ../concrete/src/Foundation/Environment/User.php
 
@@ -4911,12 +4893,6 @@ parameters:
 		-
 			message: '#^Call to function is_callable\(\) with array\{Concrete\\Core\\Page\\Controller\\PageController, ''useUserLocale''\} will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Multilingual/Service/Detector.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between null and null will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
 			count: 1
 			path: ../concrete/src/Multilingual/Service/Detector.php
 
@@ -6217,33 +6193,9 @@ parameters:
 			path: ../concrete/src/Service/Detector/HTTP/ApacheDetector.php
 
 		-
-			message: '#^Result of \|\| is always true\.$#'
-			identifier: booleanOr.alwaysTrue
-			count: 1
-			path: ../concrete/src/Service/Detector/HTTP/ApacheDetector.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between \*NEVER\* and '''' will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/src/Service/Detector/HTTP/ApacheDetector.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between null and null will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
-			count: 1
-			path: ../concrete/src/Service/Detector/HTTP/ApacheDetector.php
-
-		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 3
-			path: ../concrete/src/Service/Detector/HTTP/NginxDetector.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between null and null will always evaluate to true\.$#'
-			identifier: identical.alwaysTrue
-			count: 1
 			path: ../concrete/src/Service/Detector/HTTP/NginxDetector.php
 
 		-

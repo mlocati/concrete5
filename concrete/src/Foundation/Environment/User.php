@@ -25,7 +25,7 @@ class User
     public function isSuperUser()
     {
         $result = null;
-        if ($result === null && $this->functionInspector->functionAvailable('posix_getuid')) {
+        if ($this->functionInspector->functionAvailable('posix_getuid')) {
             $uid = posix_getuid();
             if (is_int($uid)) {
                 $result = $uid === 0;

@@ -237,23 +237,21 @@ class Detector implements ApplicationAwareInterface, SiteAggregateInterface
 
             $section = null;
             $default_locale = null;
-            if ($section === null) {
-                $locale = false;
-                // Detect locale by value stored in session or cookie
-                if ($this->canSetSessionValue() && $session->has('multilingual_default_locale')) {
-                    $locale = $session->get('multilingual_default_locale');
-                } else {
-                    $cookie = $this->app->make('cookie');
-                    if ($cookie->has('multilingual_default_locale')) {
-                        $locale = $cookie->get('multilingual_default_locale');
-                    }
+            $locale = false;
+            // Detect locale by value stored in session or cookie
+            if ($this->canSetSessionValue() && $session->has('multilingual_default_locale')) {
+                $locale = $session->get('multilingual_default_locale');
+            } else {
+                $cookie = $this->app->make('cookie');
+                if ($cookie->has('multilingual_default_locale')) {
+                    $locale = $cookie->get('multilingual_default_locale');
                 }
-                if ($locale) {
-                    $home = Section::getByLocale($locale);
-                    if (is_object($home)) {
-                        $section = $home;
-                        $default_locale = $locale;
-                    }
+            }
+            if ($locale) {
+                $home = Section::getByLocale($locale);
+                if (is_object($home)) {
+                    $section = $home;
+                    $default_locale = $locale;
                 }
             }
 
