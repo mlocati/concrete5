@@ -24,9 +24,6 @@ class ConfigStore
     {
         $this->rows = array();
         $this->db = Loader::db();
-        if (!$this->db) {
-            return;
-        }
         $r = $this->db->Execute('select * from ConfigStore where uID = 0 order by cfKey asc');
         while ($row = $r->fetch()) {
             if (!$row['pkgID']) {
@@ -86,9 +83,6 @@ class ConfigStore
             'pkgID' => $pkgID,
         );
         $db = Loader::db();
-        if (!$db) {
-            return;
-        }
 
         $db->query(
             "replace into ConfigStore (cfKey, timestamp, cfValue, pkgID) values (?, ?, ?, ?)",

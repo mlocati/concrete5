@@ -1153,12 +1153,6 @@ parameters:
 			path: ../concrete/controllers/single_page/download_file.php
 
 		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 2
-			path: ../concrete/controllers/single_page/login.php
-
-		-
 			message: '#^Parameter \#1 \$uID of static method Concrete\\Core\\Support\\Facade\\UserInfo\:\:getByID\(\) expects int, string given\.$#'
 			identifier: argument.type
 			count: 1
@@ -2209,12 +2203,6 @@ parameters:
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportExpressRelationsRoutine.php
 
 		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportPackagesRoutine.php
-
-		-
 			message: '#^Method Concrete\\Core\\Backup\\ContentImporter\\Importer\\Routine\\ImportPageStructureRoutine\:\:importAlias\(\) never returns string so it can be removed from the return type\.$#'
 			identifier: return.unusedType
 			count: 1
@@ -2581,12 +2569,6 @@ parameters:
 			path: ../concrete/src/Config/ConfigStore.php
 
 		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 2
-			path: ../concrete/src/Config/ConfigStore.php
-
-		-
 			message: '#^Call to an undefined static method Concrete\\Core\\Support\\Facade\\Database\:\:executeQuery\(\)\.$#'
 			identifier: staticMethod.notFound
 			count: 1
@@ -2901,12 +2883,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Doctrine\\Common\\Cache\\Cache\:\:flushAll\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Database/DatabaseStructureManager.php
-
-		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
 			count: 1
 			path: ../concrete/src/Database/DatabaseStructureManager.php
 
@@ -4183,15 +4159,9 @@ parameters:
 			path: ../concrete/src/Health/Search/Traits/SearchContentTrait.php
 
 		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Health/Search/Traits/SearchContentTrait.php
-
-		-
 			message: '#^Result of && is always false\.$#'
 			identifier: booleanAnd.alwaysFalse
-			count: 2
+			count: 1
 			path: ../concrete/src/Health/Search/Traits/SearchContentTrait.php
 
 		-
@@ -4715,12 +4685,6 @@ parameters:
 			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Marketplace/Marketplace.php
-
-		-
-			message: '#^Negated boolean expression is always false\.$#'
-			identifier: booleanNot.alwaysFalse
-			count: 1
-			path: ../concrete/src/Marketplace/PackageRepository.php
 
 		-
 			message: '#^Call to function is_callable\(\) with array\{Concrete\\Core\\Package\\Package, ''restore''\} will always evaluate to true\.$#'

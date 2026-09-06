@@ -82,7 +82,7 @@ class Login extends PageController implements LoggerAwareInterface
             return $this->view();
         }
         $at = AuthenticationType::getByHandle($type);
-        if (!$at || !$at->isEnabled()) {
+        if (!$at->isEnabled()) {
             throw new AuthenticationTypeFailureException(t('Invalid authentication type.'));
         }
 
@@ -371,7 +371,7 @@ class Login extends PageController implements LoggerAwareInterface
             $u = $this->app->make(User::class);
             $at = AuthenticationType::getByHandle($session->get('uRequiredAttributeUserAuthenticationType'));
             $session->remove('uRequiredAttributeUserAuthenticationType');
-            if (!$at || !$at->isEnabled()) {
+            if (!$at->isEnabled()) {
                 throw new Exception(t('Invalid Authentication Type'));
             }
 
