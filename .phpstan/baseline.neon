@@ -2536,18 +2536,6 @@ parameters:
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
-			path: ../concrete/src/Config/Driver/Redis/RedisLoader.php
-
-		-
-			message: '#^Parameter \#1 \$key of method Redis\:\:del\(\) expects array\<string\>\|string, Generator&iterable\<string\> given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Config/Driver/Redis/RedisLoader.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
 			path: ../concrete/src/Config/Driver/Redis/RedisSaver.php
 
 		-
