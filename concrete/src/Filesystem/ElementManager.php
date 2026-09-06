@@ -5,7 +5,7 @@ namespace Concrete\Core\Filesystem;
 class ElementManager
 {
     /**
-     * @var \Concrete\Core\Filesystem\Element[]
+     * @var array<string, \Concrete\Core\Filesystem\Element|\Closure>
      */
     protected $registry = [];
 
@@ -42,7 +42,7 @@ class ElementManager
      * Register an element.
      *
      * @param string $element the element name
-     * @param \Concrete\Core\Filesystem\Element $object the element instance
+     * @param \Concrete\Core\Filesystem\Element|\Closure $object the element instance, or a closure returning it
      */
     public function register($element, $object)
     {
