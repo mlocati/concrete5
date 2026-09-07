@@ -2311,12 +2311,6 @@ parameters:
 			path: ../concrete/src/Console/Command/CompareSchemaCommand.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between array\|string and null will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/src/Console/Command/FixDatabaseForeignKeys.php
-
-		-
 			message: '#^Call to sprintf contains 1 placeholder, 2 values given\.$#'
 			identifier: argument.sprintf
 			count: 1
