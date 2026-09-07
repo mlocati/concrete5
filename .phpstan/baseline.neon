@@ -427,12 +427,6 @@ parameters:
 			path: ../concrete/controllers/element/navigation/menu.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\Calendar\\Calendar and Concrete\\Core\\Entity\\Calendar\\Calendar will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/event/export.php
-
-		-
 			message: '#^Array has 2 duplicate keys with value ''editInComposer'' \(''editInComposer'', ''editInComposer''\)\.$#'
 			identifier: array.duplicateKey
 			count: 1
