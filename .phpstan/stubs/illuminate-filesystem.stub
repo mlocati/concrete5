@@ -1,0 +1,21 @@
+<?php
+
+/*
+ * Filesystem::get() is documented as returning a string, but it returns the result of file_get_contents(), which is
+ * false when the file exists but it can't be read: this stub declares the actual type.
+ */
+
+namespace Illuminate\Filesystem;
+
+class Filesystem
+{
+    /**
+     * @param string $path
+     * @param bool $lock
+     *
+     * @return string|false false if the file exists but it can't be read (an exception is thrown if it doesn't exist)
+     */
+    public function get($path, $lock = false)
+    {
+    }
+}
