@@ -1849,8 +1849,8 @@ parameters:
 			path: ../concrete/src/Authentication/AuthenticationType.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between list\<mixed\> and array\<string, mixed\> will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
+			message: '#^Parameter \#1 \$array \(list\<mixed\>\) of array_values is already a list, call has no effect\.$#'
+			identifier: arrayValues.list
 			count: 1
 			path: ../concrete/src/Authentication/AuthenticationType.php
 
