@@ -2539,12 +2539,6 @@ parameters:
 			path: ../concrete/src/Conversation/Editor/Editor.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Conversation\\Conversation and Concrete\\Core\\Conversation\\Conversation will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Conversation/FrontendController.php
-
-		-
 			message: '#^Method Concrete\\Core\\Conversation\\FrontendController\:\:getBlockController\(\) should return Concrete\\Block\\CoreConversation\\Controller but returns Concrete\\Core\\Block\\BlockController\.$#'
 			identifier: return.type
 			count: 1
