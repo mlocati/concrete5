@@ -3769,12 +3769,6 @@ parameters:
 			path: ../concrete/src/Html/Service/Html.php
 
 		-
-			message: '#^Call to function is_object\(\) with array\<array\<string\>\> will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Http/Client/Client.php
-
-		-
 			message: '#^Class Concrete\\Core\\Http\\Client\\Client extends @final class GuzzleHttp\\Client\.$#'
 			identifier: class.extendsFinalByPhpDoc
 			count: 1
