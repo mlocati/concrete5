@@ -253,12 +253,6 @@ parameters:
 			path: ../concrete/controllers/dialog/page/add_block.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Error\\ErrorList\\ErrorList and Concrete\\Core\\Error\\ErrorList\\ErrorList will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/dialog/page/add_block.php
-
-		-
 			message: '#^Parameter \#2 \$userID of class Concrete\\Core\\Page\\Command\\DeletePageCommand constructor expects int\|null, string given\.$#'
 			identifier: argument.type
 			count: 1
@@ -1913,12 +1907,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Attribute/Key/SearchIndexer/StandardSearchIndexer.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Error\\ErrorList\\ErrorList and Concrete\\Core\\Error\\ErrorList\\ErrorList will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Attribute/StandardValidator.php
 
 		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\StandardValidator\:\:parseResponse\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'

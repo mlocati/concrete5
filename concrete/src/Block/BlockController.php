@@ -269,7 +269,7 @@ class BlockController extends \Concrete\Core\Controller\AbstractController
      * @param $args array|string|null
      * @version <= 8.4.3 Method returns ErrorList|boolean
      * @version 8.5.0a3 Method returns ErrorList
-     * @return ErrorList|boolean
+     * @return ErrorList|bool|mixed an ErrorList instance, or a boolean (the block controllers of third-party packages may return other values: the callers treat the objects that aren't ErrorList instances as validation failures)
      */
     public function validate($args)
     {
