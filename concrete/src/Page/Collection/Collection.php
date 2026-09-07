@@ -601,22 +601,20 @@ class Collection extends ConcreteObject implements TrackableInterface
             ->setParameter('cID', $this->getCollectionID())
             ->execute();
         $bIDArray = [];
-        if ($r) {
-            while ($row = $r->fetch()) {
-                $bIDArray[] = $row['bID'];
-            }
-            if (count($bIDArray) > 0) {
-                $qb2 = $db->createQueryBuilder();
-                $qb2->select('cID')
-                    ->from('CollectionVersionBlocks')
-                    ->where($qb2->expr()->in('bID', $bIDArray))
-                    ->andWhere($qb2->expr()->neq('cID', ':cID'))
-                    ->setParameter('cID', $this->getCollectionID())
-                    ->setMaxResults(1);
-                $aliasedCID = $qb2->execute()->fetchColumn();
-                if ($aliasedCID > 0) {
-                    return true;
-                }
+        while ($row = $r->fetch()) {
+            $bIDArray[] = $row['bID'];
+        }
+        if (count($bIDArray) > 0) {
+            $qb2 = $db->createQueryBuilder();
+            $qb2->select('cID')
+                ->from('CollectionVersionBlocks')
+                ->where($qb2->expr()->in('bID', $bIDArray))
+                ->andWhere($qb2->expr()->neq('cID', ':cID'))
+                ->setParameter('cID', $this->getCollectionID())
+                ->setMaxResults(1);
+            $aliasedCID = $qb2->execute()->fetchColumn();
+            if ($aliasedCID > 0) {
+                return true;
             }
         }
 
@@ -1106,23 +1104,20 @@ class Collection extends ConcreteObject implements TrackableInterface
                 ->setParameter('cvID', $cvID)
                 ->setParameter('arHandle', $arHandle);
         }
-        /** @var PDOStatement $r */
         $r = $qb->execute();
-        if ($r) {
-            if ($r->rowCount() > 0) {
-                // then we know we got a value; we increment it and return
-                $res = $r->fetchAssociative();
-                $displayOrder = $res['cbdis'];
-                if ($displayOrder === null) {
-                    return 0;
-                }
-                ++$displayOrder;
-
-                return $displayOrder;
-            } else {
-                // we didn't get anything, so we return a zero
+        if ($r->rowCount() > 0) {
+            // then we know we got a value; we increment it and return
+            $res = $r->fetchAssociative();
+            $displayOrder = $res['cbdis'];
+            if ($displayOrder === null) {
                 return 0;
             }
+            ++$displayOrder;
+
+            return $displayOrder;
+        } else {
+            // we didn't get anything, so we return a zero
+            return 0;
         }
     }
 
@@ -1152,24 +1147,22 @@ class Collection extends ConcreteObject implements TrackableInterface
             ->setParameter('arHandle', $arHandle)
             ->execute();
 
-        if ($r) {
-            $displayOrder = 0;
-            while ($row = $r->fetch()) {
-                $qb2 = $db->createQueryBuilder();
-                $qb2->update('CollectionVersionBlocks')
-                    ->set('cbDisplayOrder', ':cbDisplayOrder')
-                    ->where('cID = :cID')
-                    ->andWhere('cvID = :cvID')
-                    ->andWhere('arHandle = :arHandle')
-                    ->andWhere('bID = :bID')
-                    ->setParameter('cbDisplayOrder', $displayOrder)
-                    ->setParameter('cID', $cID)
-                    ->setParameter('cvID', $cvID)
-                    ->setParameter('arHandle', $arHandle)
-                    ->setParameter('bID', $row['bID'])
-                    ->execute();
-                ++$displayOrder;
-            }
+        $displayOrder = 0;
+        while ($row = $r->fetch()) {
+            $qb2 = $db->createQueryBuilder();
+            $qb2->update('CollectionVersionBlocks')
+                ->set('cbDisplayOrder', ':cbDisplayOrder')
+                ->where('cID = :cID')
+                ->andWhere('cvID = :cvID')
+                ->andWhere('arHandle = :arHandle')
+                ->andWhere('bID = :bID')
+                ->setParameter('cbDisplayOrder', $displayOrder)
+                ->setParameter('cID', $cID)
+                ->setParameter('cvID', $cvID)
+                ->setParameter('arHandle', $arHandle)
+                ->setParameter('bID', $row['bID'])
+                ->execute();
+            ++$displayOrder;
         }
     }
 
@@ -1213,29 +1206,27 @@ class Collection extends ConcreteObject implements TrackableInterface
             ->setParameter('arHandle', $arHandle)
             ->execute();
 
-        if ($r) {
-            $currentDisplayOrder = $block->getBlockDisplayOrder();
-            $displayOrder = $fromDisplay;
-            while ($row = $r->fetchAssociative()) {
-                if ($displayOrder === $currentDisplayOrder) {
-                    // Skip our blocks display order
-                    $displayOrder++;
-                }
-                $qb2 = $db->createQueryBuilder();
-                $qb2->update('CollectionVersionBlocks')
-                    ->set('cbDisplayOrder', ':cbDisplayOrder')
-                    ->where('cID = :cID')
-                    ->andWhere('cvID = :cvID')
-                    ->andWhere('arHandle = :arHandle')
-                    ->andWhere('bID = :bID')
-                    ->setParameter('cbDisplayOrder', $displayOrder)
-                    ->setParameter('cID', $cID)
-                    ->setParameter('cvID', $cvID)
-                    ->setParameter('arHandle', $arHandle)
-                    ->setParameter('bID', $row['bID'])
-                    ->execute();
-                ++$displayOrder;
+        $currentDisplayOrder = $block->getBlockDisplayOrder();
+        $displayOrder = $fromDisplay;
+        while ($row = $r->fetchAssociative()) {
+            if ($displayOrder === $currentDisplayOrder) {
+                // Skip our blocks display order
+                $displayOrder++;
             }
+            $qb2 = $db->createQueryBuilder();
+            $qb2->update('CollectionVersionBlocks')
+                ->set('cbDisplayOrder', ':cbDisplayOrder')
+                ->where('cID = :cID')
+                ->andWhere('cvID = :cvID')
+                ->andWhere('arHandle = :arHandle')
+                ->andWhere('bID = :bID')
+                ->setParameter('cbDisplayOrder', $displayOrder)
+                ->setParameter('cID', $cID)
+                ->setParameter('cvID', $cvID)
+                ->setParameter('arHandle', $arHandle)
+                ->setParameter('bID', $row['bID'])
+                ->execute();
+            ++$displayOrder;
         }
     }
 

@@ -4819,12 +4819,6 @@ parameters:
 			path: ../concrete/src/Page/Collection/Collection.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 4
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
 			message: '#^Method Concrete\\Core\\Page\\Collection\\Collection\:\:getSetCollectionAttributes\(\) should return array\<Concrete\\Core\\Entity\\Attribute\\Key\\PageKey\> but returns list\<Concrete\\Core\\Entity\\Attribute\\Key\\Key\>\.$#'
 			identifier: return.type
 			count: 1
@@ -4972,12 +4966,6 @@ parameters:
 			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
-			path: ../concrete/src/Page/Page.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 4
 			path: ../concrete/src/Page/Page.php
 
 		-
@@ -5137,12 +5125,6 @@ parameters:
 			path: ../concrete/src/Page/Stack/Pile/Pile.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 4
-			path: ../concrete/src/Page/Stack/Pile/Pile.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Block\\Block will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -5151,12 +5133,6 @@ parameters:
 		-
 			message: '#^Constant PILE_MODULES_INSTALLED not found\.$#'
 			identifier: constant.notFound
-			count: 1
-			path: ../concrete/src/Page/Stack/Pile/PileContent.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Page/Stack/Pile/PileContent.php
 
