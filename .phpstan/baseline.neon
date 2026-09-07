@@ -2473,12 +2473,6 @@ parameters:
 			path: ../concrete/src/Conversation/Message/Message.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Conversation\\Conversation and Concrete\\Core\\Conversation\\Conversation will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Conversation/Message/Message.php
-
-		-
 			message: '#^Strict comparison using \=\=\= between Concrete\\Core\\Utility\\IPAddress and false will always evaluate to false\.$#'
 			identifier: identical.alwaysFalse
 			count: 1
@@ -2721,12 +2715,6 @@ parameters:
 		-
 			message: '#^Cannot call method count\(\) on array\<Concrete\\Core\\Entity\\Board\\InstanceLogEntry\>\.$#'
 			identifier: method.nonObject
-			count: 1
-			path: ../concrete/src/Entity/Board/InstanceLog.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\Board\\InstanceLogEntry and Concrete\\Core\\Entity\\Board\\InstanceLogEntry will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
 			count: 1
 			path: ../concrete/src/Entity/Board/InstanceLog.php
 
@@ -3215,12 +3203,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Feed/FeedPost.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\File\\Image\\Thumbnail\\Type\\Version and Concrete\\Core\\File\\Image\\Thumbnail\\Type\\Version will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/File/Command/GenerateThumbnailCommandHandler.php
 
 		-
 			message: '#^Parameter \#1 \$version of method Concrete\\Core\\Attribute\\Category\\FileCategory\:\:getAttributeValues\(\) expects Concrete\\Core\\Entity\\File\\Version, Concrete\\Core\\Entity\\File\\File given\.$#'
@@ -3791,12 +3773,6 @@ parameters:
 			identifier: constructor.unusedParameter
 			count: 1
 			path: ../concrete/src/Html/Object/Picture.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\View\\View and Concrete\\Core\\View\\View will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Html/Service/Html.php
 
 		-
 			message: '#^Loose comparison using \!\= between '''' and '''' will always evaluate to false\.$#'

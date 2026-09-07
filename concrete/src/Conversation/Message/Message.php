@@ -566,10 +566,7 @@ class Message extends ConcreteObject implements ObjectInterface, SubjectInterfac
             $cnvMessageLevel = $parentMessage->getConversationMessageLevel() + 1;
         }
 
-        $cnvID = 0;
-        if ($cnv instanceof Conversation) {
-            $cnvID = $cnv->getConversationID();
-        }
+        $cnvID = $cnv->getConversationID();
 
         $editor = ConversationEditor::getActive();
         $cnvEditorID = $editor->getConversationEditorID();
