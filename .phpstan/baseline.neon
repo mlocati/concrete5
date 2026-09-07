@@ -37,12 +37,6 @@ parameters:
 			path: ../concrete/controllers/backend/dashboard/get_image_data.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|int\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 2
-			path: ../concrete/controllers/backend/file.php
-
-		-
 			message: '#^Call to function is_scalar\(\) with float\|int\<min, \-1\>\|int\<1, max\>\|non\-falsy\-string\|true will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 3
@@ -563,12 +557,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/panel/detail/theme/preview_skin.php
-
-		-
-			message: '#^Call to function is_array\(\) with float\|int\<min, \-1\>\|int\<1, max\>\|non\-falsy\-string\|true will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/controllers/panel/help.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
@@ -4777,15 +4765,9 @@ parameters:
 			path: ../concrete/src/Page/Single.php
 
 		-
-			message: '#^Call to function is_array\(\) with bool\|float\|null will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Page/Sitemap/DragRequestData.php
-
-		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 2
+			count: 1
 			path: ../concrete/src/Page/Sitemap/DragRequestData.php
 
 		-

@@ -368,7 +368,7 @@ class File extends Controller
             if (!$token->validate()) {
                 throw new UserMessageException($token->getErrorMessage());
             }
-            $filenames = $this->request->request->get('send_file');
+            $filenames = $this->request->request->all()['send_file'] ?? null;
             if (is_string($filenames)) {
                 $filenames = [$filenames];
             } elseif (!is_array($filenames)) {
@@ -426,7 +426,7 @@ class File extends Controller
             if (!$token->validate()) {
                 throw new UserMessageException($token->getErrorMessage());
             }
-            $urls = $this->request->request->get('url_upload');
+            $urls = $this->request->request->all()['url_upload'] ?? null;
             if (is_string($urls)) {
                 $urls = explode("\n", $urls);
             } elseif (!is_array($urls)) {
