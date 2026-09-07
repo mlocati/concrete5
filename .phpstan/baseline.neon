@@ -853,12 +853,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/express/entities/order_entries.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Error\\ErrorList\\Error\\Error will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/files/external_file_provider.php
-
-		-
 			message: '#^Variable \$sectionID in isset\(\) always exists and is not nullable\.$#'
 			identifier: isset.variable
 			count: 1
@@ -1387,22 +1381,10 @@ parameters:
 			path: ../concrete/src/Area/Area.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\StyleCustomizer\\Inline\\StyleSet will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/Area/CustomStyle.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Area/CustomStyleRepository.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Area\\Area will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Area/Layout/Column.php
 
 		-
 			message: '#^Return type \(Concrete\\Core\\Area\\Layout\\CustomColumn\) of method Concrete\\Core\\Area\\Layout\\CustomColumn\:\:duplicate\(\) should be compatible with return type \(int\) of method Concrete\\Core\\Area\\Layout\\Column\:\:duplicate\(\)$#'
@@ -2005,12 +1987,6 @@ parameters:
 			path: ../concrete/src/Block/BlockType/BlockTypeList.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\StyleCustomizer\\Inline\\StyleSet will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/Block/CustomStyle.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2311,18 +2287,6 @@ parameters:
 			path: ../concrete/src/Conversation/Editor/Editor.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Conversation\\Conversation will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Conversation/Editor/Editor.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Conversation\\Message\\Message will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Conversation/Editor/Editor.php
-
-		-
 			message: '#^Strict comparison using \!\=\= between null and null will always evaluate to false\.$#'
 			identifier: notIdentical.alwaysFalse
 			count: 1
@@ -2342,12 +2306,6 @@ parameters:
 
 		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\File\\File will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Conversation/Message/Message.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\User\\UserInfo will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Conversation/Message/Message.php
@@ -2673,24 +2631,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\File\\StorageLocation\\Configuration\\ConfigurationInterface\:\:getTypeObject\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/File/StorageLocation/StorageLocation.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\File\\StorageLocation\\StorageLocation\:\:getID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/File/StorageLocation/StorageLocation.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\File\\StorageLocation\\StorageLocation\:\:setIsDefault\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/File/StorageLocation/StorageLocation.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\File\\StorageLocation\\StorageLocation will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Entity/File/StorageLocation/StorageLocation.php
 
@@ -3029,12 +2969,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Express/ObjectBuilder/FieldsetBuilder.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Express/ObjectManager.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
@@ -4209,7 +4143,7 @@ parameters:
 		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
-			count: 2
+			count: 1
 			path: ../concrete/src/Notification/View/NewFormSubmissionListView.php
 
 		-
@@ -4813,12 +4747,6 @@ parameters:
 			path: ../concrete/src/Permission/Access/Entity/PageOwnerEntity.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Site\\Group\\Group will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Permission/Access/Entity/SiteGroupEntity.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Permission\\Access\\Access\:\:save\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
 			count: 1
@@ -4859,12 +4787,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/Permission/Assignment/CalendarAssignment.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Express\\Entity will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Permission/Assignment/ExpressEntryAssignment.php
 
 		-
 			message: '#^Method Concrete\\Core\\Permission\\Assignment\\PageAssignment\:\:getPermissionAccessObject\(\) should return Concrete\\Core\\Permission\\Access\\PageAccess\|null but returns Concrete\\Core\\Permission\\Access\\Access\|null\.$#'
@@ -5791,12 +5713,6 @@ parameters:
 			path: ../concrete/src/Url/Resolver/RouterUrlResolver.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\File\\StorageLocation\\StorageLocation\:\:getConfigurationObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Avatar/StandardAvatar.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\User\\UserInfo\:\:enterGroup\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -6113,12 +6029,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Workflow/EmptyWorkflow.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Workflow\\Workflow will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Workflow/Progress/Progress.php
 
 		-
 			message: '#^If condition is always true\.$#'
