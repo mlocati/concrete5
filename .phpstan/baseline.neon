@@ -4123,18 +4123,6 @@ parameters:
 			path: ../concrete/src/ImageEditor/ImageEditorService.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\File\\Image\\Editor and Concrete\\Core\\Entity\\File\\Image\\Editor will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 2
-			path: ../concrete/src/ImageEditor/ImageEditorService.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\File\\Version and Concrete\\Core\\Entity\\File\\Version will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 2
-			path: ../concrete/src/ImageEditor/ImageEditorService.php
-
-		-
 			message: '#^Left side of && is always true\.$#'
 			identifier: booleanAnd.leftAlwaysTrue
 			count: 1
