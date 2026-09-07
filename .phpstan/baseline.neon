@@ -283,12 +283,6 @@ parameters:
 			path: ../concrete/controllers/dialog/page/bulk/permissions.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Permission\\Duration and Concrete\\Core\\Permission\\Duration will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/dialog/page/bulk/permissions.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Controller\\AbstractController\:\:on_start\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
 			count: 1
@@ -5321,12 +5315,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/Permission/Assignment/StackAssignment.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Duration will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Permission/Duration.php
 
 		-
 			message: '#^Parameter \#1 \$repeat_period_week_days of method Concrete\\Core\\Foundation\\Repetition\\AbstractRepetition\:\:setRepeatPeriodWeekDays\(\) expects array\<int\>, bool\|float\|int\|string\|null given\.$#'
