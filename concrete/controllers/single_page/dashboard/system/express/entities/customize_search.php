@@ -2,7 +2,6 @@
 namespace Concrete\Controller\SinglePage\Dashboard\System\Express\Entities;
 
 use Concrete\Controller\Element\Search\Express\CustomizeResults;
-use Concrete\Core\Entity\Express\Entity;
 use Concrete\Core\Entity\Search\Query;
 use Concrete\Core\Page\Controller\DashboardPageController;
 use Concrete\Core\Search\Query\QueryFactory;
@@ -20,9 +19,6 @@ class CustomizeSearch extends DashboardPageController
 
     public function save($id = null)
     {
-        /**
-         * @var Entity $entity
-         */
         $entity = $this->repository->findOneById($id);
         if (is_object($entity)) {
             if (!$this->token->validate('save')) {

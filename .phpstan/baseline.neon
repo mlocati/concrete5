@@ -775,12 +775,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/files/search.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Theme\\Theme will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/pages/themes.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -845,18 +839,6 @@ parameters:
 			identifier: argument.byRef
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/system/conversations/settings.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Express\\Entity will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/system/express/entities.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Express\\Entity will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/express/entities/customize_search.php
 
 		-
 			message: '#^Parameter \#1 \$em of method Doctrine\\ORM\\Id\\AbstractIdGenerator\:\:generate\(\) expects Doctrine\\ORM\\EntityManager, Doctrine\\ORM\\EntityManagerInterface\|null given\.$#'
@@ -1933,28 +1915,10 @@ parameters:
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportAttributesRoutine.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Express\\Association will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportExpressRelationsRoutine.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Express\\Entity will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportExpressRelationsRoutine.php
-
-		-
 			message: '#^Method Concrete\\Core\\Backup\\ContentImporter\\Importer\\Routine\\ImportPageStructureRoutine\:\:importAlias\(\) never returns string so it can be removed from the return type\.$#'
 			identifier: return.unusedType
 			count: 1
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportPageStructureRoutine.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Site\\Skeleton will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportSiteTypeSkeletonsRoutine.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
@@ -2899,12 +2863,6 @@ parameters:
 			path: ../concrete/src/Export/Item/Express/Form.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Site\\Skeleton will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Export/Item/SiteType.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Entry\\Association\:\:setSelectedEntry\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -3143,18 +3101,6 @@ parameters:
 			identifier: return.type
 			count: 1
 			path: ../concrete/src/File/Filesystem.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Access\\Access will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/File/FolderItemList.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Key\\FileFolderKey will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/File/FolderItemList.php
 
 		-
 			message: '#^Call to function is_callable\(\) with array\{League\\Flysystem\\File, ''exists''\} will always evaluate to true\.$#'
@@ -6119,12 +6065,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Utility/Service/Validation/Strings.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Validation\\BannedWord will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/Validation/BannedWord/BannedWord.php
 
 		-
 			message: '#^Call to an undefined method ArrayAccess\:\:add\(\)\.$#'
