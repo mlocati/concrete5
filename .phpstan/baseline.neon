@@ -2659,12 +2659,6 @@ parameters:
 			path: ../concrete/src/Database/Connection/Connection.php
 
 		-
-			message: '#^Instanceof between Doctrine\\DBAL\\Driver and Doctrine\\DBAL\\Driver will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Database/Connection/ConnectionFactory.php
-
-		-
 			message: '#^Method Concrete\\Core\\Database\\DatabaseManager\:\:getConnectionNames\(\) should return array\<string, string\> but returns list\<\(int\|string\)\>\.$#'
 			identifier: return.type
 			count: 1
@@ -3661,18 +3655,6 @@ parameters:
 			path: ../concrete/src/Filesystem/Twig/FluentArea.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Area\\ContainerArea and Concrete\\Core\\Area\\ContainerArea will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Filesystem/Twig/FluentArea.php
-
-		-
-			message: '#^Result of && is always false\.$#'
-			identifier: booleanAnd.alwaysFalse
-			count: 1
-			path: ../concrete/src/Filesystem/Twig/FluentArea.php
-
-		-
 			message: '#^Call to function is_string\(\) with Twig\\Extension\\ExtensionInterface will always evaluate to false\.$#'
 			identifier: function.impossibleType
 			count: 1
@@ -3735,18 +3717,6 @@ parameters:
 		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/Foundation/Environment/FunctionInspector.php
-
-		-
-			message: '#^Instanceof between Traversable\<mixed, string\> and Traversable will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Foundation/Environment/FunctionInspector.php
-
-		-
-			message: '#^Result of \|\| is always true\.$#'
-			identifier: booleanOr.alwaysTrue
 			count: 1
 			path: ../concrete/src/Foundation/Environment/FunctionInspector.php
 
@@ -3887,18 +3857,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Health/Report/Test/Test/Search/SurveyBlockTest.php
-
-		-
-			message: '#^Instanceof between Doctrine\\DBAL\\Query\\QueryBuilder and Doctrine\\DBAL\\Query\\QueryBuilder will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Health/Search/Traits/SearchContentTrait.php
-
-		-
-			message: '#^Result of && is always false\.$#'
-			identifier: booleanAnd.alwaysFalse
-			count: 1
-			path: ../concrete/src/Health/Search/Traits/SearchContentTrait.php
 
 		-
 			message: '#^Method Concrete\\Core\\Html\\Image\:\:__construct\(\) with return type void returns false but should not return anything\.$#'
@@ -5221,12 +5179,6 @@ parameters:
 			path: ../concrete/src/Permission/Access/ViewUserAttributesUserAccess.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Area\\Area and Concrete\\Core\\Area\\Area will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Permission/Assignment/AreaAssignment.php
-
-		-
 			message: '#^Instanceof between Concrete\\Core\\Page\\Page and Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
 			count: 1
@@ -5693,24 +5645,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Session/SessionFactory.php
-
-		-
-			message: '#^Call to function is_object\(\) with \*NEVER\* will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Session/Storage/Handler/RedisSessionHandler.php
-
-		-
-			message: '#^Instanceof between Predis\\Client and Predis\\Client will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Session/Storage/Handler/RedisSessionHandler.php
-
-		-
-			message: '#^Result of && is always false\.$#'
-			identifier: booleanAnd.alwaysFalse
-			count: 1
-			path: ../concrete/src/Session/Storage/Handler/RedisSessionHandler.php
 
 		-
 			message: '#^Call to an undefined method Illuminate\\Config\\Repository\:\:save\(\)\.$#'
@@ -6501,12 +6435,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\User\\UserList\:\:setQuery\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/UserList.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\User\\Group\\Group and Concrete\\Core\\User\\Group\\Group will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
 			count: 1
 			path: ../concrete/src/User/UserList.php
 

@@ -63,7 +63,7 @@ class AreaAssignment extends Assignment
      *
      * @see \Concrete\Core\Permission\Assignment\Assignment::setPermissionObject()
      *
-     * @param \Concrete\Core\Area\Area $a
+     * @param \Concrete\Core\Area\Area|mixed $a the area (other values are ignored)
      */
     public function setPermissionObject($a)
     {
