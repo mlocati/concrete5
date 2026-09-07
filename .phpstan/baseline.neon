@@ -1357,12 +1357,6 @@ parameters:
 			path: ../concrete/src/Application/Service/User.php
 
 		-
-			message: '#^Call to function is_array\(\) with Concrete\\Core\\Page\\Page will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Application/Service/UserInterface.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Navigation\\Item\\ItemInterface\:\:getPageID\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -2175,12 +2169,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Predis\\Client\:\:flushDB\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
-
-		-
-			message: '#^Call to function is_null\(\) with int will always evaluate to false\.$#'
-			identifier: function.impossibleType
 			count: 1
 			path: ../concrete/src/Cache/Driver/RedisStashDriver.php
 
@@ -3211,12 +3199,6 @@ parameters:
 			path: ../concrete/src/File/Document/Xml/Sanitizer.php
 
 		-
-			message: '#^Call to function is_object\(\) with int will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/File/FileList.php
-
-		-
 			message: '#^Method Concrete\\Core\\File\\Filesystem\:\:addFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\FileFolder but returns Concrete\\Core\\Tree\\Node\\Node\.$#'
 			identifier: return.type
 			count: 1
@@ -3237,12 +3219,6 @@ parameters:
 		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Key\\FileFolderKey will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/File/FolderItemList.php
-
-		-
-			message: '#^Call to function is_object\(\) with int will always evaluate to false\.$#'
-			identifier: function.impossibleType
 			count: 1
 			path: ../concrete/src/File/FolderItemList.php
 
@@ -3539,12 +3515,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Filesystem/Twig/FluentArea.php
-
-		-
-			message: '#^Call to function is_string\(\) with Twig\\Extension\\ExtensionInterface will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Filesystem/TwigFactory.php
 
 		-
 			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
@@ -3959,12 +3929,6 @@ parameters:
 			identifier: catch.neverThrown
 			count: 1
 			path: ../concrete/src/Install/Preconditions/DatabaseCharsetCollation.php
-
-		-
-			message: '#^Call to function is_int\(\) with string will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Install/Preconditions/RequestUrls.php
 
 		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
@@ -5611,12 +5575,6 @@ parameters:
 			path: ../concrete/src/Summary/Template/Renderer.php
 
 		-
-			message: '#^Call to function is_object\(\) with string will always evaluate to false\.$#'
-			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Support/Facade/Facade.php
-
-		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -5733,12 +5691,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeStorageLocationID\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/FileFolder.php
-
-		-
-			message: '#^Call to function is_object\(\) with int will always evaluate to false\.$#'
-			identifier: function.impossibleType
 			count: 1
 			path: ../concrete/src/Tree/Node/Type/FileFolder.php
 
