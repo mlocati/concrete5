@@ -452,7 +452,7 @@ class AuthenticationType extends ConcreteObject
         // invoke the auth controller method even when no matching template existed, then
         // render form.php as a fallback.
         if (!$this->hasTemplate($element) && method_exists($this->controller, $element)) {
-            $params = array_values($params) === $params ? array_values($params) : [];
+            $params = array_values($params) === $params ? $params : [];
             call_user_func_array([$this->controller, $element], $params);
 
             $atHandle = $this->getAuthenticationTypeHandle();
@@ -561,7 +561,7 @@ class AuthenticationType extends ConcreteObject
         }
 
         if (method_exists($this->controller, $handle)) {
-            $params = array_values($data) === $data ? array_values($data) : [];
+            $params = array_values($data) === $data ? $data : [];
             call_user_func_array([$this->controller, $handle], $params);
         } elseif ($viewFallback && method_exists($this->controller, 'view')) {
             $this->controller->view();

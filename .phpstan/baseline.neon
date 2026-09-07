@@ -1843,18 +1843,6 @@ parameters:
 			path: ../concrete/src/Authentication/AuthenticationType.php
 
 		-
-			message: '#^Parameter \#1 \$array \(list\) of array_values is already a list, call has no effect\.$#'
-			identifier: arrayValues.list
-			count: 1
-			path: ../concrete/src/Authentication/AuthenticationType.php
-
-		-
-			message: '#^Parameter \#1 \$array \(list\<mixed\>\) of array_values is already a list, call has no effect\.$#'
-			identifier: arrayValues.list
-			count: 1
-			path: ../concrete/src/Authentication/AuthenticationType.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Controller\\PageController\:\:finishAuthentication\(\)\.$#'
 			identifier: method.notFound
 			count: 1
