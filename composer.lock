@@ -274,16 +274,16 @@
         },
         {
             "name": "concretecms/dependency-patches",
-            "version": "1.8.1",
+            "version": "1.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/dependency-patches.git",
-                "reference": "dc000eab49f6b15b950ecb96fca2b9328a3f0f27"
+                "reference": "829d1dfef7c7df76cad407ad1242111e3dfa237b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/dependency-patches/zipball/dc000eab49f6b15b950ecb96fca2b9328a3f0f27",
-                "reference": "dc000eab49f6b15b950ecb96fca2b9328a3f0f27",
+                "url": "https://api.github.com/repos/concretecms/dependency-patches/zipball/829d1dfef7c7df76cad407ad1242111e3dfa237b",
+                "reference": "829d1dfef7c7df76cad407ad1242111e3dfa237b",
                 "shasum": ""
             },
             "require": {
@@ -293,7 +293,8 @@
             "extra": {
                 "patches": {
                     "league/url:3.3.5": {
-                        "Add PHP 8.1 compatibility": "league/url/php8.1-compatibility.patch"
+                        "Add PHP 8.1 compatibility": "league/url/php8.1-compatibility.patch",
+                        "Fix the PHPDoc of the setters of Url and UrlImmutable": "league/url/setters-phpdoc.patch"
                     },
                     "twig/twig:3.11.3": {
                         "Escape profiler HTML output names (CVE-2026-47730)": "twig/twig/cve-2026-47730-profiler-html-escaping.patch",
@@ -386,9 +387,9 @@
             "homepage": "https://github.com/concretecms/dependency-patches",
             "support": {
                 "issues": "https://github.com/concretecms/dependency-patches/issues",
-                "source": "https://github.com/concretecms/dependency-patches/tree/1.8.1"
+                "source": "https://github.com/concretecms/dependency-patches/tree/1.8.3"
             },
-            "time": "2026-08-21T07:53:10+00:00"
+            "time": "2026-09-07T13:47:33+00:00"
         },
         {
             "name": "concretecms/doctrine-xml",

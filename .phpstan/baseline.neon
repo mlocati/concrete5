@@ -5833,24 +5833,6 @@ parameters:
 			path: ../concrete/src/Url/Resolver/CallableUrlResolver.php
 
 		-
-			message: '#^Parameter \#1 \$data of method League\\Url\\UrlImmutable\:\:setHost\(\) expects array\<int\|string, mixed\>\|string\|Traversable\<int\|string, mixed\>, null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Url/Resolver/CanonicalUrlResolver.php
-
-		-
-			message: '#^Parameter \#1 \$data of method League\\Url\\UrlImmutable\:\:setScheme\(\) expects string, null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Url/Resolver/CanonicalUrlResolver.php
-
-		-
-			message: '#^Method Concrete\\Core\\Url\\Resolver\\PathUrlResolver\:\:handlePath\(\) should return Concrete\\Core\\Url\\UrlInterface\|League\\Url\\Url but returns League\\Url\\UrlInterface\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Url/Resolver/PathUrlResolver.php
-
-		-
 			message: '#^Parameter \#1 \$url of method Concrete\\Core\\Url\\Resolver\\PathUrlResolver\:\:handlePath\(\) expects Concrete\\Core\\Url\\UrlInterface, League\\Url\\UrlInterface\|null given\.$#'
 			identifier: argument.type
 			count: 1
