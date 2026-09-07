@@ -2281,12 +2281,6 @@ parameters:
 			path: ../concrete/src/Block/View/BlockViewTemplate.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Board/Command/BoardSlotCommandHandler.php
-
-		-
 			message: '#^Property Concrete\\Core\\Board\\Command\\ScheduleBoardInstanceRuleCommand\:\:\$timezone \(string\) does not accept default value of type int\.$#'
 			identifier: property.defaultValue
 			count: 1
@@ -2417,18 +2411,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Command/Process/Command/RetryFailedMessageCommandHandler.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Command/Process/ProcessFactory.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Command/Scheduler/Scheduler.php
 
 		-
 			message: '#^If condition is always true\.$#'
