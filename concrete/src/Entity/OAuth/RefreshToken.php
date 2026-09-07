@@ -27,7 +27,7 @@ class RefreshToken implements RefreshTokenEntityInterface
     protected $expiryDateTime;
 
     /**
-     * @var \League\OAuth2\Server\Entities\AccessTokenEntityInterface
+     * @var \League\OAuth2\Server\Entities\AccessTokenEntityInterface|null
      * @ORM\OneToOne(targetEntity="AccessToken")
      * @ORM\JoinColumn(name="accessToken", referencedColumnName="identifier", onDelete="SET NULL")
      */
@@ -67,7 +67,7 @@ class RefreshToken implements RefreshTokenEntityInterface
      * {@inheritdoc}
      *
      * @see \League\OAuth2\Server\Entities\RefreshTokenEntityInterface::getAccessToken()
-     * @return \League\OAuth2\Server\Entities\AccessTokenEntityInterface
+     * @return \League\OAuth2\Server\Entities\AccessTokenEntityInterface|null
      */
     public function getAccessToken()
     {

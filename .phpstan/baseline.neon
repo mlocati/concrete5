@@ -151,12 +151,6 @@ parameters:
 			path: ../concrete/controllers/calendar_feed.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/dialog/board/custom_slot.php
-
-		-
 			message: '#^Method Concrete\\Controller\\Dialog\\Event\\AdvancedSearch\:\:getSearchProvider\(\) should return Concrete\\Core\\Search\\ProviderInterface but returns false\.$#'
 			identifier: return.type
 			count: 1
@@ -1365,12 +1359,6 @@ parameters:
 		-
 			message: '#^Dead catch \- Concrete\\Core\\User\\Exception\\UserDeactivatedException is never thrown in the try block\.$#'
 			identifier: catch.neverThrown
-			count: 1
-			path: ../concrete/src/Api/OAuth/Controller.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Api/OAuth/Controller.php
 
@@ -3994,12 +3982,6 @@ parameters:
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
-			path: ../concrete/src/Health/Report/Finding/Message/Search/AttributeMessage.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
 			path: ../concrete/src/Health/Report/Message/EmailReportMessageHandler.php
 
 		-
@@ -6071,12 +6053,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Summary/Template/AbstractPopulator.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Summary/Template/Renderer.php
 
 		-
 			message: '#^Parameter \#1 \$summaryObject of method Concrete\\Core\\Summary\\SummaryObjectExtractor\:\:getData\(\) expects Concrete\\Core\\Summary\\SummaryObject, Concrete\\Core\\Summary\\SummaryObjectInterface given\.$#'

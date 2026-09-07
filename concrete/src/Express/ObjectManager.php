@@ -112,9 +112,6 @@ class ObjectManager
             $entry = $this->getEntry($entry);
         }
         if ($entry) {
-            /**
-             * @var Entry $entry
-             */
             $entity = $entry->getEntity();
             if ($entity) {
                 $request = Request::createFromGlobals();
