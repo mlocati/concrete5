@@ -37,12 +37,6 @@ parameters:
 			path: ../concrete/controllers/backend/dashboard/get_image_data.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\Express\\Entity and Concrete\\Core\\Entity\\Express\\Entity will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/backend/express/entry/autocomplete.php
-
-		-
 			message: '#^Call to function is_array\(\) with bool\|float\|int\|null will always evaluate to false\.$#'
 			identifier: function.impossibleType
 			count: 2
@@ -2795,12 +2789,6 @@ parameters:
 			identifier: cast.string
 			count: 2
 			path: ../concrete/src/Entity/Attribute/Value/AbstractValue.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\Express\\Entry and Concrete\\Core\\Entity\\Express\\Entry will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Entity/Attribute/Value/ExpressValue.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Automation\\TaskSet\:\:getAttributeSetID\(\)\.$#'
