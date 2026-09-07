@@ -6343,12 +6343,6 @@ parameters:
 			path: ../concrete/src/User/Group/Group.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Tree\\Node\\Type\\Group and Concrete\\Core\\Tree\\Node\\Type\\Group will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 2
-			path: ../concrete/src/User/Group/Group.php
-
-		-
 			message: '#^Method Concrete\\Core\\User\\Group\\GroupJoinRequest\:\:getNotificationDate\(\) should return DateTime but returns null\.$#'
 			identifier: return.type
 			count: 1
