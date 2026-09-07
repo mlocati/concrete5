@@ -4333,18 +4333,6 @@ parameters:
 			path: ../concrete/src/Navigation/NavigationFactory.php
 
 		-
-			message: '#^Instanceof between Lcobucci\\JWT\\Token and Lcobucci\\JWT\\Token will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Notification/Events/MercureServiceProvider.php
-
-		-
-			message: '#^Instanceof between Lcobucci\\JWT\\Token and Lcobucci\\JWT\\Token will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Notification/Events/Subscriber.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getSubscriptionsAllowedArray\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -5599,12 +5587,6 @@ parameters:
 			path: ../concrete/src/StyleCustomizer/StyleListFactory.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\StyleCustomizer\\Normalizer\\NormalizedVariableCollection and Concrete\\Core\\StyleCustomizer\\Normalizer\\NormalizedVariableCollection will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/StyleCustomizer/Stylesheet.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Summary\\Category\\CategoryMemberInterface\:\:getVersion\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -5781,12 +5763,6 @@ parameters:
 		-
 			message: '#^Call to function is_object\(\) with int will always evaluate to false\.$#'
 			identifier: function.impossibleType
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/FileFolder.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\File\\StorageLocation\\StorageLocation and Concrete\\Core\\Entity\\File\\StorageLocation\\StorageLocation will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
 			count: 1
 			path: ../concrete/src/Tree/Node/Type/FileFolder.php
 
@@ -5993,12 +5969,6 @@ parameters:
 			identifier: method.notFound
 			count: 2
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20190422235040.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Entity\\Attribute\\Type and Concrete\\Core\\Entity\\Attribute\\Type will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20200523051311.php
 
 		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
