@@ -1051,24 +1051,6 @@ parameters:
 			path: ../concrete/controllers/upgrade.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Workflow\\Progress\\Response and Concrete\\Core\\Workflow\\Progress\\Response will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/workflow/categories/calendar_event.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Workflow\\Progress\\Response and Concrete\\Core\\Workflow\\Progress\\Response will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/workflow/categories/page.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Workflow\\Progress\\Response and Concrete\\Core\\Workflow\\Progress\\Response will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/workflow/categories/user.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Workflow\\Request\\Request\:\:getRequestedPageID\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1829,12 +1811,6 @@ parameters:
 			identifier: booleanAnd.rightAlwaysTrue
 			count: 1
 			path: ../concrete/src/Attribute/Key/Key.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Attribute\\Key\\SearchIndexer\\SearchIndexerInterface and Concrete\\Core\\Attribute\\Key\\SearchIndexer\\SearchIndexerInterface will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Attribute/Key/Listener.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getSearchIndexValue\(\)\.$#'
