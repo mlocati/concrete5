@@ -248,7 +248,7 @@ final class PhpDocTypeResolver
     private function getFileImports(\ReflectionClass $class): array
     {
         $file = $class->getFileName();
-        if (!is_string($file) || $file === '') {
+        if ($file === false) {
             return [];
         }
         if (!isset($this->fileImports[$file])) {

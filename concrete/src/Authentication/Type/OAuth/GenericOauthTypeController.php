@@ -221,7 +221,7 @@ abstract class GenericOauthTypeController extends AuthenticationTypeController
         }
 
         if ($this->supportsRegistration()) {
-            if ($extractor->getEmail() === null || empty($extractor->getEmail())) {
+            if (empty($extractor->getEmail())) {
 
                 /** @var FlashBagInterface $flashbag */
                 $flashbag = $this->app->make('session')->getFlashBag();

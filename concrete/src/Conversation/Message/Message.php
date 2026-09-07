@@ -587,7 +587,7 @@ class Message extends ConcreteObject implements ObjectInterface, SubjectInterfac
                 $cnvMessageAuthorName,
                 $cnvMessageAuthorEmail,
                 $cnvMessageAuthorWebsite,
-                ($ip === false) ? ('') : ($ip->getIp()),
+                $ip->getIp(),
                 $_SERVER['HTTP_USER_AGENT']
             ));
 

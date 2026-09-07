@@ -342,7 +342,7 @@ class User extends ConcreteObject
         /** @var \Concrete\Core\Permission\IPService $iph */
         $iph = $app->make('helper/validation/ip');
         $ip = $iph->getRequestIP();
-        $db->query('update Users set uLastIP = ?, uLastLogin = ?, uPreviousLogin = ?, uNumLogins = uNumLogins + 1 where uID = ?', [($ip === false) ? ('') : ($ip->getIp()), time(), $uLastLogin, $this->uID]);
+        $db->query('update Users set uLastIP = ?, uLastLogin = ?, uPreviousLogin = ?, uNumLogins = uNumLogins + 1 where uID = ?', [$ip->getIp(), time(), $uLastLogin, $this->uID]);
     }
 
     /**

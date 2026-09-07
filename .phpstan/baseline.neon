@@ -199,12 +199,6 @@ parameters:
 			path: ../concrete/controllers/dialog/file/replace.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between Concrete\\Core\\Entity\\File\\File and null will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/dialog/file/statistics.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Controller\\Dialog\\File\\Bulk\\Properties\:\:setFiles\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -887,12 +881,6 @@ parameters:
 			identifier: isset.variable
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/system/multilingual/page_report.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between int and null will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/multisite/sites.php
 
 		-
 			message: '#^Result of method Concrete\\Controller\\SinglePage\\Dashboard\\System\\Multisite\\Types\:\:prepareAddOrEdit\(\) \(void\) is used\.$#'
@@ -1909,12 +1897,6 @@ parameters:
 			path: ../concrete/src/Authentication/Type/OAuth/GenericOauthTypeController.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/src/Authentication/Type/OAuth/GenericOauthTypeController.php
-
-		-
 			message: '#^Call to an undefined method OAuth\\Common\\Service\\AbstractService\:\:requestAccessToken\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -2287,12 +2269,6 @@ parameters:
 			path: ../concrete/src/Config/DatabaseSaver.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 3
-			path: ../concrete/src/Config/FileLoader.php
-
-		-
 			message: '#^Call to an undefined method Symfony\\Component\\Console\\Application\:\:getConcrete\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2421,12 +2397,6 @@ parameters:
 		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\User\\UserInfo will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Conversation/Message/Message.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between Concrete\\Core\\Utility\\IPAddress and false will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
 			count: 1
 			path: ../concrete/src/Conversation/Message/Message.php
 
@@ -5569,12 +5539,6 @@ parameters:
 			path: ../concrete/src/Support/Symbol/PhpDocGenerator.php
 
 		-
-			message: '#^Strict comparison using \=\=\= between non\-empty\-string and '''' will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
-			count: 1
-			path: ../concrete/src/Support/Symbol/PhpDocTypeResolver.php
-
-		-
 			message: '#^Unreachable statement \- code above always terminates\.$#'
 			identifier: deadCode.unreachable
 			count: 1
@@ -6117,12 +6081,6 @@ parameters:
 		-
 			message: '#^Right side of \|\| is always false\.$#'
 			identifier: booleanOr.rightAlwaysFalse
-			count: 1
-			path: ../concrete/src/User/User.php
-
-		-
-			message: '#^Strict comparison using \=\=\= between Concrete\\Core\\Utility\\IPAddress and false will always evaluate to false\.$#'
-			identifier: identical.alwaysFalse
 			count: 1
 			path: ../concrete/src/User/User.php
 
