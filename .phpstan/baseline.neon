@@ -439,18 +439,6 @@ parameters:
 			path: ../concrete/controllers/dialog/user/bulk/properties.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/element/dashboard/boards/configuration/calendar_event.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/element/dashboard/boards/configuration/page.php
-
-		-
 			message: '#^Method Concrete\\Controller\\Element\\Dashboard\\Express\\Control\\Options\:\:getElement\(\) should return string but return statement is missing\.$#'
 			identifier: return.missing
 			count: 1
@@ -803,18 +791,6 @@ parameters:
 			identifier: function.alreadyNarrowedType
 			count: 2
 			path: ../concrete/controllers/single_page/dashboard/boards/designer/customize_slot.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/boards/instances/details.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/boards/instances/rules.php
 
 		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Board\\Designer\\CustomElement will always evaluate to true\.$#'
@@ -1281,12 +1257,6 @@ parameters:
 		-
 			message: '#^Call to function is_scalar\(\) with float\|int\<min, \-1\>\|int\<1, max\>\|non\-falsy\-string\|true will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Api/Controller/Files.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Api/Controller/Files.php
 
@@ -2101,12 +2071,6 @@ parameters:
 			path: ../concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 2
-			path: ../concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php
-
-		-
 			message: '#^Method Concrete\\Core\\Authentication\\Type\\OAuth\\OAuth2\\GenericOauth2TypeController\:\:getService\(\) should return OAuth\\OAuth2\\Service\\AbstractService but returns OAuth\\Common\\Service\\AbstractService\.$#'
 			identifier: return.type
 			count: 1
@@ -2245,12 +2209,6 @@ parameters:
 			path: ../concrete/src/Block/BlockType/BlockTypeList.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Block/CacheSettings.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\StyleCustomizer\\Inline\\StyleSet will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 3
@@ -2309,18 +2267,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Board/Instance/Item/Populator/PagePopulator.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Board/Instance/Notifier/AbstractNotifier.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 2
-			path: ../concrete/src/Board/Instance/Notifier/PageNotifier.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Board\\Instance\\Item\\Data\\DataInterface\:\:getOccurrenceID\(\)\.$#'
@@ -2485,12 +2431,6 @@ parameters:
 			path: ../concrete/src/Config/DatabaseSaver.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Config/Driver/Redis/RedisSaver.php
-
-		-
 			message: '#^Strict comparison using \=\=\= between string and null will always evaluate to false\.$#'
 			identifier: identical.alwaysFalse
 			count: 3
@@ -2569,12 +2509,6 @@ parameters:
 			path: ../concrete/src/Console/Command/UpdatePackageCommand.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Console/CommandRegistry.php
-
-		-
 			message: '#^Trait Concrete\\Core\\Console\\ConsoleAwareTrait is used zero times and is not analysed\.$#'
 			identifier: trait.unused
 			count: 1
@@ -2585,12 +2519,6 @@ parameters:
 			identifier: property.onlyWritten
 			count: 1
 			path: ../concrete/src/Console/OutputStyle.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Console/Parser.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Notification\\Notifier\\NotifierInterface\:\:notify\(\)\.$#'
@@ -3121,12 +3049,6 @@ parameters:
 			path: ../concrete/src/Entity/Search/Query.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Entity/Site/Site.php
-
-		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\SiteCategory\:\:getAttributeValue\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\SiteKey, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
 			identifier: argument.type
 			count: 1
@@ -3209,12 +3131,6 @@ parameters:
 			identifier: method.notFound
 			count: 2
 			path: ../concrete/src/Express/Association/Applier.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Express/Command/ExpressEntryCommandFactory.php
 
 		-
 			message: '#^Call to function is_array\(\) with array\<Concrete\\Core\\Entity\\Express\\Entry\> will always evaluate to true\.$#'
@@ -4561,12 +4477,6 @@ parameters:
 			path: ../concrete/src/Messenger/MessageBusAwareTrait.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Multilingual/Page/Section/Section.php
-
-		-
 			message: '#^Call to function is_callable\(\) with array\{Concrete\\Core\\Page\\Controller\\PageController, ''useUserLocale''\} will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -5857,12 +5767,6 @@ parameters:
 			path: ../concrete/src/Session/Storage/Handler/RedisSessionHandler.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Sharing/SocialNetwork/ServiceList.php
-
-		-
 			message: '#^Call to an undefined method Illuminate\\Config\\Repository\:\:save\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -5899,12 +5803,6 @@ parameters:
 			path: ../concrete/src/StyleCustomizer/Normalizer/ScssNormalizerCompiler.php
 
 		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/StyleCustomizer/Preset/PresetFactory.php
-
-		-
 			message: '#^Access to protected property Less_Parser\|Less_Tree_Ruleset\:\:\$rules\.$#'
 			identifier: property.protected
 			count: 1
@@ -5915,12 +5813,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/StyleCustomizer/Preview/LegacyStylesheetPreviewHandler.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/StyleCustomizer/Style/ColorStyle.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Style\\StyleInterface\:\:setName\(\)\.$#'
@@ -5999,12 +5891,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Summary/Data/Extractor/Driver/BasicPageDriver.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Summary/Template/AbstractPopulator.php
 
 		-
 			message: '#^Parameter \#1 \$summaryObject of method Concrete\\Core\\Summary\\SummaryObjectExtractor\:\:getData\(\) expects Concrete\\Core\\Summary\\SummaryObject, Concrete\\Core\\Summary\\SummaryObjectInterface given\.$#'
