@@ -1483,15 +1483,9 @@ parameters:
 			path: ../concrete/src/Area/Area.php
 
 		-
-			message: '#^Call to function is_a\(\) with Concrete\\Core\\Page\\Page and ''Page'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Area/Area.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 3
+			count: 1
 			path: ../concrete/src/Area/Area.php
 
 		-
@@ -5129,12 +5123,6 @@ parameters:
 			identifier: staticMethod.resultUnused
 			count: 1
 			path: ../concrete/src/Permission/Access/ViewUserAttributesUserAccess.php
-
-		-
-			message: '#^Instanceof between Concrete\\Core\\Page\\Page and Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/src/Permission/Assignment/AreaAssignment.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:arePermissionsSetToOverride\(\)\.$#'
