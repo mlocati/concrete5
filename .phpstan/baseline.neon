@@ -703,12 +703,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/blocks/stacks.php
 
 		-
-			message: '#^Instanceof between Concrete\\Core\\Block\\BlockController and Concrete\\Core\\Block\\BlockController will always evaluate to true\.$#'
-			identifier: instanceof.alwaysTrue
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/blocks/stacks.php
-
-		-
 			message: '#^Parameter \#1 \$templateIDs of method Concrete\\Core\\Board\\Command\\EnableCustomSlotTemplatesCommand\:\:setTemplateIDs\(\) expects array, float\|int\<min, \-1\>\|int\<1, max\>\|string\|true given\.$#'
 			identifier: argument.type
 			count: 1
