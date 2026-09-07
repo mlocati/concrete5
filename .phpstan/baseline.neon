@@ -661,6 +661,12 @@ parameters:
 			path: ../concrete/controllers/search/standard.php
 
 		-
+			message: '#^Access to an undefined property Concrete\\Core\\Authentication\\AuthenticationTypeController\:\:\$apiMethods\.$#'
+			identifier: property.notFound
+			count: 1
+			path: ../concrete/controllers/single_page/account/edit_profile.php
+
+		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Page\:\:copyLocalizedStacksFrom\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -877,6 +883,12 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/permissions/site.php
 
 		-
+			message: '#^Call to an undefined method Concrete\\Core\\Authentication\\AuthenticationTypeController\:\:saveAuthenticationType\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: ../concrete/controllers/single_page/dashboard/system/registration/authentication.php
+
+		-
 			message: '#^If condition is always false\.$#'
 			identifier: if.alwaysFalse
 			count: 1
@@ -977,6 +989,12 @@ parameters:
 			identifier: staticMethod.resultUnused
 			count: 1
 			path: ../concrete/controllers/single_page/download_file.php
+
+		-
+			message: '#^Access to an undefined property Concrete\\Core\\Authentication\\AuthenticationTypeController\:\:\$apiMethods\.$#'
+			identifier: property.notFound
+			count: 1
+			path: ../concrete/controllers/single_page/login.php
 
 		-
 			message: '#^Parameter \#1 \$uID of static method Concrete\\Core\\Support\\Facade\\UserInfo\:\:getByID\(\) expects int, string given\.$#'
@@ -1285,12 +1303,6 @@ parameters:
 			path: ../concrete/src/Application/Service/Dashboard/Sitemap.php
 
 		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Application/Service/FileManager.php
-
-		-
 			message: '#^Constant ONLINE_NOW_SRC_OFF not found\.$#'
 			identifier: constant.notFound
 			count: 1
@@ -1371,12 +1383,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromPageToArea\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Area/Area.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Area/Area.php
 
@@ -1783,7 +1789,7 @@ parameters:
 			path: ../concrete/src/Authentication/AuthenticationType.php
 
 		-
-			message: '#^Call to function method_exists\(\) with Concrete\\Authentication\\Concrete\\Controller and ''view'' will always evaluate to true\.$#'
+			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Authentication\\AuthenticationTypeController and ''view'' will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Authentication/AuthenticationType.php
@@ -2281,12 +2287,6 @@ parameters:
 			path: ../concrete/src/Conversation/Command/HandleNewConversationMessageCommandHandler.php
 
 		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Conversation/Editor/Editor.php
-
-		-
 			message: '#^Strict comparison using \!\=\= between null and null will always evaluate to false\.$#'
 			identifier: notIdentical.alwaysFalse
 			count: 1
@@ -2605,12 +2605,6 @@ parameters:
 			path: ../concrete/src/Entity/File/File.php
 
 		-
-			message: '#^Call to function is_numeric\(\) with int will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Entity/File/File.php
-
-		-
 			message: '#^Method Concrete\\Core\\Entity\\File\\File\:\:getDetailsURL\(\) should return Concrete\\Core\\Url\\UrlInterface but returns League\\Url\\UrlInterface\.$#'
 			identifier: return.type
 			count: 1
@@ -2723,12 +2717,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/Entity/OAuth/RefreshToken.php
-
-		-
-			message: '#^Call to function is_numeric\(\) with int will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Entity/Search/Query.php
 
 		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\SiteCategory\:\:getAttributeValue\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\SiteKey, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
@@ -3019,12 +3007,6 @@ parameters:
 			path: ../concrete/src/File/Component/Chooser/Option/FolderBookmarkOption.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/File/Document/Xml/Sanitizer.php
-
-		-
 			message: '#^Method Concrete\\Core\\File\\Filesystem\:\:addFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\FileFolder but returns Concrete\\Core\\Tree\\Node\\Node\.$#'
 			identifier: return.type
 			count: 1
@@ -3043,58 +3025,10 @@ parameters:
 			path: ../concrete/src/File/Image/BasicThumbnailer.php
 
 		-
-			message: '#^Call to function is_float\(\) with \*NEVER\* will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/File/Image/BasicThumbnailer.php
-
-		-
-			message: '#^Call to function is_int\(\) with int will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/File/Image/BasicThumbnailer.php
-
-		-
-			message: '#^Call to function is_numeric\(\) with \*NEVER\* will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/File/Image/BasicThumbnailer.php
-
-		-
-			message: '#^Call to function is_string\(\) with \*NEVER\* will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/File/Image/BasicThumbnailer.php
-
-		-
-			message: '#^Result of \|\| is always true\.$#'
-			identifier: booleanOr.alwaysTrue
-			count: 3
-			path: ../concrete/src/File/Image/BasicThumbnailer.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/File/Image/Svg/Sanitizer.php
-
-		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/File/Image/Svg/SanitizerOptions.php
-
-		-
 			message: '#^Parameter \#2 \$value of class HtmlObject\\Element constructor expects string\|null, array\<int, HtmlObject\\Element\> given\.$#'
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/File/Image/Thumbnail/ThumbnailPlaceholderService.php
-
-		-
-			message: '#^Call to function is_numeric\(\) with int\<min, \-1\>\|int\<1, max\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/File/Image/Thumbnail/Type/Version.php
 
 		-
 			message: '#^Comparison operation "\>" between int\<1, max\> and 0 is always true\.$#'
@@ -3175,22 +3109,10 @@ parameters:
 			path: ../concrete/src/File/Service/Application.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/File/Service/File.php
-
-		-
 			message: '#^Method Concrete\\Core\\File\\Service\\File\:\:forceDownload\(\) should never return but return statement found\.$#'
 			identifier: return.never
 			count: 1
 			path: ../concrete/src/File/Service/File.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/File/Service/VolatileDirectory.php
 
 		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
@@ -3221,12 +3143,6 @@ parameters:
 			identifier: notIdentical.alwaysTrue
 			count: 1
 			path: ../concrete/src/File/Service/Zip.php
-
-		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/File/Set/Set.php
 
 		-
 			message: '#^Parameter \#2 \$y of method Doctrine\\DBAL\\Query\\Expression\\ExpressionBuilder\:\:in\(\) expects array\<string\>\|string, array\<int, int\> given\.$#'
@@ -3319,22 +3235,10 @@ parameters:
 			path: ../concrete/src/Filesystem/Twig/CoreExtension.php
 
 		-
-			message: '#^Call to function is_iterable\(\) with iterable will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Filesystem/Twig/Extension/FormProxy.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Filesystem\\Twig\\FluentArea\:\:getTotalBlocksInArea\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Filesystem/Twig/FluentArea.php
-
-		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/Form/Service/Form.php
 
 		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
@@ -3379,12 +3283,6 @@ parameters:
 			path: ../concrete/src/Foundation/Composer.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Foundation/Environment/FunctionInspector.php
-
-		-
 			message: '#^Call to function is_int\(\) with int will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -3407,18 +3305,6 @@ parameters:
 			identifier: arguments.count
 			count: 1
 			path: ../concrete/src/Foundation/Runtime/Boot/DefaultBooter.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Foundation/Serializer/SafeClassUnserializerTrait.php
-
-		-
-			message: '#^Call to function is_numeric\(\) with numeric\-string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/Geolocator/GeolocationResult.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Control\\ControlInterface\:\:getLocation\(\)\.$#'
@@ -3727,12 +3613,6 @@ parameters:
 			path: ../concrete/src/Install/Preconditions/DatabaseCharsetCollation.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Install/Preconditions/RequestUrls.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Support\\Facade\\UserInfo\:\:getUserAvatar\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -3805,12 +3685,6 @@ parameters:
 			path: ../concrete/src/Localization/Locale/Service.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Localization/Service/AddressFormat.php
-
-		-
 			message: '#^Offset ''country'' on non\-empty\-array in empty\(\) always exists and is not falsy\.$#'
 			identifier: empty.offset
 			count: 1
@@ -3825,7 +3699,7 @@ parameters:
 		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 3
+			count: 1
 			path: ../concrete/src/Localization/Service/Date.php
 
 		-
@@ -3857,18 +3731,6 @@ parameters:
 			identifier: staticMethod.notFound
 			count: 1
 			path: ../concrete/src/Localization/Translation/Remote/CommunityStoreTranslationProvider.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 5
-			path: ../concrete/src/Localization/Translator/Adapter/Laminas/TranslatorAdapter.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/Localization/Translator/Adapter/Plain/TranslatorAdapter.php
 
 		-
 			message: '#^Property Concrete\\Core\\Localization\\Translator\\Loader\\Gettext\:\:\$webrootDirectory is never read, only written\.$#'
@@ -4261,12 +4123,6 @@ parameters:
 			path: ../concrete/src/Page/Collection/Collection.php
 
 		-
-			message: '#^Parameter \#1 \$c of static method Concrete\\Core\\Area\\Area\:\:get\(\) expects Concrete\\Core\\Page\\Page, \$this\(Concrete\\Core\\Page\\Collection\\Collection\) given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
 			message: '#^Parameter \#2 \$value of method Doctrine\\DBAL\\Query\\QueryBuilder\:\:setValue\(\) expects string, int given\.$#'
 			identifier: argument.type
 			count: 3
@@ -4507,12 +4363,6 @@ parameters:
 			path: ../concrete/src/Page/Single.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Sitemap/DragRequestData.php
-
-		-
 			message: '#^Method Concrete\\Core\\Page\\Sitemap\\PageListGenerator\:\:getViewPagePermissionKey\(\) should return Concrete\\Core\\Permission\\Key\\PageKey\|null but returns Concrete\\Core\\Permission\\Key\\Key\|null\.$#'
 			identifier: return.type
 			count: 1
@@ -4715,12 +4565,6 @@ parameters:
 			identifier: staticMethod.resultUnused
 			count: 1
 			path: ../concrete/src/Permission/Access/EditUserPropertiesUserAccess.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\User\\User\|Concrete\\Core\\User\\User will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Permission/Access/Entity/ConversationMessageAuthorEntity.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:getUserID\(\)\.$#'
@@ -5035,12 +4879,6 @@ parameters:
 			path: ../concrete/src/Permission/Response/PageResponse.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Category will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Permission/Response/Response.php
-
-		-
 			message: '#^Variable \$view in isset\(\) always exists and is not nullable\.$#'
 			identifier: isset.variable
 			count: 1
@@ -5197,18 +5035,6 @@ parameters:
 			path: ../concrete/src/Search/Result/Item.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 4
-			path: ../concrete/src/Service/Detector/HTTP/ApacheDetector.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/Service/Detector/HTTP/NginxDetector.php
-
-		-
 			message: '#^Parameter \#2 \$opts of class RedisArray constructor expects array\<string, string\>, array\<string, int\|string\> given\.$#'
 			identifier: argument.type
 			count: 1
@@ -5339,12 +5165,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Summary/Template/Renderer.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Support/ShortTagExpander.php
 
 		-
 			message: '#^Call to function method_exists\(\) with ReflectionParameter and ''getDefaultValueCons…'' will always evaluate to true\.$#'
@@ -5695,12 +5515,6 @@ parameters:
 			path: ../concrete/src/Url/Components/Path.php
 
 		-
-			message: '#^Call to function is_callable\(\) with callable\(\)\: mixed will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Url/Resolver/CallableUrlResolver.php
-
-		-
 			message: '#^Parameter \#1 \$url of method Concrete\\Core\\Url\\Resolver\\PathUrlResolver\:\:handlePath\(\) expects Concrete\\Core\\Url\\UrlInterface, League\\Url\\UrlInterface\|null given\.$#'
 			identifier: argument.type
 			count: 1
@@ -5767,12 +5581,6 @@ parameters:
 			path: ../concrete/src/User/Group/Group.php
 
 		-
-			message: '#^Call to function is_numeric\(\) with int will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/User/Group/Group.php
-
-		-
 			message: '#^Method Concrete\\Core\\User\\Group\\GroupJoinRequest\:\:getNotificationDate\(\) should return DateTime but returns null\.$#'
 			identifier: return.type
 			count: 1
@@ -5807,12 +5615,6 @@ parameters:
 			identifier: return.empty
 			count: 1
 			path: ../concrete/src/User/Login/LoginAttemptService.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/User/Password/PasswordUsageTracker.php
 
 		-
 			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(string\)\: bool\)\|null, ''strlen'' given\.$#'
@@ -5875,12 +5677,6 @@ parameters:
 			path: ../concrete/src/User/Search/ColumnSet/ColumnSet.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\User\\Group\\Group will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/User/User.php
-
-		-
 			message: '#^Negated boolean expression is always true\.$#'
 			identifier: booleanNot.alwaysTrue
 			count: 1
@@ -5897,18 +5693,6 @@ parameters:
 			identifier: constructor.unusedParameter
 			count: 1
 			path: ../concrete/src/User/UserBannedIp.php
-
-		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/User/UserInfo.php
-
-		-
-			message: '#^Call to function is_array\(\) with array\<int\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/User/UserInfo.php
 
 		-
 			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Attribute\\Controller and ''createDefaultAttrib…'' will always evaluate to true\.$#'
@@ -5971,12 +5755,6 @@ parameters:
 			path: ../concrete/src/Utility/Service/Text.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Utility/Service/Validation/Strings.php
-
-		-
 			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(\)\: void given\.$#'
 			identifier: argument.type
 			count: 1
@@ -5987,12 +5765,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Validator/String/ReuseValidator.php
-
-		-
-			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Entity\\User\\User\|Concrete\\Core\\User\\User\|Concrete\\Core\\User\\UserInfo and ''getUserID'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Validator/String/UniqueUserNameValidator.php
 
 		-
 			message: '#^Elseif condition is always false\.$#'

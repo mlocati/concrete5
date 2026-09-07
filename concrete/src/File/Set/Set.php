@@ -406,7 +406,7 @@ class Set
     }
 
     /**
-     * @param array $files Array of file IDs
+     * @param array|mixed $files Array of file IDs (nothing happens if it's not an array)
      */
     public function updateFileSetDisplayOrder($files)
     {
