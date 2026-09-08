@@ -401,7 +401,7 @@ abstract class GenericOauthTypeController extends AuthenticationTypeController
 
         if ($group_id = intval($this->registrationGroupID(), 10)) {
             $group = \Group::getByID($group_id);
-            if ($group && is_object($group) && !$group->isError()) {
+            if ($group && !$group->isError()) {
                 $user = User::getByUserID($user_info->getUserID());
                 $user->enterGroup($group);
             }

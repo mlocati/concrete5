@@ -1780,7 +1780,7 @@ EOT
                 ->setParameter('bID', $this->getBlockID())
                 ->setParameter('arHandle', $this->getAreaHandle())
                 ->execute()->fetchAssociative();
-            if ($row && is_array($row) && $row['cID']) {
+            if ($row !== false) {
                 $connection->insert('PageTypeComposerOutputBlocks', [
                     'cID' => $ncID,
                     'cvID' => $nvID,

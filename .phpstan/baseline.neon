@@ -511,12 +511,6 @@ parameters:
 			path: ../concrete/controllers/panel/page/devices.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\User\\UserInfo will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/panel/page/preview_as_user.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Checker\:\:canEditPageVersions\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -779,12 +773,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/system/express/entities/forms.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Express\\Entity will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/express/entities/order_entries.php
 
 		-
 			message: '#^Variable \$sectionID in isset\(\) always exists and is not nullable\.$#'
@@ -1717,12 +1705,6 @@ parameters:
 			path: ../concrete/src/Authentication/Type/OAuth/BindingService.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\User\\Group\\Group will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Authentication/Type/OAuth/GenericOauthTypeController.php
-
-		-
 			message: '#^Parameter \#1 \$stack of function array_shift is passed by reference, so it expects variables only\.$#'
 			identifier: argument.byRef
 			count: 5
@@ -1815,12 +1797,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromPageOrAreaToBlock\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/Block.php
-
-		-
-			message: '#^Call to function is_array\(\) with non\-empty\-array\<string, mixed\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Block/Block.php
 
@@ -4135,12 +4111,6 @@ parameters:
 			path: ../concrete/src/Page/Stack/Pile/Pile.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Block\\Block will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Stack/Pile/PileContent.php
-
-		-
 			message: '#^Constant PILE_MODULES_INSTALLED not found\.$#'
 			identifier: constant.notFound
 			count: 1
@@ -4289,12 +4259,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Permission/Access/Entity/FileUploaderEntity.php
-
-		-
-			message: '#^Call to function is_array\(\) with non\-empty\-array\<mixed\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Permission/Access/Entity/GroupCombinationEntity.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:getAreaCollectionObject\(\)\.$#'
@@ -4757,12 +4721,6 @@ parameters:
 			identifier: return.type
 			count: 2
 			path: ../concrete/src/Site/Menu/Item/SiteListController.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Site\\Site will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Site/Resolver/MultisiteDriver.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\OptionsForm\\OptionsFormProviderInterface\:\:getType\(\)\.$#'
@@ -5399,12 +5357,6 @@ parameters:
 			identifier: booleanAnd.rightAlwaysFalse
 			count: 2
 			path: ../concrete/src/Validator/UserNameValidatorServiceProvider.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Theme\\Theme will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/View/View.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getCurrentlyActiveUsers\(\)\.$#'
