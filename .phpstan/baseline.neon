@@ -2065,34 +2065,10 @@ parameters:
 			path: ../concrete/src/Entity/Express/Control/AttributeKeyControl.php
 
 		-
-			message: '#^Parameter \#1 \$context of class Concrete\\Core\\Express\\Form\\Control\\View\\AuthorView constructor expects Concrete\\Core\\Express\\Form\\Context\\ContextInterface, Concrete\\Core\\Form\\Context\\ContextInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Entity/Express/Control/AuthorControl.php
-
-		-
-			message: '#^Parameter \#1 \$context of class Concrete\\Core\\Express\\Form\\Control\\View\\PublicIdentifierView constructor expects Concrete\\Core\\Express\\Form\\Context\\ContextInterface, Concrete\\Core\\Form\\Context\\ContextInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Entity/Express/Control/PublicIdentifierControl.php
-
-		-
-			message: '#^Parameter \#1 \$context of class Concrete\\Core\\Express\\Form\\Control\\View\\TextView constructor expects Concrete\\Core\\Express\\Form\\Context\\ContextInterface, Concrete\\Core\\Form\\Context\\ContextInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Entity/Express/Control/TextControl.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:setGenericValue\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Entity/Express/Entry.php
-
-		-
-			message: '#^Parameter \#1 \$context of class Concrete\\Core\\Express\\Form\\Control\\View\\FormView constructor expects Concrete\\Core\\Express\\Form\\Context\\ContextInterface, Concrete\\Core\\Form\\Context\\ContextInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Entity/Express/Form.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromFileSetToFile\(\)\.$#'
