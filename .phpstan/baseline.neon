@@ -835,12 +835,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/users/search.php
 
 		-
-			message: '#^Parameter \#1 \$attributes of method Concrete\\Core\\User\\UserInfo\:\:saveUserAttributesForm\(\) expects array\<Concrete\\Core\\Entity\\Attribute\\Key\\UserKey\>, array\<int, Concrete\\Core\\Entity\\Attribute\\Key\\Key\> given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/search.php
-
-		-
 			message: '#^Parameter \#1 \$requester of method Concrete\\Core\\User\\UserInfo\:\:triggerDelete\(\) expects Concrete\\Core\\User\\User, Concrete\\Core\\User\\UserInfo\|false given\.$#'
 			identifier: argument.type
 			count: 1

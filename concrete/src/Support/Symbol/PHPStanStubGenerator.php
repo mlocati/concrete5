@@ -122,12 +122,28 @@ final class PHPStanStubGenerator
         $facadeClass = $facade->getFacadeReflectionClass();
         $rootClass = $facade->getReflectionClass();
         $annotations = [];
+        $annotationsFromDocBlocks = [];
         foreach ($rootClass->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
             $name = $method->getName();
             if (strpos($name, '__') === 0 || isset($annotations[$name]) || $facadeClass->hasMethod($name)) {
                 continue;
             }
             $annotations[$name] = '@method static ' . $this->renderMethodSignature($method);
+        }
+        // The @method annotations of the root class (and of its parent classes) describe the methods more precisely than their reflection
+        $matches = null;
+        for ($class = $rootClass; $class !== false; $class = $class->getParentClass()) {
+            foreach ($this->getClassAnnotations($class) as $annotation) {
+                if (!preg_match('/^@method\s+(?:static\s+)?(.*?\s([A-Za-z_][A-Za-z0-9_]*)\s*\(.*)$/', $annotation, $matches)) {
+                    continue;
+                }
+                $name = $matches[2];
+                if (strpos($name, '__') === 0 || $facadeClass->hasMethod($name) || isset($annotationsFromDocBlocks[$name])) {
+                    continue;
+                }
+                $annotationsFromDocBlocks[$name] = true;
+                $annotations[$name] = '@method static ' . $matches[1];
+            }
         }
         ksort($annotations, SORT_NATURAL | SORT_FLAG_CASE);
 
