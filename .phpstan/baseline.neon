@@ -2083,12 +2083,6 @@ parameters:
 			path: ../concrete/src/Editor/Plugin.php
 
 		-
-			message: '#^Parameter \#2 \$algo of function password_needs_rehash expects int, string given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Encryption/PasswordHasher.php
-
-		-
 			message: '#^Variable \$password on left side of \?\? always exists and is not nullable\.$#'
 			identifier: nullCoalesce.variable
 			count: 1
