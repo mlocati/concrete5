@@ -163,12 +163,6 @@ parameters:
 			path: ../concrete/controllers/dialog/file/upload_complete.php
 
 		-
-			message: '#^Parameter \#2 \$array of function implode expects array\<string\>, array\<Concrete\\Core\\Error\\ErrorList\\Error\\ErrorInterface\> given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/dialog/logs/delete.php
-
-		-
 			message: '#^Parameter \#2 \$userID of class Concrete\\Core\\Page\\Command\\DeletePageCommand constructor expects int\|null, string given\.$#'
 			identifier: argument.type
 			count: 1
@@ -1909,12 +1903,6 @@ parameters:
 			path: ../concrete/src/Console/Command/InstallLanguageCommand.php
 
 		-
-			message: '#^Parameter \#2 \$array of function implode expects array\<string\>, array\<Concrete\\Core\\Error\\ErrorList\\Error\\ErrorInterface\> given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Console/Command/InstallPackageCommand.php
-
-		-
 			message: '#^Call to an undefined method Gettext\\Translations\:\:toPoFile\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1931,18 +1919,6 @@ parameters:
 			identifier: staticMethod.notFound
 			count: 1
 			path: ../concrete/src/Console/Command/TranslatePackageCommand.php
-
-		-
-			message: '#^Parameter \#2 \$array of function implode expects array\<string\>, array\<Concrete\\Core\\Error\\ErrorList\\Error\\ErrorInterface\> given\.$#'
-			identifier: argument.type
-			count: 2
-			path: ../concrete/src/Console/Command/UninstallPackageCommand.php
-
-		-
-			message: '#^Parameter \#2 \$array of function implode expects array\<string\>, array\<Concrete\\Core\\Error\\ErrorList\\Error\\ErrorInterface\> given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Console/Command/UpdatePackageCommand.php
 
 		-
 			message: '#^Trait Concrete\\Core\\Console\\ConsoleAwareTrait is used zero times and is not analysed\.$#'
