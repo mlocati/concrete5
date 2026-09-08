@@ -24,7 +24,7 @@ class Location extends BackendInterfacePageController
     protected $validationToken = '/panels/details/page/location';
 
     /**
-     * @var \Concrete\Core\Permission\Access\ListItem\EditPagePropertiesPageListItem
+     * @var \Concrete\Core\Permission\Access\ListItem\EditPagePropertiesPageListItem|null NULL until on_start() is called
      */
     protected $asl;
 

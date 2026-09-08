@@ -199,12 +199,6 @@ parameters:
 			path: ../concrete/controllers/dialog/logs/delete.php
 
 		-
-			message: '#^Call to function is_a\(\) with Concrete\\Core\\Block\\BlockController and ''\\\\Concrete\\\\Core…'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/dialog/page/add_block.php
-
-		-
 			message: '#^Parameter \#2 \$userID of class Concrete\\Core\\Page\\Command\\DeletePageCommand constructor expects int\|null, string given\.$#'
 			identifier: argument.type
 			count: 1
@@ -469,12 +463,6 @@ parameters:
 			path: ../concrete/controllers/panel/detail/page/location.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Access\\ListItem\\EditPagePropertiesPageListItem will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/location.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\Entity\\Entity\:\:getGroupObject\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -655,12 +643,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/boards/designer/choose_items.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Board\\Designer\\CustomElement will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/boards/designer/choose_items.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\Designer\\CustomElement\:\:getItems\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -677,18 +659,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/boards/designer/customize_slot.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Board\\Designer\\CustomElement will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/boards/designer/customize_slot.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Board\\Designer\\CustomElement will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/boards/scheduler.php
 
 		-
 			message: '#^Loose comparison using \=\= between 0\|0\.0\|''0'' and ''0'' will always evaluate to true\.$#'
@@ -3529,12 +3499,6 @@ parameters:
 			path: ../concrete/src/Localization/Locale/Service.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Site\\Tree\\TreeInterface will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Localization/Locale/Service.php
-
-		-
 			message: '#^Offset ''country'' on non\-empty\-array in empty\(\) always exists and is not falsy\.$#'
 			identifier: empty.offset
 			count: 1
@@ -4481,12 +4445,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Permission/Key/WorkflowKey.php
-
-		-
-			message: '#^Method Concrete\\Core\\Permission\\Registry\\Entry\\Access\\Entity\\GroupEntity\:\:getAccessEntity\(\) should return Concrete\\Core\\Permission\\Access\\Entity\\Entity but returns null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Permission/Registry/Entry/Access/Entity/GroupEntity.php
 
 		-
 			message: '#^Method Concrete\\Core\\Permission\\Registry\\Entry\\Object\\Object\\BasicWorkflow\:\:getPermissionObject\(\) should return Concrete\\Core\\Permission\\AssignableObjectInterface but returns Concrete\\Core\\Workflow\\Workflow\|null\.$#'
