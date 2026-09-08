@@ -3037,18 +3037,6 @@ parameters:
 			path: ../concrete/src/Filesystem/Twig/FluentArea.php
 
 		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Form/Service/Form.php
-
-		-
-			message: '#^Result of && is always false\.$#'
-			identifier: booleanAnd.alwaysFalse
-			count: 1
-			path: ../concrete/src/Form/Service/Form.php
-
-		-
 			message: '#^Binary operation "\+" between '' \<span class\="text…'' and string results in an error\.$#'
 			identifier: binaryOp.invalid
 			count: 1
