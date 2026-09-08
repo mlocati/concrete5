@@ -1291,12 +1291,6 @@ parameters:
 			path: ../concrete/src/Attribute/Category/ExpressCategory.php
 
 		-
-			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\ExpressCategory\:\:saveFromRequest\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\ExpressKey, Concrete\\Core\\Entity\\Attribute\\Key\\Key given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Attribute/Category/ExpressCategory.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\SetManagerInterface\:\:addSet\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1319,12 +1313,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Attribute/Category/SearchIndexer/StandardSearchIndexer.php
-
-		-
-			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\UserCategory\:\:saveFromRequest\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\UserKey, Concrete\\Core\\Entity\\Attribute\\Key\\Key given\.$#'
-			identifier: argument.type
-			count: 2
-			path: ../concrete/src/Attribute/Category/UserCategory.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:getIndexedSearchTable\(\)\.$#'
@@ -4571,12 +4559,6 @@ parameters:
 			identifier: nullCoalesce.expr
 			count: 1
 			path: ../concrete/src/User/Component/UserSelectInstanceFactory.php
-
-		-
-			message: '#^Property Concrete\\Core\\User\\CsvWriter\:\:\$attributeKeys \(array\<Concrete\\Core\\Entity\\Attribute\\Key\\UserKey\>\|null\) does not accept array\<Concrete\\Core\\Entity\\Attribute\\Key\\Key\>\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: ../concrete/src/User/CsvWriter.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:getTreeNodeGroupObject\(\)\.$#'
