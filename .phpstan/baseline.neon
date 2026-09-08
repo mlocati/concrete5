@@ -709,6 +709,12 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/attributes/sets.php
 
 		-
+			message: '#^Instanceof between Concrete\\Core\\Entity\\Attribute\\Key\\Key and Concrete\\Core\\Entity\\Attribute\\Key\\Key will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: ../concrete/controllers/single_page/dashboard/system/attributes/sets.php
+
+		-
 			message: '#^Parameter \#1 \$category of class Concrete\\Controller\\Element\\Attribute\\SiteStandardListHeader constructor expects Concrete\\Core\\Entity\\Attribute\\Category, Concrete\\Core\\Attribute\\CategoryObjectInterface given\.$#'
 			identifier: argument.type
 			count: 1
@@ -953,12 +959,6 @@ parameters:
 			identifier: class.notFound
 			count: 1
 			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Parameter \#1 \$attributeKey of class Concrete\\Core\\Api\\Attribute\\AttributeValueMapEntry constructor expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Api/Attribute/AttributeValueMapFactory.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Block\\BlockController\:\:getOriginalBlockID\(\)\.$#'
@@ -3769,12 +3769,6 @@ parameters:
 			path: ../concrete/src/Page/Type/Composer/Control/CorePageProperty/DescriptionCorePageProperty.php
 
 		-
-			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Page\\Type\\Composer\\Control\\Type\\CollectionAttributeType\:\:makeControlForKey\(\) expects Concrete\\Core\\Attribute\\Key\\CollectionKey\|Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
-			identifier: argument.type
-			count: 2
-			path: ../concrete/src/Page/Type/Composer/Control/Type/CollectionAttributeType.php
-
-		-
 			message: '#^Call to an undefined static method Concrete\\Core\\Support\\Facade\\Database\:\:Connection\(\)\.$#'
 			identifier: staticMethod.notFound
 			count: 1
@@ -4157,12 +4151,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Search/Field/Field/KeywordsField.php
-
-		-
-			message: '#^Parameter \#1 \$attributeKey of class Concrete\\Core\\Search\\Field\\AttributeKeyField constructor expects Concrete\\Core\\Entity\\Attribute\\Key\\Key\|null, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Search/Field/Manager.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getSearchByColumn\(\)\.$#'

@@ -16,7 +16,7 @@ class Action extends AbstractController
                 switch($arguments[0]) {
                     case 'key':
                         if (isset($arguments[1])) {
-                            $key = Key::getByID($arguments[1]);
+                            $key = Key::getByID((int) $arguments[1]);
                             if (is_object($key)) {
                                 $controller = $key->getController();
                             }
