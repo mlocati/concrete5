@@ -733,12 +733,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/conversations/settings.php
 
 		-
-			message: '#^Parameter \#1 \$em of method Doctrine\\ORM\\Id\\AbstractIdGenerator\:\:generate\(\) expects Doctrine\\ORM\\EntityManager, Doctrine\\ORM\\EntityManagerInterface\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/express/entities/forms.php
-
-		-
 			message: '#^Variable \$sectionID in isset\(\) always exists and is not nullable\.$#'
 			identifier: isset.variable
 			count: 1
@@ -2465,12 +2459,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Express/Form/Validator/Routine/ValidateUniqueAttributesRoutine.php
-
-		-
-			message: '#^Parameter \#1 \$em of method Doctrine\\ORM\\Id\\AbstractIdGenerator\:\:generate\(\) expects Doctrine\\ORM\\EntityManager, Doctrine\\ORM\\EntityManagerInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Express/ObjectBuilder/FieldsetBuilder.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
