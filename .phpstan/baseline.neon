@@ -3241,54 +3241,6 @@ parameters:
 			path: ../concrete/src/Notification/Type/CoreUpdateType.php
 
 		-
-			message: '#^Parameter \#1 \$create of class Concrete\\Core\\Entity\\Notification\\GroupCreateNotification constructor expects Concrete\\Core\\Entity\\User\\GroupCreate, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/GroupCreateType.php
-
-		-
-			message: '#^Parameter \#1 \$groupRoleChange of class Concrete\\Core\\Entity\\Notification\\GroupRoleChangeNotification constructor expects Concrete\\Core\\Entity\\User\\GroupRoleChange, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/GroupRoleChangeType.php
-
-		-
-			message: '#^Parameter \#1 \$signup of class Concrete\\Core\\Entity\\Notification\\GroupSignupNotification constructor expects Concrete\\Core\\Entity\\User\\GroupSignup, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/GroupSignupType.php
-
-		-
-			message: '#^Parameter \#1 \$message of class Concrete\\Core\\Entity\\Notification\\NewConversationMessageNotification constructor expects Concrete\\Core\\Conversation\\Message\\NewMessage, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/NewConversationMessageType.php
-
-		-
-			message: '#^Parameter \#1 \$subject of class Concrete\\Core\\Entity\\Notification\\NewFormSubmissionNotification constructor expects Concrete\\Core\\Express\\Entry\\Notifier\\Notification\\EntrySubject, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/NewFormSubmissionType.php
-
-		-
-			message: '#^Parameter \#1 \$message of class Concrete\\Core\\Entity\\Notification\\NewPrivateMessageNotification constructor expects Concrete\\Core\\User\\PrivateMessage\\PrivateMessage, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/NewPrivateMessageType.php
-
-		-
-			message: '#^Parameter \#1 \$signup of class Concrete\\Core\\Entity\\Notification\\UserSignupNotification constructor expects Concrete\\Core\\Entity\\User\\UserSignup, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/UserSignupType.php
-
-		-
-			message: '#^Parameter \#1 \$progress of class Concrete\\Core\\Entity\\Notification\\WorkflowProgressNotification constructor expects Concrete\\Core\\Workflow\\Progress\\Progress, Concrete\\Core\\Notification\\Subject\\SubjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Notification/Type/WorkflowProgressType.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
