@@ -715,12 +715,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/attributes/sets.php
 
 		-
-			message: '#^Parameter \#1 \$category of class Concrete\\Controller\\Element\\Attribute\\SiteStandardListHeader constructor expects Concrete\\Core\\Entity\\Attribute\\Category, Concrete\\Core\\Attribute\\CategoryObjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/basics/attributes.php
-
-		-
 			message: '#^Variable \$controller in PHPDoc tag @var does not exist\.$#'
 			identifier: varTag.variableNotFound
 			count: 1
@@ -3485,18 +3479,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Page/Container/ContainerExporter.php
-
-		-
-			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:updateFromRequest\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Page/Controller/DashboardAttributesPageController.php
-
-		-
-			message: '#^Parameter \#2 \$key of method Concrete\\Core\\Attribute\\ValidatorInterface\:\:validateUpdateKeyRequest\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Page/Controller/DashboardAttributesPageController.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
