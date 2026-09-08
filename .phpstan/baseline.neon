@@ -4525,12 +4525,6 @@ parameters:
 			path: ../concrete/src/Tree/Node/Type/File.php
 
 		-
-			message: '#^Method Concrete\\Core\\Tree\\Node\\Type\\Group\:\:getTreeNodeDisplayName\(\) should return string but returns null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/Group.php
-
-		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
