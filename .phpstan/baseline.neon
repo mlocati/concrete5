@@ -3751,12 +3751,6 @@ parameters:
 			path: ../concrete/src/Page/Search/IndexedSearch.php
 
 		-
-			message: '#^Parameter \#1 \$stack of function array_unshift expects array, null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Page/Search/Result/Result.php
-
-		-
 			message: '#^Loose comparison using \!\= between null and null will always evaluate to false\.$#'
 			identifier: notEqual.alwaysFalse
 			count: 1
