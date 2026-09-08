@@ -487,12 +487,6 @@ parameters:
 			path: ../concrete/controllers/panel/detail/page/attributes.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Asset\\Asset will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/attributes.php
-
-		-
 			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Attribute\\Key\\PageKey will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -1673,12 +1667,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Attribute/Key/Component/KeySelector/ControllerTrait.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Asset\\Asset will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Attribute/Key/Component/KeySelector/KeySerializer.php
 
 		-
 			message: '#^Access to an undefined property Concrete\\Core\\Attribute\\Key\\Key\:\:\$searchIndexFieldDefinition\.$#'
@@ -4937,12 +4925,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Search/Column/UserAttributeKeyColumn.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Asset\\Asset will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Search/Field/AbstractField.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\ItemList\:\:filterByKeywords\(\)\.$#'
