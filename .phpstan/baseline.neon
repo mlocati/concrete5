@@ -1363,48 +1363,6 @@ parameters:
 			path: ../concrete/src/Attribute/Category/SearchIndexer/StandardSearchIndexer.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Attribute\\Key\\Key\:\:setAttributeKeyDisplayedOnMemberList\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/UserCategory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Attribute\\Key\\Key\:\:setAttributeKeyDisplayedOnProfile\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/UserCategory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Attribute\\Key\\Key\:\:setAttributeKeyEditableOnProfile\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/UserCategory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Attribute\\Key\\Key\:\:setAttributeKeyEditableOnRegister\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/UserCategory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Attribute\\Key\\Key\:\:setAttributeKeyRequiredOnProfile\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/UserCategory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Attribute\\Key\\Key\:\:setAttributeKeyRequiredOnRegister\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/UserCategory.php
-
-		-
-			message: '#^Method Concrete\\Core\\Attribute\\Category\\UserCategory\:\:import\(\) should return Concrete\\Core\\Entity\\Attribute\\Key\\UserKey but returns Concrete\\Core\\Entity\\Attribute\\Key\\Key\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Attribute/Category/UserCategory.php
-
-		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\UserCategory\:\:saveFromRequest\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\UserKey, Concrete\\Core\\Entity\\Attribute\\Key\\Key given\.$#'
 			identifier: argument.type
 			count: 2
@@ -2069,18 +2027,6 @@ parameters:
 			identifier: notIdentical.alwaysFalse
 			count: 1
 			path: ../concrete/src/Conversation/Editor/Editor.php
-
-		-
-			message: '#^Method Concrete\\Core\\Conversation\\FrontendController\:\:getBlockController\(\) should return Concrete\\Block\\CoreConversation\\Controller but returns Concrete\\Core\\Block\\BlockController\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Conversation/FrontendController.php
-
-		-
-			message: '#^Property Concrete\\Core\\Conversation\\FrontendController\:\:\$blockController \(Concrete\\Block\\CoreConversation\\Controller\|null\) does not accept Concrete\\Core\\Block\\BlockController\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: ../concrete/src/Conversation/FrontendController.php
 
 		-
 			message: '#^PHPDoc tag @return contains unresolvable type\.$#'
