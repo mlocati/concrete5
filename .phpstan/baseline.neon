@@ -4489,12 +4489,6 @@ parameters:
 			path: ../concrete/src/Routing/Router.php
 
 		-
-			message: '#^Method Concrete\\Core\\Routing\\Router\:\:getRouteByPath\(\) should return Concrete\\Core\\Routing\\Route but returns Symfony\\Component\\Routing\\Route\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Routing/Router.php
-
-		-
 			message: '#^Return type \(Symfony\\Component\\Routing\\RouteCollection\) of method Concrete\\Core\\Routing\\Router\:\:getRoutes\(\) should be compatible with return type \(array\<Symfony\\Component\\Routing\\RouteCollection\>\) of method Concrete\\Core\\Routing\\RouterInterface\:\:getRoutes\(\)$#'
 			identifier: method.childReturnType
 			count: 1
