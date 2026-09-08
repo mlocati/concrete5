@@ -2647,12 +2647,6 @@ parameters:
 			path: ../concrete/src/File/Service/Zip.php
 
 		-
-			message: '#^Parameter \#2 \$y of method Doctrine\\DBAL\\Query\\Expression\\ExpressionBuilder\:\:in\(\) expects array\<string\>\|string, array\<int, int\> given\.$#'
-			identifier: argument.type
-			count: 2
-			path: ../concrete/src/File/Set/Set.php
-
-		-
 			message: '#^Method Concrete\\Core\\File\\StorageLocation\\Configuration\\DefaultConfiguration\:\:loadFromRequest\(\) with return type void returns false but should not return anything\.$#'
 			identifier: return.void
 			count: 1
@@ -3525,24 +3519,6 @@ parameters:
 		-
 			message: '#^Method Concrete\\Core\\Page\\Collection\\Collection\:\:rescanDisplayOrderFromBlock\(\) with return type void returns mixed but should not return anything\.$#'
 			identifier: return.void
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Parameter \#2 \$value of method Doctrine\\DBAL\\Query\\QueryBuilder\:\:setValue\(\) expects string, int given\.$#'
-			identifier: argument.type
-			count: 3
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Parameter \#2 \$value of method Doctrine\\DBAL\\Query\\QueryBuilder\:\:setValue\(\) expects string, int\|null given\.$#'
-			identifier: argument.type
-			count: 2
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Parameter \#2 \$y of method Doctrine\\DBAL\\Query\\Expression\\ExpressionBuilder\:\:notIn\(\) expects array\<string\>\|string, list\<int\> given\.$#'
-			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Page/Collection/Collection.php
 
@@ -4437,12 +4413,6 @@ parameters:
 		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Tree/Node/Node.php
-
-		-
-			message: '#^Parameter \#2 \$value of method Doctrine\\DBAL\\Query\\QueryBuilder\:\:set\(\) expects string, int given\.$#'
-			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Tree/Node/Node.php
 
