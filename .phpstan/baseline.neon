@@ -1327,12 +1327,6 @@ parameters:
 			path: ../concrete/src/Attribute/Category/ExpressCategory.php
 
 		-
-			message: '#^Method Concrete\\Core\\Attribute\\Category\\ExpressCategory\:\:getAttributeTypes\(\) should return Doctrine\\Common\\Collections\\ArrayCollection&iterable\<Concrete\\Core\\Entity\\Attribute\\Type\> but returns array\<Concrete\\Core\\Entity\\Attribute\\Type\>\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Attribute/Category/ExpressCategory.php
-
-		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\ExpressCategory\:\:saveFromRequest\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\ExpressKey, Concrete\\Core\\Entity\\Attribute\\Key\\Key given\.$#'
 			identifier: argument.type
 			count: 1
@@ -2107,12 +2101,6 @@ parameters:
 			path: ../concrete/src/Database/Connection/Connection.php
 
 		-
-			message: '#^Method Concrete\\Core\\Database\\DatabaseManager\:\:getConnectionNames\(\) should return array\<string, string\> but returns list\<\(int\|string\)\>\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Database/DatabaseManager.php
-
-		-
 			message: '#^Method Concrete\\Core\\Database\\DatabaseManager\:\:makeConnection\(\) should return Concrete\\Core\\Database\\Connection\\Connection but returns Doctrine\\DBAL\\Connection\.$#'
 			identifier: return.type
 			count: 1
@@ -2243,18 +2231,6 @@ parameters:
 			identifier: method.nonObject
 			count: 1
 			path: ../concrete/src/Entity/Board/InstanceLog.php
-
-		-
-			message: '#^Method Concrete\\Core\\Entity\\Calendar\\CalendarEvent\:\:getAttributeValueObject\(\) should return Concrete\\Core\\Entity\\Attribute\\Value\\EventValue\|null but returns Concrete\\Core\\Attribute\\AttributeValueInterface\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Entity/Calendar/CalendarEvent.php
-
-		-
-			message: '#^Method Concrete\\Core\\Entity\\Calendar\\CalendarEventVersion\:\:getAttributeValueObject\(\) should return Concrete\\Core\\Entity\\Attribute\\Value\\EventValue\|null but returns Concrete\\Core\\Attribute\\AttributeValueInterface\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Entity/Calendar/CalendarEventVersion.php
 
 		-
 			message: '#^If condition is always true\.$#'
@@ -2763,12 +2739,6 @@ parameters:
 		-
 			message: '#^Method Concrete\\Core\\File\\StorageLocation\\Configuration\\DefaultConfiguration\:\:loadFromRequest\(\) with return type void returns false but should not return anything\.$#'
 			identifier: return.void
-			count: 1
-			path: ../concrete/src/File/StorageLocation/Configuration/DefaultConfiguration.php
-
-		-
-			message: '#^Method Concrete\\Core\\File\\StorageLocation\\Configuration\\DefaultConfiguration\:\:validateRequest\(\) should return Concrete\\Core\\Error\\ErrorList\\ErrorList but returns false\.$#'
-			identifier: return.type
 			count: 1
 			path: ../concrete/src/File/StorageLocation/Configuration/DefaultConfiguration.php
 
@@ -3637,12 +3607,6 @@ parameters:
 			path: ../concrete/src/Page/Collection/Collection.php
 
 		-
-			message: '#^Method Concrete\\Core\\Page\\Collection\\Collection\:\:getSetCollectionAttributes\(\) should return array\<Concrete\\Core\\Entity\\Attribute\\Key\\PageKey\> but returns list\<Concrete\\Core\\Entity\\Attribute\\Key\\Key\>\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
 			message: '#^Method Concrete\\Core\\Page\\Collection\\Collection\:\:rescanDisplayOrderFromBlock\(\) with return type void returns mixed but should not return anything\.$#'
 			identifier: return.void
 			count: 1
@@ -3692,12 +3656,6 @@ parameters:
 
 		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:updateFromRequest\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Page/Controller/DashboardAttributesPageController.php
-
-		-
-			message: '#^Parameter \#1 \$types of method Concrete\\Controller\\Element\\Attribute\\KeyList\:\:setAttributeTypes\(\) expects array, Doctrine\\Common\\Collections\\ArrayCollection&iterable\<Concrete\\Core\\Entity\\Attribute\\Type\> given\.$#'
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Page/Controller/DashboardAttributesPageController.php
@@ -3863,18 +3821,6 @@ parameters:
 			identifier: notEqual.alwaysFalse
 			count: 1
 			path: ../concrete/src/Page/Single.php
-
-		-
-			message: '#^Method Concrete\\Core\\Page\\Sitemap\\PageListGenerator\:\:getViewPagePermissionKey\(\) should return Concrete\\Core\\Permission\\Key\\PageKey\|null but returns Concrete\\Core\\Permission\\Key\\Key\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Page/Sitemap/PageListGenerator.php
-
-		-
-			message: '#^Property Concrete\\Core\\Page\\Sitemap\\PageListGenerator\:\:\$viewPagePermissionKey \(Concrete\\Core\\Permission\\Key\\PageKey\|false\|null\) does not accept Concrete\\Core\\Permission\\Key\\Key\|null\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: ../concrete/src/Page/Sitemap/PageListGenerator.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Page\:\:getBlockID\(\)\.$#'
@@ -4183,30 +4129,6 @@ parameters:
 			path: ../concrete/src/Permission/Key/WorkflowKey.php
 
 		-
-			message: '#^Method Concrete\\Core\\Permission\\Registry\\Entry\\Object\\Object\\BasicWorkflow\:\:getPermissionObject\(\) should return Concrete\\Core\\Permission\\AssignableObjectInterface but returns Concrete\\Core\\Workflow\\Workflow\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Permission/Registry/Entry/Object/Object/BasicWorkflow.php
-
-		-
-			message: '#^Method Concrete\\Core\\Permission\\Registry\\Entry\\Object\\Object\\NullObject\:\:getPermissionObject\(\) should return Concrete\\Core\\Permission\\AssignableObjectInterface but returns null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Permission/Registry/Entry/Object/Object/NullObject.php
-
-		-
-			message: '#^Method Concrete\\Core\\Permission\\Registry\\Entry\\Object\\Object\\Page\:\:getPermissionObject\(\) should return Concrete\\Core\\Permission\\AssignableObjectInterface but return statement is missing\.$#'
-			identifier: return.missing
-			count: 1
-			path: ../concrete/src/Permission/Registry/Entry/Object/Object/Page.php
-
-		-
-			message: '#^Method Concrete\\Core\\Permission\\Registry\\Entry\\Object\\Object\\PageType\:\:getPermissionObject\(\) should return Concrete\\Core\\Permission\\AssignableObjectInterface but return statement is missing\.$#'
-			identifier: return.missing
-			count: 1
-			path: ../concrete/src/Permission/Registry/Entry/Object/Object/PageType.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Response\\AreaResponse\:\:canEditAreaContents\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -4387,12 +4309,6 @@ parameters:
 			path: ../concrete/src/Search/Field/Manager.php
 
 		-
-			message: '#^Method Concrete\\Core\\Search\\ItemList\\ItemList\:\:getPagination\(\) should return Concrete\\Core\\Search\\Pagination\\Pagination but returns Pagerfanta\\Pagerfanta\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Search/ItemList/ItemList.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getSearchByColumn\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -4475,12 +4391,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Site/InstallationService.php
-
-		-
-			message: '#^Method Concrete\\Core\\Site\\Menu\\Item\\SiteListController\:\:getMenuItemLinkElement\(\) should return HtmlObject\\Link but returns HtmlObject\\Element\.$#'
-			identifier: return.type
-			count: 2
-			path: ../concrete/src/Site/Menu/Item/SiteListController.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\OptionsForm\\OptionsFormProviderInterface\:\:getType\(\)\.$#'
@@ -4843,12 +4753,6 @@ parameters:
 			path: ../concrete/src/User/CsvWriter.php
 
 		-
-			message: '#^Method Concrete\\Core\\User\\Group\\GroupJoinRequest\:\:getNotificationDate\(\) should return DateTime but returns null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/User/Group/GroupJoinRequest.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:getTreeNodeGroupObject\(\)\.$#'
 			identifier: method.notFound
 			count: 4
@@ -4975,8 +4879,8 @@ parameters:
 			path: ../concrete/src/User/UserServiceProvider.php
 
 		-
-			message: '#^Method Concrete\\Core\\User\\Workflow\\Progress\\ProgressList\:\:get\(\) should return array\<Concrete\\Core\\User\\UserInfo\> but returns list\<Concrete\\Core\\User\\Workflow\\Progress\\User\>\.$#'
-			identifier: return.type
+			message: '#^Return type \(array\<Concrete\\Core\\User\\Workflow\\Progress\\User\>\) of method Concrete\\Core\\User\\Workflow\\Progress\\ProgressList\:\:get\(\) should be compatible with return type \(array\<Concrete\\Core\\User\\UserInfo\>\) of method Concrete\\Core\\Legacy\\UserList\:\:get\(\)$#'
+			identifier: method.childReturnType
 			count: 1
 			path: ../concrete/src/User/Workflow/Progress/ProgressList.php
 
