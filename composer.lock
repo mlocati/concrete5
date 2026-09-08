@@ -274,16 +274,16 @@
         },
         {
             "name": "concretecms/dependency-patches",
-            "version": "1.8.3",
+            "version": "1.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/dependency-patches.git",
-                "reference": "829d1dfef7c7df76cad407ad1242111e3dfa237b"
+                "reference": "421bf35141ee220479ca726ef3f7f3b79555990e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/dependency-patches/zipball/829d1dfef7c7df76cad407ad1242111e3dfa237b",
-                "reference": "829d1dfef7c7df76cad407ad1242111e3dfa237b",
+                "url": "https://api.github.com/repos/concretecms/dependency-patches/zipball/421bf35141ee220479ca726ef3f7f3b79555990e",
+                "reference": "421bf35141ee220479ca726ef3f7f3b79555990e",
                 "shasum": ""
             },
             "require": {
@@ -367,7 +367,8 @@
                     },
                     "sunra/php-simple-html-dom-parser:1.5.2": {
                         "Add PHP 8.1 compatibility": "sunra/php-simple-html-dom-parser/php8.1-compatibility.patch",
-                        "Fix minus in regular expressions": "sunra/php-simple-html-dom-parser/minus-in-regular-expressions.patch"
+                        "Fix minus in regular expressions": "sunra/php-simple-html-dom-parser/minus-in-regular-expressions.patch",
+                        "Fix the return types of HtmlDomParser::file_get_html() and str_get_html()": "sunra/php-simple-html-dom-parser/return-types.patch"
                     }
                 }
             },
@@ -387,9 +388,9 @@
             "homepage": "https://github.com/concretecms/dependency-patches",
             "support": {
                 "issues": "https://github.com/concretecms/dependency-patches/issues",
-                "source": "https://github.com/concretecms/dependency-patches/tree/1.8.3"
+                "source": "https://github.com/concretecms/dependency-patches/tree/1.8.4"
             },
-            "time": "2026-09-07T13:47:33+00:00"
+            "time": "2026-09-08T10:20:34+00:00"
         },
         {
             "name": "concretecms/doctrine-xml",

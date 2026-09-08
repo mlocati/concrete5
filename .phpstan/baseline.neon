@@ -1279,18 +1279,6 @@ parameters:
 			path: ../concrete/src/Area/Layout/CustomLayout.php
 
 		-
-			message: '#^Call to function is_object\(\) with simplehtmldom_1_5\\simple_html_dom will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Area/Layout/Formatter/ThemeGridFormatter.php
-
-		-
-			message: '#^Call to function is_object\(\) with simplehtmldom_1_5\\simple_html_dom will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Area/Layout/Preset/Formatter/ThemeFormatter.php
-
-		-
 			message: '#^Class Concrete\\Core\\Area\\Layout\\Preset\\Provider\\Manager does not have a constructor and must be instantiated without any parameters\.$#'
 			identifier: new.noConstructor
 			count: 1
@@ -2273,18 +2261,6 @@ parameters:
 			identifier: staticMethod.void
 			count: 1
 			path: ../concrete/src/Database/Schema/MySqlSchemaManager.php
-
-		-
-			message: '#^Call to function is_object\(\) with simplehtmldom_1_5\\simple_html_dom will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/src/Editor/LinkAbstractor.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Editor/LinkAbstractor.php
 
 		-
 			message: '#^Parameter \#1 \$asset of method Concrete\\Core\\Asset\\AssetGroup\:\:addAsset\(\) expects Concrete\\Core\\Asset\\Asset, Concrete\\Core\\Asset\\AssetInterface given\.$#'
