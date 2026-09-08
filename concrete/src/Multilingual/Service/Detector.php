@@ -324,7 +324,7 @@ class Detector implements ApplicationAwareInterface, SiteAggregateInterface
         }
         if ($c) {
             $pageController = $c->getPageController();
-            if (is_object($pageController) && is_callable([$pageController, 'useUserLocale'])) {
+            if ($pageController instanceof \Concrete\Core\Page\Controller\PageController) {
                 $useUserLocale = $pageController->useUserLocale();
             } else {
                 $dh = $this->app->make('helper/concrete/dashboard');

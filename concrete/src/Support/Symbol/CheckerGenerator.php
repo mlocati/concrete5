@@ -269,10 +269,7 @@ class CheckerGenerator
                 $param .= '$' . $parameter->getName();
 
                 if ($parameter->isOptional()) {
-                    $defaultValue = null;
-                    if (method_exists($parameter, 'getDefaultValueConstantName')) {
-                        $defaultValue = $parameter->getDefaultValueConstantName();
-                    }
+                    $defaultValue = $parameter->getDefaultValueConstantName();
                     if ($defaultValue) {
                         // Strip out wrong namespaces.
                         $matches = null;

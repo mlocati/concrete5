@@ -933,12 +933,10 @@ class Collection extends ConcreteObject implements TrackableInterface
         $blockIDs = $this->getBlockIDs($arHandle);
 
         $blocks = [];
-        if (is_array($blockIDs)) {
-            foreach ($blockIDs as $row) {
-                $ab = Block::getByID($row['bID'], $this, $row['arHandle']);
-                if (is_object($ab)) {
-                    $blocks[] = $ab;
-                }
+        foreach ($blockIDs as $row) {
+            $ab = Block::getByID($row['bID'], $this, $row['arHandle']);
+            if (is_object($ab)) {
+                $blocks[] = $ab;
             }
         }
 
@@ -977,10 +975,8 @@ class Collection extends ConcreteObject implements TrackableInterface
                 ->setParameter('cvID', $this->getVersionID())
                 ->execute()->fetchAll();
             $blockIDs = [];
-            if (is_array($r)) {
-                foreach ($r as $bl) {
-                    $blockIDs[strtolower($bl['arHandle'])][] = $bl;
-                }
+            foreach ($r as $bl) {
+                $blockIDs[strtolower($bl['arHandle'])][] = $bl;
             }
             CacheLocal::set('collection_block_ids', $this->getCollectionID() . ':' . $this->getVersionID(), $blockIDs);
         }

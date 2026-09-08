@@ -61,7 +61,7 @@ class SemaphoreMutex implements MutexInterface
                     @chmod($filename, 0666);
                     $statBefore = @stat($filename);
                     $semKey = @ftok($filename, 'a');
-                    if (!is_int($semKey) || $semKey === -1) {
+                    if ($semKey === -1) {
                         $retry = true; // file may have been deleted in the meanwhile
                         throw new RuntimeException("ftok() failed for path {$filename}");
                     }

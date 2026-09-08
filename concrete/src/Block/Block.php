@@ -2004,7 +2004,7 @@ EOT
 
             // so, first we delete the block's sub content
             $bt = BlockType::getByID($this->getBlockTypeID());
-            if ($bt && method_exists($bt, 'getBlockTypeClass')) {
+            if ($bt) {
                 $class = $bt->getBlockTypeClass();
                 $app = Facade::getFacadeApplication();
                 $bc = $app->make($class, ['obj' => $this]);

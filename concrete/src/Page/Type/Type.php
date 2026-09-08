@@ -700,10 +700,8 @@ class Type extends ConcreteObject implements \Concrete\Core\Permission\ObjectInt
             if (is_object($rpa)) {
                 $pk->setPermissionObject($new);
                 $pt = $pk->getPermissionAssignmentObject();
-                if (is_object($pt)) {
-                    $pt->clearPermissionAssignment();
-                    $pt->assignPermissionAccess($rpa);
-                }
+                $pt->clearPermissionAssignment();
+                $pt->assignPermissionAccess($rpa);
             }
         }
         // copy permissions from the default page to the page type
@@ -714,10 +712,8 @@ class Type extends ConcreteObject implements \Concrete\Core\Permission\ObjectInt
             if (is_object($rpa)) {
                 $pk->setPermissionObject($new->getPageTypePageTemplateDefaultPageObject());
                 $pt = $pk->getPermissionAssignmentObject();
-                if (is_object($pt)) {
-                    $pt->clearPermissionAssignment();
-                    $pt->assignPermissionAccess($rpa);
-                }
+                $pt->clearPermissionAssignment();
+                $pt->assignPermissionAccess($rpa);
             }
         }
 
@@ -867,9 +863,7 @@ class Type extends ConcreteObject implements \Concrete\Core\Permission\ObjectInt
         if (is_object($pk)) {
             $pk->setPermissionObject($ptt);
             $pt = $pk->getPermissionAssignmentObject();
-            if (is_object($pt)) {
-                $pt->clearPermissionAssignment();
-            }
+            $pt->clearPermissionAssignment();
             // now we assign the page draft owner access entity
             $pa = PermissionAccess::create($pk);
             $pe = PageOwnerPermissionAccessEntity::getOrCreate();
@@ -1133,16 +1127,14 @@ class Type extends ConcreteObject implements \Concrete\Core\Permission\ObjectInt
     public function setConfiguredPageTypePublishTargetObject(PageTypePublishTargetConfiguration $configuredTarget)
     {
         $db = Loader::db();
-        if (is_object($configuredTarget)) {
-            $db->Execute(
-                'update PageTypes set ptPublishTargetTypeID = ?, ptPublishTargetObject = ? where ptID = ?',
-                array(
-                    $configuredTarget->getPageTypePublishTargetTypeID(),
-                    @serialize($configuredTarget),
-                    $this->getPageTypeID(),
-                )
-            );
-        }
+        $db->Execute(
+            'update PageTypes set ptPublishTargetTypeID = ?, ptPublishTargetObject = ? where ptID = ?',
+            [
+                $configuredTarget->getPageTypePublishTargetTypeID(),
+                @serialize($configuredTarget),
+                $this->getPageTypeID(),
+            ]
+        );
     }
 
     public function rescanFormLayoutSetDisplayOrder()

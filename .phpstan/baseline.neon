@@ -55,28 +55,10 @@ parameters:
 			path: ../concrete/controllers/backend/page/arrange_blocks.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Collection\\Version\\Version will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/backend/page/multilingual.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/backend/page/multilingual.php
-
-		-
 			message: '#^Variable \$contextFactory in PHPDoc tag @var does not exist\.$#'
 			identifier: varTag.variableNotFound
 			count: 1
 			path: ../concrete/controllers/backend/tasks.php
-
-		-
-			message: '#^Call to function is_array\(\) with list\<Concrete\\Core\\Tree\\Node\\Node\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/backend/tree/node/drag_request.php
 
 		-
 			message: '#^Loose comparison using \=\= between int\<1, max\> and 0 will always evaluate to false\.$#'
@@ -125,12 +107,6 @@ parameters:
 			identifier: return.type
 			count: 1
 			path: ../concrete/controllers/dialog/event/advanced_search.php
-
-		-
-			message: '#^Call to function is_array\(\) with array\<Concrete\\Core\\Entity\\Calendar\\CalendarEventRepetition\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/dialog/event/edit.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Search\\SavedSearch\:\:getEntity\(\)\.$#'
@@ -487,12 +463,6 @@ parameters:
 			path: ../concrete/controllers/panel/detail/page/attributes.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Attribute\\Key\\PageKey will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/attributes.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -562,12 +532,6 @@ parameters:
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Checker\:\:canEditPageVersions\(\)\.$#'
 			identifier: method.notFound
 			count: 1
-			path: ../concrete/controllers/panel/page/versions.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Collection\\Version\\Version will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
 			path: ../concrete/controllers/panel/page/versions.php
 
 		-
@@ -1087,12 +1051,6 @@ parameters:
 			path: ../concrete/src/Api/Api.php
 
 		-
-			message: '#^Call to function method_exists\(\) with League\\OAuth2\\Server\\AuthorizationValidators\\BearerTokenValidator and ''setPublicKey'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Api/ApiServiceProvider.php
-
-		-
 			message: '#^Parameter \#1 \$attributeKey of class Concrete\\Core\\Api\\Attribute\\AttributeValueMapEntry constructor expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
 			identifier: argument.type
 			count: 1
@@ -1255,12 +1213,6 @@ parameters:
 			path: ../concrete/src/Api/OpenApi/SpecParameter.php
 
 		-
-			message: '#^Call to function is_array\(\) with array\<Concrete\\Core\\Job\\Set\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Application/Application.php
-
-		-
 			message: '#^Call to method Concrete\\Core\\Routing\\RedirectResponse\:\:setRequest\(\) on a separate line has no effect\.$#'
 			identifier: method.resultUnused
 			count: 1
@@ -1361,12 +1313,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Application/UserInterface/OptionsForm/OptionsForm.php
-
-		-
-			message: '#^Call to function is_array\(\) with non\-empty\-list\<string\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Application/UserInterface/Sitemap/StandardSitemapProvider.php
 
 		-
 			message: '#^Anonymous function has an unused use \$area\.$#'
@@ -1591,18 +1537,6 @@ parameters:
 			path: ../concrete/src/Attribute/Controller.php
 
 		-
-			message: '#^Call to function method_exists\(\) with \$this\(Concrete\\Core\\Attribute\\Controller\) and ''on_before_render'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Attribute/Controller.php
-
-		-
-			message: '#^Call to function method_exists\(\) with \$this\(Concrete\\Core\\Attribute\\Controller\) and ''on_start'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Attribute/Controller.php
-
-		-
 			message: '#^Method Concrete\\Core\\Attribute\\Controller\:\:createAttributeValueFromRequest\(\) should return Concrete\\Core\\Attribute\\AttributeValueInterface but returns Concrete\\Core\\Attribute\\Value\\EmptyRequestAttributeValue\.$#'
 			identifier: return.type
 			count: 1
@@ -1771,18 +1705,6 @@ parameters:
 			path: ../concrete/src/Attribute/TypeFactory.php
 
 		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/Authentication/AuthenticationType.php
-
-		-
-			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Authentication\\AuthenticationTypeController and ''view'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Authentication/AuthenticationType.php
-
-		-
 			message: '#^Cannot access property \$file on string\.$#'
 			identifier: property.nonObject
 			count: 1
@@ -1933,28 +1855,10 @@ parameters:
 			path: ../concrete/src/Block/Block.php
 
 		-
-			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Entity\\Block\\BlockType\\BlockType and ''getBlockTypeClass'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Block/Block.php
-
-		-
 			message: '#^Parameter \#1 \$c of static method Concrete\\Core\\Area\\Area\:\:getOrCreate\(\) expects Concrete\\Core\\Page\\Page, Concrete\\Core\\Page\\Collection\\Collection\|null given\.$#'
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Block/Block.php
-
-		-
-			message: '#^Call to function method_exists\(\) with \$this\(Concrete\\Core\\Block\\BlockController\) and ''on_before_render'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Block/BlockController.php
-
-		-
-			message: '#^Call to function method_exists\(\) with \$this\(Concrete\\Core\\Block\\BlockController\) and ''on_start'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Block/BlockController.php
 
 		-
 			message: '#^Method Concrete\\Core\\Controller\\AbstractController\:\:on_before_render\(\) invoked with 1 parameter, 0 required\.$#'
@@ -2291,12 +2195,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/Conversation/FrontendController.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\File\\File will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Conversation/Message/Message.php
 
 		-
 			message: '#^PHPDoc tag @return contains unresolvable type\.$#'
@@ -2803,12 +2701,6 @@ parameters:
 			path: ../concrete/src/Express/Entity/Cloner.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Attribute\\Category\\SearchIndexer\\ExpressSearchIndexer will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Express/Entity/Listener.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getPlainTextValue\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3265,12 +3157,6 @@ parameters:
 			path: ../concrete/src/Foundation/Composer.php
 
 		-
-			message: '#^Call to function is_int\(\) with int will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Foundation/Environment/User.php
-
-		-
 			message: '#^Parameter \#1 \$autoload_function of function spl_autoload_register expects callable\(string\)\: void, array\{\$this\(Concrete\\Core\\Foundation\\ModifiedPsr4ClassLoader\), ''loadClass''\} given\.$#'
 			identifier: argument.type
 			count: 1
@@ -3529,12 +3415,6 @@ parameters:
 			path: ../concrete/src/Http/ResponseFactory.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Checker will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
 			message: '#^If condition is always false\.$#'
 			identifier: if.alwaysFalse
 			count: 1
@@ -3607,12 +3487,6 @@ parameters:
 			path: ../concrete/src/Legacy/Avatar.php
 
 		-
-			message: '#^Call to function is_array\(\) with array\<float\|int\|numeric\-string\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Legacy/FileList.php
-
-		-
 			message: '#^Method Concrete\\Core\\Attribute\\Controller\:\:searchKeywords\(\) invoked with 1 parameter, 2 required\.$#'
 			identifier: arguments.count
 			count: 1
@@ -3651,12 +3525,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Site\\Tree\\TreeInterface\:\:getSiteHomePageObject\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Localization/Locale/Service.php
-
-		-
-			message: '#^Call to function is_array\(\) with list\<non\-falsy\-string\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Localization/Locale/Service.php
 
@@ -3823,24 +3691,6 @@ parameters:
 			path: ../concrete/src/Mail/Service.php
 
 		-
-			message: '#^Call to function is_array\(\) with array\<string\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Marketplace/Marketplace.php
-
-		-
-			message: '#^Call to function is_callable\(\) with array\{Concrete\\Core\\Package\\Package, ''restore''\} will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Marketplace/RemoteItem.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Error\\ErrorList\\ErrorList\|Concrete\\Core\\Package\\Package will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Marketplace/RemoteItem.php
-
-		-
 			message: '#^Call to an undefined method Symfony\\Component\\Messenger\\Stamp\\StampInterface\:\:getOutput\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3857,12 +3707,6 @@ parameters:
 			identifier: trait.unused
 			count: 1
 			path: ../concrete/src/Messenger/MessageBusAwareTrait.php
-
-		-
-			message: '#^Call to function is_callable\(\) with array\{Concrete\\Core\\Page\\Controller\\PageController, ''useUserLocale''\} will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Multilingual/Service/Detector.php
 
 		-
 			message: '#^Variable \$icon in isset\(\) always exists and is not nullable\.$#'
@@ -4075,18 +3919,6 @@ parameters:
 			path: ../concrete/src/Page/Collection/Collection.php
 
 		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Call to function is_array\(\) with array\<mixed\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
 			message: '#^Method Concrete\\Core\\Page\\Collection\\Collection\:\:getSetCollectionAttributes\(\) should return array\<Concrete\\Core\\Entity\\Attribute\\Key\\PageKey\> but returns list\<Concrete\\Core\\Entity\\Attribute\\Key\\Key\>\.$#'
 			identifier: return.type
 			count: 1
@@ -4175,24 +4007,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Page/Controller/DashboardExpressEntityPageController.php
-
-		-
-			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Controller/PageController.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Controller/PageController.php
-
-		-
-			message: '#^Call to function is_object\(\) with ReflectionClass will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Controller/PageController.php
 
 		-
 			message: '#^Offset 0 on non\-empty\-list\<string\> in isset\(\) always exists and is not nullable\.$#'
@@ -4417,18 +4231,6 @@ parameters:
 			path: ../concrete/src/Page/Theme/Documentation/Installer.php
 
 		-
-			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Page\\Theme\\Theme and ''getThemeDescription'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Theme/Theme.php
-
-		-
-			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Page\\Theme\\Theme and ''getThemeName'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Theme/Theme.php
-
-		-
 			message: '#^Unsafe call to private method Concrete\\Core\\Page\\Theme\\Theme\:\:getThemeNameAndDescription\(\) through static\:\:\.$#'
 			identifier: staticClassAccess.privateMethod
 			count: 2
@@ -4439,12 +4241,6 @@ parameters:
 			identifier: foreach.emptyArray
 			count: 1
 			path: ../concrete/src/Page/Type/Command/UpdatePageTypeDefaultsCommandHandler.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Attribute\\Controller will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Type/Composer/Control/CollectionAttributeControl.php
 
 		-
 			message: '#^Offset ''description'' on non\-empty\-array\<mixed, mixed\> on left side of \?\? always exists and is not nullable\.$#'
@@ -4468,18 +4264,6 @@ parameters:
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromDefaultsToPageType\(\)\.$#'
 			identifier: method.notFound
 			count: 1
-			path: ../concrete/src/Page/Type/Type.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Type\\PublishTarget\\Configuration\\Configuration will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Page/Type/Type.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Assignment\\Assignment will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
 			path: ../concrete/src/Page/Type/Type.php
 
 		-
@@ -5131,28 +4915,10 @@ parameters:
 			path: ../concrete/src/Summary/Template/Renderer.php
 
 		-
-			message: '#^Call to function method_exists\(\) with ReflectionParameter and ''getDefaultValueCons…'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Support/Symbol/CheckerGenerator.php
-
-		-
 			message: '#^Strict comparison using \!\=\= between array\{\} and array\{\} will always evaluate to false\.$#'
 			identifier: notIdentical.alwaysFalse
 			count: 1
 			path: ../concrete/src/Support/Symbol/CheckerGenerator.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Support/Symbol/ClassSymbol/ClassSymbol.php
-
-		-
-			message: '#^Call to function method_exists\(\) with ReflectionParameter and ''getDefaultValueCons…'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Support/Symbol/ClassSymbol/MethodSymbol/MethodSymbol.php
 
 		-
 			message: '#^Variable \$commonObjectDescriptors in empty\(\) always exists and is not falsy\.$#'
@@ -5167,28 +4933,10 @@ parameters:
 			path: ../concrete/src/Support/i18n.php
 
 		-
-			message: '#^Call to function is_int\(\) with int will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/System/Mutex/SemaphoreMutex.php
-
-		-
 			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(mixed, mixed\)\: void given\.$#'
 			identifier: argument.type
 			count: 1
 			path: ../concrete/src/System/Mutex/SemaphoreMutex.php
-
-		-
-			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/System/SystemUser.php
-
-		-
-			message: '#^Offset ''name'' on array\{name\: string, passwd\: string, uid\: int, gid\: int, gecos\: string, dir\: string, shell\: string\} on left side of \?\? always exists and is not nullable\.$#'
-			identifier: nullCoalesce.offset
-			count: 1
-			path: ../concrete/src/System/SystemUser.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromParentNodeToCurrentNode\(\)\.$#'
@@ -5281,12 +5029,6 @@ parameters:
 			path: ../concrete/src/Tree/Node/Type/SearchPreset.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Entity\\Search\\SavedFileSearch will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/SearchPreset.php
-
-		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -5321,18 +5063,6 @@ parameters:
 			identifier: staticMethod.notFound
 			count: 1
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20140930000000.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Authentication\\AuthenticationType will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20141017000000.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Authentication\\AuthenticationType will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20141219000000.php
 
 		-
 			message: '#^Access to an undefined property Concrete\\Core\\Permission\\Duration\:\:\$pdEndDate\.$#'
@@ -5419,12 +5149,6 @@ parameters:
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20180926000000.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Authentication\\AuthenticationType will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20181212221911.php
-
-		-
 			message: '#^Call to an undefined method League\\OAuth2\\Server\\Entities\\AccessTokenEntityInterface\:\:getRefreshToken\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -5441,12 +5165,6 @@ parameters:
 			identifier: method.notFound
 			count: 2
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20190422235040.php
-
-		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Page\\Page will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20200928000001.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
@@ -5537,12 +5255,6 @@ parameters:
 			identifier: return.type
 			count: 1
 			path: ../concrete/src/User/Group/FolderManager.php
-
-		-
-			message: '#^Call to function is_array\(\) with list\<int\|string\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/User/Group/Group.php
 
 		-
 			message: '#^Method Concrete\\Core\\User\\Group\\GroupJoinRequest\:\:getNotificationDate\(\) should return DateTime but returns null\.$#'
@@ -5659,12 +5371,6 @@ parameters:
 			path: ../concrete/src/User/UserBannedIp.php
 
 		-
-			message: '#^Call to function method_exists\(\) with Concrete\\Core\\Attribute\\Controller and ''createDefaultAttrib…'' will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/User/UserInfo.php
-
-		-
 			message: '#^Method Concrete\\Core\\User\\UserInfo\:\:getUserPublicProfileUrl\(\) should return League\\Url\\UrlInterface\|null but empty return statement found\.$#'
 			identifier: return.empty
 			count: 1
@@ -5699,12 +5405,6 @@ parameters:
 			identifier: assignOp.invalid
 			count: 1
 			path: ../concrete/src/Utility/Service/Number.php
-
-		-
-			message: '#^Call to function is_array\(\) with list\<string\> will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Utility/Service/Text.php
 
 		-
 			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(string\)\: bool\)\|null, ''strlen'' given\.$#'
@@ -5759,9 +5459,3 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Workflow/EmptyWorkflow.php
-
-		-
-			message: '#^If condition is always true\.$#'
-			identifier: if.alwaysTrue
-			count: 1
-			path: ../concrete/src/Workflow/Request/UnapprovePageRequest.php

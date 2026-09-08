@@ -27,9 +27,7 @@ class User
         $result = null;
         if ($this->functionInspector->functionAvailable('posix_getuid')) {
             $uid = posix_getuid();
-            if (is_int($uid)) {
-                $result = $uid === 0;
-            }
+            $result = $uid === 0;
         }
 
         return $result;

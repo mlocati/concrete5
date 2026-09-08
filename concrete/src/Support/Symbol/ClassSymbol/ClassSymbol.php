@@ -126,7 +126,7 @@ class ClassSymbol
                 $app = \Concrete\Core\Support\Facade\Application::getFacadeApplication();
                 if ($app->isAlias($accessor)) {
                     $aliased = $app->getAlias($accessor);
-                    if (is_string($aliased) && (class_exists($aliased) || interface_exists($aliased))) {
+                    if (class_exists($aliased) || interface_exists($aliased)) {
                         return new ReflectionClass($aliased);
                     }
                 }

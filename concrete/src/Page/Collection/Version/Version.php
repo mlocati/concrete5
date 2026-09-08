@@ -246,7 +246,7 @@ class Version extends ConcreteObject implements PermissionObjectInterface, Attri
      * @param \Concrete\Core\Page\Collection\Collection $c the collection for which you want the version
      * @param int|string $cvID the specific version ID (or 'ACTIVE', 'SCHEDULED', 'RECENT')
      *
-     * @return static
+     * @return static|null if the version doesn't exist, currently a Version instance in an error state is returned (see isError()), but future versions may return NULL: callers must handle both cases
      */
     public static function get($c, $cvID)
     {

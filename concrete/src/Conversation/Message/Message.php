@@ -488,20 +488,16 @@ class Message extends ConcreteObject implements ObjectInterface, SubjectInterfac
     public function attachFile(\Concrete\Core\Entity\File\File $f)
     {
         $db = Loader::db();
-        if (!is_object($f)) {
-            return false;
-        } else {
-            $db->Execute('INSERT INTO ConversationMessageAttachments (cnvMessageID, fID) VALUES (?, ?)', array(
-                $this->getConversationMessageID(),
-                $f->getFileID(),
-            ));
-            $fs = FileSet::createAndGetSet(Config::get('conversations.attachments_file_set'), FileSet::TYPE_PUBLIC,
-                USER_SUPER_ID);
-            $fsToRemove = FileSet::createAndGetSet(Config::get('conversations.attachments_pending_file_set'),
-                FileSet::TYPE_PUBLIC, USER_SUPER_ID);
-            $fs->addFileToSet($f);
-            $fsToRemove->removeFileFromSet($f);
-        }
+        $db->Execute('INSERT INTO ConversationMessageAttachments (cnvMessageID, fID) VALUES (?, ?)', [
+            $this->getConversationMessageID(),
+            $f->getFileID(),
+        ]);
+        $fs = FileSet::createAndGetSet(Config::get('conversations.attachments_file_set'), FileSet::TYPE_PUBLIC,
+            USER_SUPER_ID);
+        $fsToRemove = FileSet::createAndGetSet(Config::get('conversations.attachments_pending_file_set'),
+            FileSet::TYPE_PUBLIC, USER_SUPER_ID);
+        $fs->addFileToSet($f);
+        $fsToRemove->removeFileFromSet($f);
         // associate with non-pending file set.
     }
 

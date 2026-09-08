@@ -40,7 +40,7 @@ class DragRequest extends UserInterface
                 }
             }
             $destNode = Node::getByID(Loader::helper('security')->sanitizeInt($_REQUEST['treeNodeParentID']));
-            if (is_array($sourceNodes) && count($sourceNodes) && is_object($destNode)) {
+            if (count($sourceNodes) && is_object($destNode)) {
                 $this->nodes = array($sourceNodes, $destNode);
             } else {
                 $this->nodes = false;
