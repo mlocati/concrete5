@@ -278,7 +278,7 @@ class Update extends DashboardPageController
         if (ini_get('safe_mode')) {
             return false;
         }
-        set_error_handler(function () {}, -1);
+        set_error_handler(static function (): bool { return true; }, -1);
         $result = true;
         try {
             if (!@set_time_limit(0)) {

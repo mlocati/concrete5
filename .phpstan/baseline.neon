@@ -31,18 +31,6 @@ parameters:
 			path: ../concrete/controllers/backend/block/process.php
 
 		-
-			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(\)\: void given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/backend/dashboard/get_image_data.php
-
-		-
-			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(string\)\: bool\)\|null, ''strlen'' given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/backend/file.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Block\\BlockController\:\:getOriginalBlockID\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -793,22 +781,10 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/registration/authentication.php
 
 		-
-			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(\)\: void given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/registration/password_requirements.php
-
-		-
 			message: '#^Anonymous function has an unused use \$globalConfig\.$#'
 			identifier: closure.unusedUse
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/system/seo/urls.php
-
-		-
-			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(\)\: void given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/update/update.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
@@ -2363,12 +2339,6 @@ parameters:
 			identifier: class.extendsFinalByPhpDoc
 			count: 1
 			path: ../concrete/src/Error/Handling/ErrorHandler.php
-
-		-
-			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(\)\: void given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Error/Handling/ErrorRenderer/ConcreteErrorRenderer.php
 
 		-
 			message: '#^Parameter \#1 \$handler of method Symfony\\Component\\ErrorHandler\\ErrorHandler\:\:setExceptionHandler\(\) expects \(callable\(\)\: mixed\)\|null, array\{Symfony\\Component\\ErrorHandler\\ErrorHandler, ''renderConcreteExcep…''\} given\.$#'
@@ -4489,12 +4459,6 @@ parameters:
 			path: ../concrete/src/Support/i18n.php
 
 		-
-			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(mixed, mixed\)\: void given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/System/Mutex/SemaphoreMutex.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromParentNodeToCurrentNode\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -4747,12 +4711,6 @@ parameters:
 			path: ../concrete/src/User/Login/LoginAttemptService.php
 
 		-
-			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(string\)\: bool\)\|null, ''strlen'' given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/User/PostLoginLocationUrl.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -4859,18 +4817,6 @@ parameters:
 			identifier: assignOp.invalid
 			count: 1
 			path: ../concrete/src/Utility/Service/Number.php
-
-		-
-			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(string\)\: bool\)\|null, ''strlen'' given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Utility/Service/Text.php
-
-		-
-			message: '#^Parameter \#1 \$callback of function set_error_handler expects \(callable\(int, string, string, int, array\)\: bool\)\|null, Closure\(\)\: void given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Utility/Service/Validation/Strings.php
 
 		-
 			message: '#^Call to an undefined method ArrayAccess\:\:add\(\)\.$#'
