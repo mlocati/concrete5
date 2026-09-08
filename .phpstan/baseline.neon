@@ -1009,20 +1009,8 @@ parameters:
 			path: ../concrete/src/Api/Controller/Express.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\NodeType\:\:move\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Api/Controller/Files.php
-
-		-
 			message: '#^Call to an undefined method League\\Fractal\\Resource\\ResourceAbstract\:\:setCursor\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Api/Controller/Files.php
-
-		-
-			message: '#^Parameter \#1 \$object of class Concrete\\Core\\Permission\\Checker constructor expects Concrete\\Core\\Permission\\ObjectInterface\|false\|null, Concrete\\Core\\Tree\\Node\\NodeType given\.$#'
-			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Api/Controller/Files.php
 
@@ -1697,12 +1685,6 @@ parameters:
 			identifier: return.type
 			count: 1
 			path: ../concrete/src/Authentication/Type/OAuth/OAuth2/GenericOauth2TypeController.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\NodeType\:\:move\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Block\\BlockController\:\:getAreaLayoutObject\(\)\.$#'
@@ -2389,12 +2371,6 @@ parameters:
 			path: ../concrete/src/Entity/File/File.php
 
 		-
-			message: '#^Method Concrete\\Core\\Entity\\File\\File\:\:getFileNodeObject\(\) should return Concrete\\Core\\Tree\\Node\\NodeType\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Entity/File/File.php
-
-		-
 			message: '#^Method Concrete\\Core\\Entity\\File\\File\:\:setAttribute\(\) should return Concrete\\Core\\Attribute\\AttributeValueInterface but return statement is missing\.$#'
 			identifier: return.missing
 			count: 1
@@ -2765,12 +2741,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/File/Component/Chooser/Option/FolderBookmarkOption.php
-
-		-
-			message: '#^Method Concrete\\Core\\File\\Filesystem\:\:getRootFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\FileFolder\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/File/Filesystem.php
 
 		-
 			message: '#^Parameter \#2 \$value of class HtmlObject\\Element constructor expects string\|null, array\<int, HtmlObject\\Element\> given\.$#'
@@ -4231,12 +4201,6 @@ parameters:
 			path: ../concrete/src/Permission/Assignment/CalendarAssignment.php
 
 		-
-			message: '#^Method Concrete\\Core\\Permission\\Assignment\\PageAssignment\:\:getPermissionAccessObject\(\) should return Concrete\\Core\\Permission\\Access\\PageAccess\|null but returns Concrete\\Core\\Permission\\Access\\Access\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Permission/Assignment/PageAssignment.php
-
-		-
 			message: '#^Property Concrete\\Core\\Permission\\Assignment\\PageAssignment\:\:\$pk \(Concrete\\Core\\Permission\\Key\\PageKey\) does not accept Concrete\\Core\\Permission\\Key\\Key\.$#'
 			identifier: assign.propertyType
 			count: 1
@@ -4789,12 +4753,6 @@ parameters:
 			path: ../concrete/src/Tree/Node/Type/File.php
 
 		-
-			message: '#^Method Concrete\\Core\\Tree\\Node\\Type\\Group\:\:getTreeNodeByGroupID\(\) should return Concrete\\Core\\Tree\\Node\\Type\\Group\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/Group.php
-
-		-
 			message: '#^Method Concrete\\Core\\Tree\\Node\\Type\\Group\:\:getTreeNodeDisplayName\(\) should return string but returns null\.$#'
 			identifier: return.type
 			count: 1
@@ -4805,24 +4763,6 @@ parameters:
 			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Tree/Tree.php
-
-		-
-			message: '#^Method Concrete\\Core\\Tree\\Type\\FileManager\:\:add\(\) should return Concrete\\Core\\Tree\\Type\\FileManager\|null but returns Concrete\\Core\\Tree\\Tree\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Tree/Type/FileManager.php
-
-		-
-			message: '#^Method Concrete\\Core\\Tree\\Type\\FileManager\:\:get\(\) should return Concrete\\Core\\Tree\\Type\\FileManager\|null but returns Concrete\\Core\\Tree\\Tree\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Tree/Type/FileManager.php
-
-		-
-			message: '#^Method Concrete\\Core\\Tree\\Type\\Group\:\:get\(\) should return Concrete\\Core\\Tree\\Type\\Group\|null but returns Concrete\\Core\\Tree\\Tree\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Tree/Type/Group.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Tree\:\:setTopicTreeName\(\)\.$#'
@@ -4900,12 +4840,6 @@ parameters:
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
 			identifier: method.notFound
 			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20160725000000.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\NodeType\:\:move\(\)\.$#'
-			identifier: method.notFound
-			count: 1
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20160725000000.php
 
 		-
@@ -5015,12 +4949,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/User/CsvWriter.php
-
-		-
-			message: '#^Method Concrete\\Core\\User\\Group\\FolderManager\:\:getRootFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\GroupFolder\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/User/Group/FolderManager.php
 
 		-
 			message: '#^Method Concrete\\Core\\User\\Group\\GroupJoinRequest\:\:getNotificationDate\(\) should return DateTime but returns null\.$#'
