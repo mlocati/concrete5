@@ -1285,12 +1285,6 @@ parameters:
 			path: ../concrete/src/Area/Layout/Preset/Provider/ManagerServiceProvider.php
 
 		-
-			message: '#^Method Concrete\\Core\\Area\\Layout\\Preset\\UserPreset\:\:add\(\) should return Concrete\\Core\\Area\\Layout\\Preset\\Preset but returns static\(Concrete\\Core\\Area\\Layout\\Preset\\UserPreset\)\|null\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Area/Layout/Preset/UserPreset.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Area\\Layout\\Layout\:\:getPresetObject\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2771,12 +2765,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/File/Component/Chooser/Option/FolderBookmarkOption.php
-
-		-
-			message: '#^Method Concrete\\Core\\File\\Filesystem\:\:addFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\FileFolder but returns Concrete\\Core\\Tree\\Node\\Node\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/File/Filesystem.php
 
 		-
 			message: '#^Method Concrete\\Core\\File\\Filesystem\:\:getRootFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\FileFolder\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
@@ -4801,40 +4789,10 @@ parameters:
 			path: ../concrete/src/Tree/Node/Node.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeSite\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/ExpressEntrySiteResults.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:getTreeNodeStorageLocationObject\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Tree/Node/Type/File.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeFile\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/File.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeStorageLocationID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/FileFolder.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeGroup\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/Group.php
-
-		-
-			message: '#^Method Concrete\\Core\\Tree\\Node\\Type\\Group\:\:add\(\) should return Concrete\\Core\\Tree\\Node\\Type\\Group but returns Concrete\\Core\\Tree\\Node\\Node\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/Group.php
 
 		-
 			message: '#^Method Concrete\\Core\\Tree\\Node\\Type\\Group\:\:getTreeNodeByGroupID\(\) should return Concrete\\Core\\Tree\\Node\\Type\\Group\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
@@ -4847,24 +4805,6 @@ parameters:
 			identifier: return.type
 			count: 1
 			path: ../concrete/src/Tree/Node/Type/Group.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setContains\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/GroupFolder.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setSelectedGroupTypes\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/GroupFolder.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeSavedSearch\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/SearchPreset.php
 
 		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
@@ -5081,12 +5021,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/User/CsvWriter.php
-
-		-
-			message: '#^Method Concrete\\Core\\User\\Group\\FolderManager\:\:addFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\GroupFolder but returns Concrete\\Core\\Tree\\Node\\Node\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/User/Group/FolderManager.php
 
 		-
 			message: '#^Method Concrete\\Core\\User\\Group\\FolderManager\:\:getRootFolder\(\) should return Concrete\\Core\\Tree\\Node\\Type\\GroupFolder\|null but returns Concrete\\Core\\Tree\\Node\\Node\|null\.$#'
