@@ -2335,12 +2335,6 @@ parameters:
 			path: ../concrete/src/Entity/File/Version.php
 
 		-
-			message: '#^Method Concrete\\Core\\Entity\\File\\Version\:\:getFileResource\(\) should return League\\Flysystem\\File but returns League\\Flysystem\\Handler\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Entity/File/Version.php
-
-		-
 			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\Category\\FileCategory\:\:getAttributeValue\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\FileKey, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
 			identifier: argument.type
 			count: 1
