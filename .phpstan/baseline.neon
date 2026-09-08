@@ -1339,18 +1339,6 @@ parameters:
 			path: ../concrete/src/Attribute/Controller.php
 
 		-
-			message: '#^Parameter \#2 \$key of class Concrete\\Core\\Attribute\\Form\\Control\\View\\View constructor expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Attribute/Controller.php
-
-		-
-			message: '#^Parameter \#3 \$value of class Concrete\\Core\\Attribute\\Form\\Control\\View\\View constructor expects Concrete\\Core\\Entity\\Attribute\\Value\\AbstractValue\|null, Concrete\\Core\\Attribute\\AttributeValueInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Attribute/Controller.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\|Concrete\\Core\\Entity\\Attribute\\Value\\Value\\AbstractValue\:\:setValue\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1463,12 +1451,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Attribute/Key/SearchIndexer/StandardSearchIndexer.php
-
-		-
-			message: '#^Parameter \#1 \$key of method Concrete\\Core\\Attribute\\StandardValidator\:\:parseResponse\(\) expects Concrete\\Core\\Entity\\Attribute\\Key\\Key, Concrete\\Core\\Attribute\\AttributeKeyInterface given\.$#'
-			identifier: argument.type
-			count: 2
-			path: ../concrete/src/Attribute/StandardValidator.php
 
 		-
 			message: '#^Parameter \#1 \$request of method Concrete\\Core\\Controller\\AbstractController\:\:setRequest\(\) expects Concrete\\Core\\Http\\Request, Symfony\\Component\\HttpFoundation\\Request given\.$#'
