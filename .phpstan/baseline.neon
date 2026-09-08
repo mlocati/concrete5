@@ -4045,12 +4045,6 @@ parameters:
 			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
 
 		-
-			message: '#^Parameter \#1 \$var of function count expects array\|Countable, bool given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Permission/Key/EditUserPropertiesUserKey.php
-
-		-
 			message: '#^Method Concrete\\Core\\Permission\\Key\\Key\:\:validate\(\) invoked with 1 parameter, 0 required\.$#'
 			identifier: arguments.count
 			count: 1
