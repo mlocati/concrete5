@@ -681,7 +681,7 @@ class File extends Controller
     protected function getFileToBeReplaced()
     {
         if ($this->fileToBeReplaced === false) {
-            $fID = $this->request->request->get('fID');
+            $fID = $this->request->request->all()['fID'] ?? null;
             if (!$fID) {
                 $this->fileToBeReplaced = null;
             } else {
@@ -717,7 +717,7 @@ class File extends Controller
             if ($replacingFile !== null) {
                 $folder = $replacingFile->getFileFolderObject();
             } else {
-                $treeNodeID = $this->request->request->get('currentFolder');
+                $treeNodeID = $this->request->request->all()['currentFolder'] ?? null;
                 if ($treeNodeID) {
                     $treeNodeID = is_scalar($treeNodeID) ? (int)$treeNodeID : 0;
                     $folder = $treeNodeID === 0 ? null : Node::getByID($treeNodeID);
@@ -753,7 +753,7 @@ class File extends Controller
     protected function getImportOriginalPage()
     {
         if ($this->importOriginalPage === false) {
-            $ocID = $this->request->request->get('ocID');
+            $ocID = $this->request->request->all()['ocID'] ?? null;
             if (!$ocID) {
                 $this->importOriginalPage = null;
             } else {

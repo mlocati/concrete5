@@ -37,12 +37,6 @@ parameters:
 			path: ../concrete/controllers/backend/dashboard/get_image_data.php
 
 		-
-			message: '#^Call to function is_scalar\(\) with float\|int\<min, \-1\>\|int\<1, max\>\|non\-falsy\-string\|true will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 3
-			path: ../concrete/controllers/backend/file.php
-
-		-
 			message: '#^Parameter \#2 \$callback of function array_filter expects \(callable\(string\)\: bool\)\|null, ''strlen'' given\.$#'
 			identifier: argument.type
 			count: 1
@@ -151,12 +145,6 @@ parameters:
 			path: ../concrete/controllers/dialog/file/bulk/storage.php
 
 		-
-			message: '#^Call to function is_scalar\(\) with float\|int\<min, \-1\>\|int\<1, max\>\|non\-falsy\-string\|true will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 2
-			path: ../concrete/controllers/dialog/file/import.php
-
-		-
 			message: '#^Parameter \#1 \$version of method Concrete\\Core\\Attribute\\Category\\FileCategory\:\:getAttributeValues\(\) expects Concrete\\Core\\Entity\\File\\Version, Concrete\\Core\\Attribute\\ObjectInterface given\.$#'
 			identifier: argument.type
 			count: 1
@@ -167,12 +155,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/controllers/dialog/file/properties.php
-
-		-
-			message: '#^Call to function is_scalar\(\) with float\|int\<min, \-1\>\|int\<1, max\>\|non\-falsy\-string\|true will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/controllers/dialog/file/replace.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Controller\\Dialog\\File\\Bulk\\Properties\:\:setFiles\(\)\.$#'
@@ -1035,12 +1017,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method League\\Fractal\\Resource\\ResourceAbstract\:\:setCursor\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Api/Controller/Files.php
-
-		-
-			message: '#^Call to function is_scalar\(\) with float\|int\<min, \-1\>\|int\<1, max\>\|non\-falsy\-string\|true will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Api/Controller/Files.php
 
