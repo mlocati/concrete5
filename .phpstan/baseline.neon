@@ -4387,12 +4387,6 @@ parameters:
 			path: ../concrete/src/Permission/Registry/Entry/Object/Object/PageType.php
 
 		-
-			message: '#^Call to function is_object\(\) with Concrete\\Core\\Permission\\Access\\Entity\\SiteGroupEntity will always evaluate to true\.$#'
-			identifier: function.alreadyNarrowedType
-			count: 1
-			path: ../concrete/src/Permission/Registry/Multisite/Entry/Access/Entity/SiteGroupInstanceEntity.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Response\\AreaResponse\:\:canEditAreaContents\(\)\.$#'
 			identifier: method.notFound
 			count: 1
