@@ -2083,12 +2083,6 @@ parameters:
 			path: ../concrete/src/Database/Connection/Connection.php
 
 		-
-			message: '#^Method Concrete\\Core\\Database\\DatabaseManager\:\:makeConnection\(\) should return Concrete\\Core\\Database\\Connection\\Connection but returns Doctrine\\DBAL\\Connection\.$#'
-			identifier: return.type
-			count: 1
-			path: ../concrete/src/Database/DatabaseManager.php
-
-		-
 			message: '#^Call to an undefined method Doctrine\\Common\\Cache\\Cache\:\:flushAll\(\)\.$#'
 			identifier: method.notFound
 			count: 1
