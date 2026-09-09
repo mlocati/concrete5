@@ -349,24 +349,6 @@ parameters:
 			path: ../concrete/controllers/install.php
 
 		-
-			message: '#^Call to method handleTokenRequest\(\) on an unknown class OAuth2\\Server\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/controllers/oauth2.php
-
-		-
-			message: '#^Call to static method createFromGlobals\(\) on an unknown class OAuth2\\Request\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/controllers/oauth2.php
-
-		-
-			message: '#^Method Concrete\\Controller\\Oauth2\:\:getServer\(\) has invalid return type OAuth2\\Server\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/controllers/oauth2.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\PageList\:\:filterByExcludeNav\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -839,72 +821,6 @@ parameters:
 			identifier: booleanAnd.rightAlwaysTrue
 			count: 1
 			path: ../concrete/src/Announcement/AnnouncementService.php
-
-		-
-			message: '#^Call to method getDescriptionConfig\(\) on an unknown class Concrete\\Core\\Api\\APIFactory\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Call to method setGrantType\(\) on an unknown class Frankkessler\\Guzzle\\Oauth2\\Oauth2Client\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Call to method setRefreshTokenGrantType\(\) on an unknown class Frankkessler\\Guzzle\\Oauth2\\Oauth2Client\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Instantiated class Concrete\\Core\\Api\\APIClient not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Instantiated class Frankkessler\\Guzzle\\Oauth2\\GrantType\\ClientCredentials not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Instantiated class Frankkessler\\Guzzle\\Oauth2\\GrantType\\RefreshToken not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Instantiated class Frankkessler\\Guzzle\\Oauth2\\Oauth2Client not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Instantiated class GuzzleHttp\\Command\\Guzzle\\Description not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Parameter \$factory of method Concrete\\Core\\Api\\Api\:\:__construct\(\) has invalid type Concrete\\Core\\Api\\APIFactory\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Property Concrete\\Core\\Api\\Api\:\:\$client \(GuzzleHttp\\ClientInterface\|null\) does not accept Frankkessler\\Guzzle\\Oauth2\\Oauth2Client\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: ../concrete/src/Api/Api.php
-
-		-
-			message: '#^Property Concrete\\Core\\Api\\Api\:\:\$factory has unknown class Concrete\\Core\\Api\\APIFactory as its type\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Api/Api.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Block\\BlockController\:\:getOriginalBlockID\(\)\.$#'
@@ -2767,42 +2683,6 @@ parameters:
 			path: ../concrete/src/Http/FlysystemFileResponse.php
 
 		-
-			message: '#^Access to property \$request on an unknown class Concrete\\Core\\Authentication\\OAuth2\\Request\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Http/Middleware/APIAuthenticatorMiddleware.php
-
-		-
-			message: '#^Call to method getHttpHeaders\(\) on an unknown class OAuth2\\Response\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Http/Middleware/APIAuthenticatorMiddleware.php
-
-		-
-			message: '#^Call to method getParameters\(\) on an unknown class OAuth2\\Response\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Http/Middleware/APIAuthenticatorMiddleware.php
-
-		-
-			message: '#^Call to method getStatusCode\(\) on an unknown class OAuth2\\Response\.$#'
-			identifier: class.notFound
-			count: 2
-			path: ../concrete/src/Http/Middleware/APIAuthenticatorMiddleware.php
-
-		-
-			message: '#^Instantiated class Concrete\\Core\\Authentication\\OAuth2\\Request not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Http/Middleware/APIAuthenticatorMiddleware.php
-
-		-
-			message: '#^Instantiated class OAuth2\\Response not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: ../concrete/src/Http/Middleware/APIAuthenticatorMiddleware.php
-
-		-
 			message: '#^Cannot call method next\(\) on callable\.$#'
 			identifier: method.nonObject
 			count: 1
@@ -4331,6 +4211,12 @@ parameters:
 			identifier: method.notFound
 			count: 2
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20220516191423.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between Concrete\\Core\\Permission\\Access\\Entity\\Entity and null will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: ../concrete/src/Updater/Migrations/Migrations/Version20260908000000.php
 
 		-
 			message: '#^Loose comparison using \=\= between null and ''index\.php'' will always evaluate to false\.$#'
