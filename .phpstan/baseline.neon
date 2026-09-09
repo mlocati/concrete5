@@ -145,12 +145,6 @@ parameters:
 			path: ../concrete/controllers/dialog/file/upload_complete.php
 
 		-
-			message: '#^Parameter \#2 \$userID of class Concrete\\Core\\Page\\Command\\DeletePageCommand constructor expects int\|null, string given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/dialog/page/bulk/delete.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Controller\\AbstractController\:\:on_start\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
 			count: 1
@@ -729,12 +723,6 @@ parameters:
 		-
 			message: '#^Access to an undefined property Concrete\\Core\\Authentication\\AuthenticationTypeController\:\:\$apiMethods\.$#'
 			identifier: property.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/login.php
-
-		-
-			message: '#^Parameter \#1 \$uID of static method Concrete\\Core\\Support\\Facade\\UserInfo\:\:getByID\(\) expects int, string given\.$#'
-			identifier: argument.type
 			count: 1
 			path: ../concrete/controllers/single_page/login.php
 
@@ -1591,12 +1579,6 @@ parameters:
 			path: ../concrete/src/Command/Task/Runner/ProcessTaskRunnerHandler.php
 
 		-
-			message: '#^Parameter \#1 \$uID of method Concrete\\Core\\User\\UserInfoRepository\:\:getByID\(\) expects int, string given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Command/Task/TaskService.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Config\\ConfigStore\:\:rowToConfigValue\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -2367,12 +2349,6 @@ parameters:
 		-
 			message: '#^Anonymous function never returns null so it can be removed from the return type\.$#'
 			identifier: return.unusedType
-			count: 1
-			path: ../concrete/src/Filesystem/Twig/CoreExtension.php
-
-		-
-			message: '#^Parameter \#1 \$uID of method Concrete\\Core\\User\\UserInfoRepository\:\:getByID\(\) expects int, string given\.$#'
-			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Filesystem/Twig/CoreExtension.php
 
