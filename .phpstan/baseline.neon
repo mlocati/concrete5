@@ -475,12 +475,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/blocks/stacks.php
 
 		-
-			message: '#^Parameter \#1 \$templateIDs of method Concrete\\Core\\Board\\Command\\EnableCustomSlotTemplatesCommand\:\:setTemplateIDs\(\) expects array, float\|int\<min, \-1\>\|int\<1, max\>\|string\|true given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/boards/appearance.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\DataSource\\ConfiguredDataSource\:\:getId\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1517,12 +1511,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Calendar/Event/EventOccurrenceFactory.php
-
-		-
-			message: '#^Parameter \#1 \$repeat_period_week_days of method Concrete\\Core\\Foundation\\Repetition\\AbstractRepetition\:\:setRepeatPeriodWeekDays\(\) expects array\<int\>, bool\|float\|int\|string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Calendar/Event/EventRepetitionService.php
 
 		-
 			message: '#^Method Concrete\\Core\\Captcha\\SecurimageController\:\:displayCaptchaPicture\(\) should return Symfony\\Component\\HttpFoundation\\Response but return statement is missing\.$#'
@@ -3419,12 +3407,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/Permission/Assignment/StackAssignment.php
-
-		-
-			message: '#^Parameter \#1 \$repeat_period_week_days of method Concrete\\Core\\Foundation\\Repetition\\AbstractRepetition\:\:setRepeatPeriodWeekDays\(\) expects array\<int\>, bool\|float\|int\|string\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Permission/Duration.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getBlockTypesAllowedArray\(\)\.$#'
