@@ -175,12 +175,6 @@ parameters:
 			path: ../concrete/controllers/dialog/page/bulk/properties.php
 
 		-
-			message: '#^Parameter \#1 \$object of method Concrete\\Core\\Permission\\Key\\Key\:\:setPermissionObject\(\) expects Concrete\\Core\\Permission\\ObjectInterface\|null, Concrete\\Core\\Attribute\\ObjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/dialog/page/bulk/properties.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Checker\:\:canEditFileSetPermissions\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3393,12 +3387,6 @@ parameters:
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Page\\Page\:\:setMultilingualSection\(\)\.$#'
 			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Stack/Stack.php
-
-		-
-			message: '#^Parameter \#1 \$object of class Concrete\\Core\\Permission\\Checker constructor expects Concrete\\Core\\Permission\\ObjectInterface\|false\|null, Concrete\\Core\\Page\\Collection\\Collection given\.$#'
-			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Page/Stack/Stack.php
 
