@@ -961,12 +961,6 @@ parameters:
 			path: ../concrete/src/Application/Application.php
 
 		-
-			message: '#^Parameter \#1 \$r of method Concrete\\Core\\Routing\\RedirectResponse\:\:setRequest\(\) expects Concrete\\Core\\Http\\Request, Symfony\\Component\\HttpFoundation\\Request given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Application/Application.php
-
-		-
 			message: '#^Result of method Illuminate\\Container\\Container\:\:singleton\(\) \(void\) is used\.$#'
 			identifier: method.void
 			count: 1
@@ -2707,56 +2701,8 @@ parameters:
 			path: ../concrete/src/Http/ResponseAssetGroup.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionPath\(\)\.$#'
-			identifier: method.notFound
-			count: 4
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionPointerExternalLink\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getPageController\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:isActive\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:setController\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
 			message: '#^If condition is always false\.$#'
 			identifier: if.alwaysFalse
-			count: 1
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
-			message: '#^Parameter \#1 \$c of class Concrete\\Core\\Page\\Event constructor expects Concrete\\Core\\Page\\Page, Concrete\\Core\\Page\\Collection\\Collection given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
-			message: '#^Parameter \#1 \$c of method Concrete\\Core\\Http\\RequestBase\:\:setCurrentPage\(\) expects Concrete\\Core\\Page\\Page, Concrete\\Core\\Page\\Collection\\Collection given\.$#'
-			identifier: argument.type
-			count: 2
-			path: ../concrete/src/Http/ResponseFactory.php
-
-		-
-			message: '#^Parameter \#1 \$object of class Concrete\\Core\\Permission\\Checker constructor expects Concrete\\Core\\Permission\\ObjectInterface\|false\|null, Concrete\\Core\\Page\\Collection\\Collection given\.$#'
-			identifier: argument.type
 			count: 1
 			path: ../concrete/src/Http/ResponseFactory.php
 
