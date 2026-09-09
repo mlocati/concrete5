@@ -9,6 +9,7 @@ use Concrete\Core\Command\Task\Runner\Response\ProcessStartedResponse;
 use Concrete\Core\Command\Task\Runner\Response\ResponseInterface;
 use Concrete\Core\Command\Task\Stamp\OutputStamp;
 use Concrete\Core\Command\Task\TaskService;
+use Concrete\Core\Entity\Automation\Task;
 
 defined('C5_EXECUTE') or die("Access Denied.");
 
@@ -36,8 +37,12 @@ class ProcessTaskRunnerHandler implements HandlerInterface
      */
     public function boot(TaskRunnerInterface $runner)
     {
-        $this->taskService->start($runner->getTask());
-        $process = $this->processFactory->createTaskProcess($runner->getTask(), $runner->getInput());
+        $task = $runner->getTask();
+        if (!$task instanceof Task) {
+            throw new \InvalidArgumentException(t('The task must be an instance of %s.', Task::class));
+        }
+        $this->taskService->start($task);
+        $process = $this->processFactory->createTaskProcess($task, $runner->getInput());
         $runner->setProcess($process);
     }
 
