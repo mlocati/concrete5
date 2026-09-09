@@ -217,18 +217,6 @@ parameters:
 			path: ../concrete/controllers/dialog/site_type/attributes.php
 
 		-
-			message: '#^Parameter \#1 \$folder of method Concrete\\Core\\File\\Filesystem\:\:addFolder\(\) expects Concrete\\Core\\Tree\\Node\\Type\\FileFolder, Concrete\\Core\\Tree\\Node\\Node\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/dialog/tree/node/file_folder/add.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:setTreeNodeStorageLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/tree/node/file_folder/edit.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -701,12 +689,6 @@ parameters:
 			identifier: booleanAnd.rightAlwaysFalse
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/users/add.php
-
-		-
-			message: '#^Parameter \#3 \$parentFolder of static method Concrete\\Core\\User\\Group\\Group\:\:addBeneathFolder\(\) expects Concrete\\Core\\Tree\\Node\\Type\\GroupFolder\|false\|null, Concrete\\Core\\Tree\\Node\\Node\|null given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/add_group.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setCurrentFolder\(\)\.$#'
