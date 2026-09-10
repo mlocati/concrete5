@@ -172,6 +172,9 @@ class StandardSearchIndexer implements SearchIndexerInterface
         }
         $columns = $this->connection->getSchemaManager()->listTableColumns($category->getIndexedSearchTable());
 
+        if (!method_exists($value, 'getSearchIndexValue')) {
+            throw new \InvalidArgumentException(t('The attribute value must have the %s method.', 'getSearchIndexValue()'));
+        }
         $attributeValue = $value->getSearchIndexValue();
         $details = $category->getSearchIndexFieldDefinition();
         $primary = $details['primary'][0];

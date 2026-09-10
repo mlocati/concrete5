@@ -193,7 +193,8 @@ abstract class AbstractValue implements AttributeValueInterface
     /**
      * Returns the attribute in the context of search indexing (for search index
      * database tables)
-     * @return $this
+     *
+     * @return mixed the value returned by the getSearchIndexValue() method of the attribute type controller (an array for multi-column indexes), or this instance if the controller doesn't implement it
      */
     public function getSearchIndexValue()
     {

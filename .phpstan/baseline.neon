@@ -763,12 +763,6 @@ parameters:
 			path: ../concrete/src/Area/SubArea.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getGenericValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/AbstractCategory.php
-
-		-
 			message: '#^Left side of && is always true\.$#'
 			identifier: booleanAnd.leftAlwaysTrue
 			count: 1
@@ -793,18 +787,6 @@ parameters:
 			path: ../concrete/src/Attribute/Command/RebuildIndexCommandHandler.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getAttributeValueID\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Attribute/Controller.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getGenericValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Controller.php
-
-		-
 			message: '#^Method Concrete\\Core\\Controller\\AbstractController\:\:on_before_render\(\) invoked with 1 parameter, 0 required\.$#'
 			identifier: arguments.count
 			count: 1
@@ -815,12 +797,6 @@ parameters:
 			identifier: arguments.count
 			count: 1
 			path: ../concrete/src/Attribute/Controller.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\|Concrete\\Core\\Entity\\Attribute\\Value\\Value\\AbstractValue\:\:setValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/DefaultController.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\ItemList\:\:filterByAttribute\(\)\.$#'
@@ -887,12 +863,6 @@ parameters:
 			identifier: booleanAnd.rightAlwaysTrue
 			count: 1
 			path: ../concrete/src/Attribute/Key/Key.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getSearchIndexValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Key/SearchIndexer/StandardSearchIndexer.php
 
 		-
 			message: '#^If condition is always true\.$#'
@@ -1411,12 +1381,6 @@ parameters:
 			path: ../concrete/src/Entity/Express/Control/AttributeKeyControl.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:setGenericValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/Express/Entry.php
-
-		-
 			message: '#^Method Concrete\\Core\\Entity\\File\\File\:\:setAttribute\(\) should return Concrete\\Core\\Attribute\\AttributeValueInterface but return statement is missing\.$#'
 			identifier: return.missing
 			count: 1
@@ -1469,12 +1433,6 @@ parameters:
 			identifier: isset.offset
 			count: 1
 			path: ../concrete/src/Entity/OAuth/Client.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:setGenericValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/Site/Skeleton.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Error\\ErrorList\\Error\\ErrorInterface\:\:getField\(\)\.$#'
@@ -1535,12 +1493,6 @@ parameters:
 			identifier: parameterByRef.type
 			count: 1
 			path: ../concrete/src/Express/Entity/Cloner.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\AttributeValueInterface\:\:getPlainTextValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Entry/Formatter/LabelFormatter.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Entry\\Association\:\:getSelectedEntry\(\)\.$#'

@@ -421,8 +421,9 @@ abstract class AbstractCategory implements CategoryInterface, StandardSearchInde
      */
     public function deleteValue(AttributeValueInterface $attributeValue)
     {
-        // @var \Concrete\Core\Entity\Attribute\Value\AbstractValue $attributeValue
-
+        if (!method_exists($attributeValue, 'getGenericValue')) {
+            throw new \InvalidArgumentException(t('The attribute value must have the %s method.', 'getGenericValue()'));
+        }
         $genericValue = $attributeValue->getGenericValue();
         if ($genericValue !== null) {
             $genericValues = $this->getAttributeValueRepository()->count(['generic_value' => $genericValue]);
