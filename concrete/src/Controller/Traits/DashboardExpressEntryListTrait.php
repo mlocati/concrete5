@@ -133,7 +133,7 @@ trait DashboardExpressEntryListTrait
         $queryModifier->addModifier(new ItemsPerPageRequestModifier($provider, $this->request, Request::METHOD_GET));
         $query = $queryModifier->process($query);
 
-        /** @var \Concrete\Core\Express\Entry\Search\Result\Result $result the Express search provider creates Express search results */
+        /** @var \Concrete\Core\Express\Entry\Search\Result\Result $result */
         $result = $resultFactory->createFromQuery($provider, $query);
 
         return $result;
@@ -157,11 +157,11 @@ trait DashboardExpressEntryListTrait
         $query = $result->getQuery();
         $headerMenu = $this->getHeaderMenu();
         $headerSearch = $this->getHeaderSearch();
-        /** @var \Concrete\Controller\Element\Express\Search\Menu $headerMenuController the controller of the 'express/search/menu' element */
+        /** @var \Concrete\Controller\Element\Express\Search\Menu $headerMenuController */
         $headerMenuController = $headerMenu->getElementController();
         $headerMenuController->setQuery($query);
         $headerMenuController->setEntity($entity);
-        /** @var \Concrete\Controller\Element\Express\Search\Search $headerSearchController the controller of the 'express/search/search' element */
+        /** @var \Concrete\Controller\Element\Express\Search\Search $headerSearchController */
         $headerSearchController = $headerSearch->getElementController();
         $headerSearchController->setQuery($query);
         $headerSearchController->setEntity($entity);

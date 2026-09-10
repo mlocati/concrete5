@@ -48,7 +48,7 @@ class EditPagePropertiesPageKey extends PageKey
 
         $accessEntities = $u->getUserAccessEntityObjects();
         $accessEntities = $pae->validateAndFilterAccessEntities($accessEntities);
-        /** @var \Concrete\Core\Permission\Access\ListItem\EditPagePropertiesPageListItem[] $list the list items of the 'edit_page_properties' key */
+        /** @var \Concrete\Core\Permission\Access\ListItem\EditPagePropertiesPageListItem[] $list */
         $list = $pae->getAccessListItems(PageKey::ACCESS_TYPE_ALL, $accessEntities);
         $list = PermissionDuration::filterByActive($list);
         $properties = array();

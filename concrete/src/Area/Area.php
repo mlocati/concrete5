@@ -954,7 +954,7 @@ class Area extends ConcreteObject implements \Concrete\Core\Permission\ObjectInt
         );
 
         // copy permissions from the page to the area
-        /** @var \Concrete\Core\Permission\Key\AreaKey[] $permissions the keys of the 'area' category are AreaKey instances */
+        /** @var \Concrete\Core\Permission\Key\AreaKey[] $permissions */
         $permissions = PermissionKey::getList('area');
         foreach ($permissions as $pk) {
             $pk->setPermissionObject($this);

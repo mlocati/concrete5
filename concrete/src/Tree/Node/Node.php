@@ -383,7 +383,7 @@ abstract class Node extends ConcreteObject implements \Concrete\Core\Permission\
 
             $db->executeQuery('delete from TreeNodePermissionAssignments where treeNodeID = ?', [$this->treeNodeID]);
             // copy permissions
-            /** @var \Concrete\Core\Permission\Key\TreeNodeKey[] $permissions the keys of the tree node categories are TreeNodeKey instances */
+            /** @var \Concrete\Core\Permission\Key\TreeNodeKey[] $permissions */
             $permissions = Key::getList($this->getPermissionObjectKeyCategoryHandle());
             foreach ($permissions as $pk) {
                 $pk->setPermissionObject($this);

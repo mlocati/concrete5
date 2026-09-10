@@ -81,10 +81,10 @@ class Search extends DashboardPageController
     {
         $headerMenu = $this->getHeaderMenu();
         $headerSearch = $this->getHeaderSearch();
-        /** @var \Concrete\Controller\Element\Pages\Search\Menu $headerMenuController the controller of the 'pages/search/menu' element */
+        /** @var \Concrete\Controller\Element\Pages\Search\Menu $headerMenuController */
         $headerMenuController = $headerMenu->getElementController();
         $headerMenuController->setQuery($result->getQuery());
-        /** @var \Concrete\Controller\Element\Pages\Search\Search $headerSearchController the controller of the 'pages/search/search' element */
+        /** @var \Concrete\Controller\Element\Pages\Search\Search $headerSearchController */
         $headerSearchController = $headerSearch->getElementController();
         $headerSearchController->setQuery($result->getQuery());
 
@@ -134,7 +134,7 @@ class Search extends DashboardPageController
 
         $this->renderSearchResult($result);
 
-        /** @var \Concrete\Controller\Element\Pages\Search\Search $headerSearchController the controller of the 'pages/search/search' element */
+        /** @var \Concrete\Controller\Element\Pages\Search\Search $headerSearchController */
         $headerSearchController = $this->headerSearch->getElementController();
         $headerSearchController->setQuery(null);
     }

@@ -88,10 +88,10 @@ class Logs extends DashboardPageController
     {
         $headerMenu = $this->getHeaderMenu();
         $headerSearch = $this->getHeaderSearch();
-        /** @var \Concrete\Controller\Element\Dashboard\Reports\Logs\Search\Menu $headerMenuController the controller of the 'dashboard/reports/logs/search/menu' element */
+        /** @var \Concrete\Controller\Element\Dashboard\Reports\Logs\Search\Menu $headerMenuController */
         $headerMenuController = $headerMenu->getElementController();
         $headerMenuController->setQuery($result->getQuery());
-        /** @var \Concrete\Controller\Element\Dashboard\Reports\Logs\Search\Search $headerSearchController the controller of the 'dashboard/reports/logs/search/search' element */
+        /** @var \Concrete\Controller\Element\Dashboard\Reports\Logs\Search\Search $headerSearchController */
         $headerSearchController = $headerSearch->getElementController();
         $headerSearchController->setQuery($result->getQuery());
 
@@ -138,7 +138,7 @@ class Logs extends DashboardPageController
         ]);
         $result = $this->createSearchResult($query);
         $this->renderSearchResult($result);
-        /** @var \Concrete\Controller\Element\Dashboard\Reports\Logs\Search\Search $headerSearchController the controller of the 'dashboard/reports/logs/search/search' element */
+        /** @var \Concrete\Controller\Element\Dashboard\Reports\Logs\Search\Search $headerSearchController */
         $headerSearchController = $this->headerSearch->getElementController();
         $headerSearchController->setQuery(null);
     }

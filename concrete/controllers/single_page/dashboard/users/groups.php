@@ -90,7 +90,7 @@ class Groups extends DashboardPageController
         $this->renderSearchResult($result);
         $this->setCurrentFolder($rootFolder);
 
-        /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController the controller of the 'groups/search/search' element */
+        /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController */
         $headerSearchController = $this->headerSearch->getElementController();
         $headerSearchController->setQuery(null);
     }
@@ -125,7 +125,7 @@ class Groups extends DashboardPageController
 
                     $factory = $this->createBreadcrumbFactory();
                     $this->setBreadcrumb($factory->getBreadcrumb($this->getPageObject(), $folder));
-                    /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController the controller of the 'groups/search/search' element */
+                    /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController */
                     $headerSearchController = $this->headerSearch->getElementController();
                     $headerSearchController->setHeaderSearchAction(
                         $this->app->make('url')->to('/dashboard/users/groups', 'folder', $folder->getTreeNodeID())
@@ -148,7 +148,7 @@ class Groups extends DashboardPageController
 
                 $factory = $this->createBreadcrumbFactory();
                 $this->setBreadcrumb($factory->getBreadcrumb($this->getPageObject(), $folder));
-                /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController the controller of the 'groups/search/search' element */
+                /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController */
                 $headerSearchController = $this->headerSearch->getElementController();
                 $headerSearchController->setHeaderSearchAction(
                     $this->app->make('url')->to('/dashboard/users/groups', 'folder', $folder->getTreeNodeID())
@@ -324,10 +324,10 @@ class Groups extends DashboardPageController
     {
         $headerMenu = $this->getHeaderMenu();
         $headerSearch = $this->getHeaderSearch();
-        /** @var \Concrete\Controller\Element\Groups\Search\Menu $headerMenuController the controller of the 'groups/search/menu' element */
+        /** @var \Concrete\Controller\Element\Groups\Search\Menu $headerMenuController */
         $headerMenuController = $headerMenu->getElementController();
         $headerMenuController->setQuery($result->getQuery());
-        /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController the controller of the 'groups/search/search' element */
+        /** @var \Concrete\Controller\Element\Groups\Search\Search $headerSearchController */
         $headerSearchController = $headerSearch->getElementController();
         $headerSearchController->setQuery($result->getQuery());
 
@@ -393,7 +393,7 @@ class Groups extends DashboardPageController
     protected function setCurrentFolder(Node $folder)
     {
         $this->set('folderID', $folder->getTreeNodeID());
-        /** @var \Concrete\Controller\Element\Groups\Search\Menu $headerMenuController the controller of the 'groups/search/menu' element */
+        /** @var \Concrete\Controller\Element\Groups\Search\Menu $headerMenuController */
         $headerMenuController = $this->headerMenu->getElementController();
         $headerMenuController->setCurrentFolder($folder);
     }

@@ -97,10 +97,10 @@ class Search extends DashboardPageController
     {
         $headerMenu = $this->getHeaderMenu();
         $headerSearch = $this->getHeaderSearch();
-        /** @var \Concrete\Controller\Element\Files\Search\Menu $headerMenuController the controller of the 'files/search/menu' element */
+        /** @var \Concrete\Controller\Element\Files\Search\Menu $headerMenuController */
         $headerMenuController = $headerMenu->getElementController();
         $headerMenuController->setQuery($result->getQuery());
-        /** @var \Concrete\Controller\Element\Files\Search\Search $headerSearchController the controller of the 'files/search/search' element */
+        /** @var \Concrete\Controller\Element\Files\Search\Search $headerSearchController */
         $headerSearchController = $headerSearch->getElementController();
         $headerSearchController->setQuery($result->getQuery());
 
@@ -167,7 +167,7 @@ class Search extends DashboardPageController
     protected function setCurrentFolder(FileFolder $folder)
     {
         $this->set('folderID', $folder->getTreeNodeID());
-        /** @var \Concrete\Controller\Element\Files\Search\Menu $headerMenuController the controller of the 'files/search/menu' element */
+        /** @var \Concrete\Controller\Element\Files\Search\Menu $headerMenuController */
         $headerMenuController = $this->headerMenu->getElementController();
         $headerMenuController->setCurrentFolder($folder);
     }
@@ -198,7 +198,7 @@ class Search extends DashboardPageController
         // special logic - if we're just viewing the file manager with no query let's get rid of the default
         // query we have in our query factory, because we don't want to see those empty fields when we open the
         // advanced search dialog.
-        /** @var \Concrete\Controller\Element\Files\Search\Search $headerSearchController the controller of the 'files/search/search' element */
+        /** @var \Concrete\Controller\Element\Files\Search\Search $headerSearchController */
         $headerSearchController = $this->headerSearch->getElementController();
         $headerSearchController->setQuery(null);
 
@@ -261,7 +261,7 @@ class Search extends DashboardPageController
 
                 $factory = $this->createBreadcrumbFactory();
                 $this->setBreadcrumb($factory->getBreadcrumb($this->getPageObject(), $folder));
-                /** @var \Concrete\Controller\Element\Files\Search\Search $headerSearchController the controller of the 'files/search/search' element */
+                /** @var \Concrete\Controller\Element\Files\Search\Search $headerSearchController */
                 $headerSearchController = $this->headerSearch->getElementController();
                 $headerSearchController->setHeaderSearchAction(
                     $this->app->make('url')->to('/dashboard/files/search', 'folder', $folder->getTreeNodeID())

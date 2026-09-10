@@ -31,7 +31,7 @@ class StandardNotifier implements NotifierInterface
                 /**
                  * @var Access $access
                  */
-                /** @var \Concrete\Core\Permission\Access\ListItem\NotifyInNotificationCenterNotificationListItem[] $items the list items of the 'notify_in_notification_center' key */
+                /** @var \Concrete\Core\Permission\Access\ListItem\NotifyInNotificationCenterNotificationListItem[] $items */
                 $items = $access->getAccessListItems(Key::ACCESS_TYPE_INCLUDE);
                 foreach($items as $item) {
                     if ($item->getSubscriptionsAllowedPermission() == 'A' ||
@@ -45,7 +45,7 @@ class StandardNotifier implements NotifierInterface
                 }
 
                 // Now we loop through the array and remove
-                /** @var \Concrete\Core\Permission\Access\ListItem\NotifyInNotificationCenterNotificationListItem[] $items the list items of the 'notify_in_notification_center' key */
+                /** @var \Concrete\Core\Permission\Access\ListItem\NotifyInNotificationCenterNotificationListItem[] $items */
                 $items = $access->getAccessListItems(Key::ACCESS_TYPE_EXCLUDE);
                 $usersToRemove = array();
                 foreach($subject->getUsersToExcludeFromNotification() as $user) {
