@@ -1207,48 +1207,6 @@ parameters:
 			path: ../concrete/src/Command/Task/Controller/GenerateThumbnailsController.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Command\\Task\\Runner\\TaskRunnerInterface\:\:getCommand\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Command/Task/Runner/CommandTaskRunnerHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Command\\Task\\Runner\\TaskRunnerInterface\:\:getCompletionMessage\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Command/Task/Runner/CommandTaskRunnerHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Command\\Task\\Runner\\TaskRunnerInterface\:\:getTask\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Command/Task/Runner/CommandTaskRunnerHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Command\\Task\\Runner\\Context\\ContextInterface\:\:getMessageBus\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Command/Task/Runner/ProcessTaskRunnerHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Command\\Task\\Runner\\TaskRunnerInterface\:\:getMessage\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Command/Task/Runner/ProcessTaskRunnerHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Command\\Task\\Runner\\TaskRunnerInterface\:\:getProcess\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Command/Task/Runner/ProcessTaskRunnerHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Command\\Task\\Runner\\TaskRunnerInterface\:\:getProcessStartedMessage\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Command/Task/Runner/ProcessTaskRunnerHandler.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Config\\ConfigStore\:\:rowToConfigValue\(\)\.$#'
 			identifier: method.notFound
 			count: 2
