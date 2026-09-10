@@ -157,12 +157,6 @@ parameters:
 			path: ../concrete/controllers/dialog/page/bulk/properties.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/page/bulk/properties.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Checker\:\:canEditFileSetPermissions\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -211,32 +205,14 @@ parameters:
 			path: ../concrete/controllers/dialog/site_type/attributes.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/type/attributes.php
-
-		-
 			message: '#^Unreachable statement \- code above always terminates\.$#'
 			identifier: deadCode.unreachable
 			count: 1
 			path: ../concrete/controllers/dialog/type/update_from_type.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/user/attributes.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Controller\\AbstractController\:\:on_start\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
-			count: 1
-			path: ../concrete/controllers/dialog/user/bulk/properties.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/dialog/user/bulk/properties.php
 
@@ -263,12 +239,6 @@ parameters:
 			identifier: function.notFound
 			count: 1
 			path: ../concrete/controllers/frontend/conversations/add_file.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/frontend/conversations/add_message.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Job\\JobQueue\:\:count\(\)\.$#'
@@ -313,28 +283,10 @@ parameters:
 			path: ../concrete/controllers/panel/dashboard/load_menu.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/attributes.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/location.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\Entity\\Entity\:\:getGroupObject\(\)\.$#'
 			identifier: method.notFound
 			count: 2
 			path: ../concrete/controllers/panel/detail/page/permissions.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/panel/detail/page/seo.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Customizations\\ManagerInterface\:\:getCustomStyleObjectForPage\(\)\.$#'
@@ -353,12 +305,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/panel/detail/theme/preview_skin.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/panel/page/attributes.php
 
 		-
 			message: '#^If condition is always true\.$#'
@@ -643,12 +589,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/seo/urls.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/users/add.php
-
-		-
 			message: '#^Right side of && is always false\.$#'
 			identifier: booleanAnd.rightAlwaysFalse
 			count: 1
@@ -674,12 +614,6 @@ parameters:
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/search.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/users/search.php
@@ -767,12 +701,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Api/Controller/Pages.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getMyAssignment\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Api/Controller/Users.php
 
 		-
 			message: '#^Call to an undefined method League\\Fractal\\Resource\\ResourceAbstract\:\:setCursor\(\)\.$#'
