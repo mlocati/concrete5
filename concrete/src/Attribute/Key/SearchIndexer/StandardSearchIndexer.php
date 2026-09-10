@@ -162,9 +162,14 @@ class StandardSearchIndexer implements SearchIndexerInterface
      * {@inheritdoc}
      *
      * @see \Concrete\Core\Attribute\Key\SearchIndexer\SearchIndexerInterface::indexEntry()
+     *
+     * @throws \InvalidArgumentException if $category doesn't implement \Concrete\Core\Attribute\Category\SearchIndexer\StandardSearchIndexerInterface
      */
     public function indexEntry(CategoryInterface $category, AttributeValueInterface $value, $subject)
     {
+        if (!$category instanceof StandardSearchIndexerInterface) {
+            throw new \InvalidArgumentException(t('The attribute category must implement %s.', StandardSearchIndexerInterface::class));
+        }
         $columns = $this->connection->getSchemaManager()->listTableColumns($category->getIndexedSearchTable());
 
         $attributeValue = $value->getSearchIndexValue();
@@ -216,9 +221,14 @@ class StandardSearchIndexer implements SearchIndexerInterface
      * {@inheritdoc}
      *
      * @see \Concrete\Core\Attribute\Key\SearchIndexer\SearchIndexerInterface::clearIndexEntry()
+     *
+     * @throws \InvalidArgumentException if $category doesn't implement \Concrete\Core\Attribute\Category\SearchIndexer\StandardSearchIndexerInterface
      */
     public function clearIndexEntry(CategoryInterface $category, AttributeValueInterface $value, $subject)
     {
+        if (!$category instanceof StandardSearchIndexerInterface) {
+            throw new \InvalidArgumentException(t('The attribute category must implement %s.', StandardSearchIndexerInterface::class));
+        }
         $key = $value->getAttributeKey();
         if (!$key->isAttributeKeySearchable()) {
             return false; // if it's not searchable there won't be the right columns in the database
