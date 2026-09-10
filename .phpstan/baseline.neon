@@ -301,30 +301,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/boards/data_sources.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\Designer\\CustomElement\:\:getItems\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/boards/designer/choose_items.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\Designer\\CustomElement\:\:getItems\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/boards/designer/customize_slot.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\Designer\\CustomElement\:\:setContentObjectCollection\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/boards/designer/customize_slot.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\Designer\\CustomElement\:\:setSlotTemplate\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/boards/designer/customize_slot.php
-
-		-
 			message: '#^Loose comparison using \=\= between 0\|0\.0\|''0'' and ''0'' will always evaluate to true\.$#'
 			identifier: equal.alwaysTrue
 			count: 1
@@ -893,36 +869,6 @@ parameters:
 			identifier: property.defaultValue
 			count: 1
 			path: ../concrete/src/Board/Command/ScheduleBoardInstanceRuleCommand.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\Designer\\CustomElement\:\:getItems\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Board/Designer/Command/SetItemSelectorCustomElementItemsCommandHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\DataSource\\Configuration\\Configuration\:\:getCalendar\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Board/Instance/Item/Populator/CalendarEventPopulator.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\DataSource\\Configuration\\Configuration\:\:getQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Board/Instance/Item/Populator/CalendarEventPopulator.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Board\\DataSource\\Configuration\\Configuration\:\:getQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Board/Instance/Item/Populator/PagePopulator.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Board\\Instance\\Item\\Data\\DataInterface\:\:getOccurrenceID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Board/Instance/Slot/Content/Populator/CalendarEventPopulator.php
 
 		-
 			message: '#^Call to function array_filter\(\) on a separate line has no effect\.$#'

@@ -38,6 +38,9 @@ class CalendarEventPopulator extends AbstractPopulator
      */
     public function createContentObjects(DataInterface $data, LoggerInterface $logger, bool $enforceViewPermissions = false): array
     {
+        if (!$data instanceof CalendarEventData) {
+            throw new \InvalidArgumentException(t('The item data must be an instance of %s.', CalendarEventData::class));
+        }
         $occurrence = $this->eventOccurrenceService->getByID($data->getOccurrenceID());
         if ($occurrence) {
             if ($enforceViewPermissions) {
