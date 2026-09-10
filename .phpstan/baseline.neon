@@ -577,12 +577,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/sitemap/search.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\SetManagerInterface\:\:addSet\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/attributes/sets.php
-
-		-
 			message: '#^Instanceof between Concrete\\Core\\Entity\\Attribute\\Key\\Key and Concrete\\Core\\Entity\\Attribute\\Key\\Key will always evaluate to true\.$#'
 			identifier: instanceof.alwaysTrue
 			count: 1
@@ -1039,28 +1033,10 @@ parameters:
 			path: ../concrete/src/Attribute/Category/AbstractCategory.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\SetManagerInterface\:\:addKey\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/AbstractCategory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\SetManagerInterface\:\:addSet\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/AbstractStandardCategory.php
-
-		-
 			message: '#^Left side of && is always true\.$#'
 			identifier: booleanAnd.leftAlwaysTrue
 			count: 1
 			path: ../concrete/src/Attribute/Category/ExpressCategory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\SetManagerInterface\:\:addSet\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/LegacyCategory.php
 
 		-
 			message: '#^Method Concrete\\Core\\Attribute\\Category\\LegacyCategory\:\:addFromRequest\(\) should return Concrete\\Core\\Entity\\Attribute\\Key\\Key but return statement is missing\.$#'
