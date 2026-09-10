@@ -715,42 +715,6 @@ parameters:
 			path: ../concrete/src/Application/UserInterface/Dashboard/Navigation/Navigation.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\Menu\\Item\\ItemInterface\:\:getHandle\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Application/UserInterface/Menu/Item/Controller.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\Menu\\Item\\ItemInterface\:\:getIcon\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Application/UserInterface/Menu/Item/Controller.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\Menu\\Item\\ItemInterface\:\:getLabel\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Application/UserInterface/Menu/Item/Controller.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\Menu\\Item\\ItemInterface\:\:getLink\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Application/UserInterface/Menu/Item/Controller.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\Menu\\Item\\ItemInterface\:\:getLinkAttributes\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Application/UserInterface/Menu/Item/Controller.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\Menu\\Item\\ItemInterface\:\:getPackageHandle\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Application/UserInterface/Menu/Item/Controller.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\OptionsForm\\OptionsFormControllerInterface\:\:render\(\)\.$#'
 			identifier: method.notFound
 			count: 1
