@@ -1141,30 +1141,6 @@ parameters:
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportPageStructureRoutine.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/Block.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getPageTemplateID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/Block.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getPageTypeHandle\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/Block.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:isBlockAliasedFromMasterCollection\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/Block.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromPageOrAreaToBlock\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1211,12 +1187,6 @@ parameters:
 			identifier: trait.unused
 			count: 1
 			path: ../concrete/src/Block/Traits/HasSubBlocksTrait.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/View/BlockViewTemplate.php
 
 		-
 			message: '#^Property Concrete\\Core\\Board\\Command\\ScheduleBoardInstanceRuleCommand\:\:\$timezone \(string\) does not accept default value of type int\.$#'
@@ -1619,12 +1589,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Entity/Automation/TaskSet.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/Block/BlockType/BlockType.php
 
 		-
 			message: '#^PHPDoc tag @var does not specify variable name\.$#'
@@ -2096,18 +2060,6 @@ parameters:
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\MessageInterface\:\:getContent\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Finding/Message/Formatter/Search/BlockFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionLink\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Finding/Message/Formatter/Search/BlockFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionPath\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Health/Report/Finding/Message/Formatter/Search/BlockFormatter.php
@@ -3005,12 +2957,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Permission/Response/AreaResponse.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:isMasterCollection\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Response/BlockResponse.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Response\\BlockResponse\:\:canEditBlock\(\)\.$#'

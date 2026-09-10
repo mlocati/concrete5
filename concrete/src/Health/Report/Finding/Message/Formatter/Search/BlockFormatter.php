@@ -22,8 +22,8 @@ class BlockFormatter implements FormatterInterface, MessageHasDetailsInterface, 
     {
         $block = Block::getByID($findingMessage->getBlockID());
         if ($block) {
-            $page = $block->getBlockCollectionObject();
-            if ($page) {
+            $page = $block->getBlockPageObject();
+            if ($page !== null) {
                 $message = t(
                     '%s block type (ID %s) on page %s (ID %s)',
                     $block->getBlockTypeName(),
@@ -69,8 +69,8 @@ class BlockFormatter implements FormatterInterface, MessageHasDetailsInterface, 
     {
         $block = Block::getByID($message->getBlockID());
         if ($block) {
-            $page = $block->getBlockCollectionObject();
-            if ($page) {
+            $page = $block->getBlockPageObject();
+            if ($page !== null) {
                 return new Location($page->getCollectionLink(), t('View Page'));
             }
         }
