@@ -1783,12 +1783,6 @@ parameters:
 			path: ../concrete/src/Database/EntityManager/Provider/YamlProvider.php
 
 		-
-			message: '#^Parameter \#1 \$config of class Concrete\\Core\\Database\\EntityManager\\Driver\\ApplicationDriver constructor expects Concrete\\Core\\Config\\Repository\\Repository, Illuminate\\Config\\Repository given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Database/EntityManagerConfigFactory.php
-
-		-
 			message: '#^Property Concrete\\Core\\Database\\ForeignKeyFixer\:\:\$connection is never read, only written\.$#'
 			identifier: property.onlyWritten
 			count: 1
