@@ -169,24 +169,6 @@ parameters:
 			path: ../concrete/controllers/dialog/search/advanced_search.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Controller\\Dialog\\Search\\Preset\\Delete\:\:getSavedSearchEntity\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/controllers/dialog/search/preset/delete.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Controller\\Dialog\\Search\\Preset\\Edit\:\:getSavedSearchBaseURL\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/search/preset/edit.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Controller\\Dialog\\Search\\Preset\\Edit\:\:getSavedSearchEntity\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/controllers/dialog/search/preset/edit.php
-
-		-
 			message: '#^Strict comparison using \!\=\= between Concrete\\Core\\Entity\\Site\\Skeleton and null will always evaluate to true\.$#'
 			identifier: notIdentical.alwaysTrue
 			count: 1
