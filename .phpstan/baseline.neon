@@ -2395,18 +2395,6 @@ parameters:
 			path: ../concrete/src/Navigation/Navigation.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getSubscriptionsAllowedArray\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Notification/Notifier/StandardNotifier.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getSubscriptionsAllowedPermission\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Notification/Notifier/StandardNotifier.php
-
-		-
 			message: '#^Method Concrete\\Core\\Notification\\Type\\CoreUpdateType\:\:createNotification\(\) should return Concrete\\Core\\Entity\\Notification\\Notification but return statement is missing\.$#'
 			identifier: return.missing
 			count: 1
@@ -2755,12 +2743,6 @@ parameters:
 			path: ../concrete/src/Permission/Access/NotifyInNotificationCenterNotificationAccess.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\NotifyInNotificationCenterNotificationListItem\:\:getAccessEntityID\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Access/NotifyInNotificationCenterNotificationAccess.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Permission\\Access\\Access\:\:save\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
 			count: 1
@@ -2771,60 +2753,6 @@ parameters:
 			identifier: assign.propertyType
 			count: 1
 			path: ../concrete/src/Permission/Assignment/StackAssignment.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getBlockTypesAllowedArray\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Key/AddBlockToAreaAreaKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getBlockTypesAllowedPermission\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Key/AddBlockToAreaAreaKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:allowEditDateTime\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:allowEditDescription\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:allowEditName\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:allowEditPaths\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:allowEditUserID\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getAttributesAllowedArray\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\ListItem\\ListItem\:\:getAttributesAllowedPermission\(\)\.$#'
-			identifier: method.notFound
-			count: 3
-			path: ../concrete/src/Permission/Key/EditPagePropertiesPageKey.php
 
 		-
 			message: '#^Method Concrete\\Core\\Permission\\Key\\Key\:\:validate\(\) invoked with 1 parameter, 0 required\.$#'

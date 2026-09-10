@@ -141,6 +141,7 @@ class AddBlockToAreaAreaKey extends AreaKey
         $u = $app->make(User::class);
         $accessEntities = $u->getUserAccessEntityObjects();
         $accessEntities = $pae->validateAndFilterAccessEntities($accessEntities);
+        /** @var \Concrete\Core\Permission\Access\ListItem\AddBlockToAreaAreaListItem[] $list the list items of the 'add_block_to_area' key */
         $list = $this->getAreaAccessListItems(AreaKey::ACCESS_TYPE_ALL, $accessEntities);
         $list = PermissionDuration::filterByActive($list);
         $btIDs = [];

@@ -20,6 +20,9 @@ class EditPagePropertiesPageKey extends PageKey
         return $allAKIDs;
     }
 
+    /**
+     * @return \Concrete\Core\Permission\Access\ListItem\EditPagePropertiesPageListItem
+     */
     public function getMyAssignment()
     {
         $app = Application::getFacadeApplication();
@@ -45,6 +48,7 @@ class EditPagePropertiesPageKey extends PageKey
 
         $accessEntities = $u->getUserAccessEntityObjects();
         $accessEntities = $pae->validateAndFilterAccessEntities($accessEntities);
+        /** @var \Concrete\Core\Permission\Access\ListItem\EditPagePropertiesPageListItem[] $list the list items of the 'edit_page_properties' key */
         $list = $pae->getAccessListItems(PageKey::ACCESS_TYPE_ALL, $accessEntities);
         $list = PermissionDuration::filterByActive($list);
         $properties = array();
