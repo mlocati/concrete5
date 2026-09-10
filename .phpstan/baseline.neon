@@ -3031,30 +3031,6 @@ parameters:
 			path: ../concrete/src/Permission/Access/ViewUserAttributesUserAccess.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:arePermissionsSetToOverride\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Assignment/BoardAssignment.php
-
-		-
-			message: '#^Property Concrete\\Core\\Permission\\Assignment\\BoardAssignment\:\:\$permissionObject \(Concrete\\Core\\Entity\\Board\\Board\) does not accept Concrete\\Core\\Permission\\ObjectInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: ../concrete/src/Permission/Assignment/BoardAssignment.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:arePermissionsSetToOverride\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Assignment/CalendarAssignment.php
-
-		-
-			message: '#^Property Concrete\\Core\\Permission\\Assignment\\CalendarAssignment\:\:\$permissionObject \(Concrete\\Core\\Entity\\Calendar\\Calendar\) does not accept Concrete\\Core\\Permission\\ObjectInterface\.$#'
-			identifier: assign.propertyType
-			count: 1
-			path: ../concrete/src/Permission/Assignment/CalendarAssignment.php
-
-		-
 			message: '#^Property Concrete\\Core\\Permission\\Assignment\\PageAssignment\:\:\$pk \(Concrete\\Core\\Permission\\Key\\PageKey\) does not accept Concrete\\Core\\Permission\\Key\\Key\.$#'
 			identifier: assign.propertyType
 			count: 1
