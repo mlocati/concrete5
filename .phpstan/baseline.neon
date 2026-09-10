@@ -1255,30 +1255,6 @@ parameters:
 			path: ../concrete/src/Database/DatabaseStructureManager.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Database\\EntityManager\\Provider\\ProviderInterface\:\:getNamespace\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Database/EntityManager/Provider/XmlProvider.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Database\\EntityManager\\Provider\\ProviderInterface\:\:getPackagePath\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Database/EntityManager/Provider/XmlProvider.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Database\\EntityManager\\Provider\\ProviderInterface\:\:getNamespace\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Database/EntityManager/Provider/YamlProvider.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Database\\EntityManager\\Provider\\ProviderInterface\:\:getPackagePath\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Database/EntityManager/Provider/YamlProvider.php
-
-		-
 			message: '#^Property Concrete\\Core\\Database\\ForeignKeyFixer\:\:\$connection is never read, only written\.$#'
 			identifier: property.onlyWritten
 			count: 1
