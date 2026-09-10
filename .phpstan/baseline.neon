@@ -3757,12 +3757,6 @@ parameters:
 			path: ../concrete/src/Summary/Data/Extractor/Driver/BasicCalendarEventDriver.php
 
 		-
-			message: '#^Parameter \#1 \$summaryObject of method Concrete\\Core\\Summary\\SummaryObjectExtractor\:\:getData\(\) expects Concrete\\Core\\Summary\\SummaryObject, Concrete\\Core\\Summary\\SummaryObjectInterface given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/src/Summary/Template/Renderer.php
-
-		-
 			message: '#^Strict comparison using \!\=\= between array\{\} and array\{\} will always evaluate to false\.$#'
 			identifier: notIdentical.alwaysFalse
 			count: 1
