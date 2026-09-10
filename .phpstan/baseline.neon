@@ -703,12 +703,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/users/search.php
 
 		-
-			message: '#^Parameter \#1 \$requester of method Concrete\\Core\\User\\UserInfo\:\:triggerDelete\(\) expects Concrete\\Core\\User\\User, Concrete\\Core\\User\\UserInfo\|false given\.$#'
-			identifier: argument.type
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/search.php
-
-		-
 			message: '#^Variable \$password in empty\(\) is never defined\.$#'
 			identifier: empty.variable
 			count: 1
