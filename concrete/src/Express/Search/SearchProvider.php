@@ -19,8 +19,16 @@ class SearchProvider extends AbstractSearchProvider
     protected $entity;
     protected $columnSet;
 
+    /**
+     * {@inheritdoc}
+     *
+     * @see \Concrete\Core\Search\ProviderInterface::getFieldManager()
+     *
+     * @return \Concrete\Core\Express\Search\Field\Manager
+     */
     public function getFieldManager()
     {
+        /** @var \Concrete\Core\Express\Search\Field\Manager $manager see the manager/search_field/express binding in ManagerServiceProvider */
         $manager = ManagerFactory::get('express');
         $manager->setExpressCategory($this->category);
         return $manager;
