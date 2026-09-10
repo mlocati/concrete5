@@ -2647,30 +2647,6 @@ parameters:
 			path: ../concrete/src/StyleCustomizer/Preset/Type/LessFilePresetType.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Style\\StyleInterface\:\:setName\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/StyleCustomizer/Style/Parser/AbstractParser.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Style\\StyleInterface\:\:setVariable\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/StyleCustomizer/Style/Parser/AbstractParser.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Style\\StyleInterface\:\:setWebFonts\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/StyleCustomizer/Style/Parser/FontFamilyParser.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Style\\StyleInterface\:\:setWebFonts\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/StyleCustomizer/Style/Parser/TypeParser.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Summary\\Category\\CategoryMemberInterface\:\:getVersion\(\)\.$#'
 			identifier: method.notFound
 			count: 1
