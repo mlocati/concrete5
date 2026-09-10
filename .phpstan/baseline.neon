@@ -403,12 +403,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/calendar/events.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/express/entries.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\Result\\Result\:\:getEntity\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -419,30 +413,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/express/entries.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setCurrentFolder\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/files/search.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/files/search.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/files/search.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/reports/forms.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\Result\\Result\:\:getEntity\(\)\.$#'
@@ -461,18 +431,6 @@ parameters:
 			identifier: greater.alwaysTrue
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/reports/health/details.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/reports/logs.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/sitemap/search.php
 
 		-
 			message: '#^Instanceof between Concrete\\Core\\Entity\\Attribute\\Key\\Key and Concrete\\Core\\Entity\\Attribute\\Key\\Key will always evaluate to true\.$#'
@@ -545,30 +503,6 @@ parameters:
 			identifier: booleanAnd.rightAlwaysFalse
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/users/add.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setCurrentFolder\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/groups.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/controllers/single_page/dashboard/users/groups.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/groups.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setQuery\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/users/search.php
 
 		-
 			message: '#^Cannot call method reindex\(\) on Concrete\\Core\\User\\UserInfo\|false\.$#'
@@ -2597,12 +2531,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Page/Container/ContainerExporter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Controller\\ElementController\:\:setHeaderSearchAction\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Controller/DashboardExpressEntityPageController.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\Result\\Result\:\:getEntity\(\)\.$#'
