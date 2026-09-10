@@ -781,12 +781,6 @@ parameters:
 			path: ../concrete/src/Area/Area.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromPageToArea\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Area/Area.php
-
-		-
 			message: '#^Return type \(Concrete\\Core\\Area\\Layout\\CustomColumn\) of method Concrete\\Core\\Area\\Layout\\CustomColumn\:\:duplicate\(\) should be compatible with return type \(int\) of method Concrete\\Core\\Area\\Layout\\Column\:\:duplicate\(\)$#'
 			identifier: method.childReturnType
 			count: 1
@@ -1073,12 +1067,6 @@ parameters:
 			identifier: return.unusedType
 			count: 1
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportPageStructureRoutine.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromPageOrAreaToBlock\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/Block.php
 
 		-
 			message: '#^Parameter \#1 \$c of static method Concrete\\Core\\Area\\Area\:\:getOrCreate\(\) expects Concrete\\Core\\Page\\Page, Concrete\\Core\\Page\\Collection\\Collection\|null given\.$#'
@@ -1547,12 +1535,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Entity/Express/Entry.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromFileSetToFile\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/File/File.php
 
 		-
 			message: '#^Method Concrete\\Core\\Entity\\File\\File\:\:setAttribute\(\) should return Concrete\\Core\\Attribute\\AttributeValueInterface but return statement is missing\.$#'
@@ -2695,12 +2677,6 @@ parameters:
 			path: ../concrete/src/Page/Type/PublishTarget/Type/Type.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromDefaultsToPageType\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Type/Type.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
@@ -3011,12 +2987,6 @@ parameters:
 			identifier: deadCode.unreachable
 			count: 1
 			path: ../concrete/src/Support/i18n.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:copyFromParentNodeToCurrentNode\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Node.php
 
 		-
 			message: '#^Call to an undefined static method Concrete\\Core\\Tree\\Node\\Node\:\:getClassByType\(\)\.$#'
