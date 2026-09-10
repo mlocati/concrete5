@@ -853,12 +853,6 @@ parameters:
 			path: ../concrete/src/Area/Area.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Area/CustomStyleRepository.php
-
-		-
 			message: '#^Return type \(Concrete\\Core\\Area\\Layout\\CustomColumn\) of method Concrete\\Core\\Area\\Layout\\CustomColumn\:\:duplicate\(\) should be compatible with return type \(int\) of method Concrete\\Core\\Area\\Layout\\Column\:\:duplicate\(\)$#'
 			identifier: method.childReturnType
 			count: 1
@@ -1205,12 +1199,6 @@ parameters:
 			identifier: method.nonObject
 			count: 1
 			path: ../concrete/src/Block/BlockType/BlockTypeList.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Block/CustomStyleRepository.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Block\\BlockController\:\:getOriginalBlockID\(\)\.$#'
@@ -2735,30 +2723,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Page/Search/Field/Field/VersionStatusField.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionDatePublic\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/IndexedSearch.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionDescription\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/IndexedSearch.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionName\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/IndexedSearch.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionPath\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/IndexedSearch.php
 
 		-
 			message: '#^Property Concrete\\Core\\Page\\Search\\IndexedSearch\:\:\$cPathSections is never read, only written\.$#'
