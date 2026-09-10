@@ -2635,38 +2635,8 @@ parameters:
 			path: ../concrete/src/Package/Packer/Writer/Zipper.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:getCollectionThemeObject\(\)\.$#'
-			identifier: method.notFound
-			count: 3
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:isAlias\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:isExternalLink\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Collection\\Collection\:\:isMasterCollection\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
 			message: '#^Method Concrete\\Core\\Page\\Collection\\Collection\:\:rescanDisplayOrderFromBlock\(\) with return type void returns mixed but should not return anything\.$#'
 			identifier: return.void
-			count: 1
-			path: ../concrete/src/Page/Collection/Collection.php
-
-		-
-			message: '#^Variable \$this in isset\(\) always exists and is not nullable\.$#'
-			identifier: isset.variable
 			count: 1
 			path: ../concrete/src/Page/Collection/Collection.php
 
