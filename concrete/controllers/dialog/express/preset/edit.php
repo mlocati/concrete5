@@ -59,6 +59,10 @@ class Edit extends PresetEdit
 
     public function getSavedSearchBaseURL(SavedSearch $search)
     {
+        if (!$search instanceof SavedExpressSearch) {
+            throw new \InvalidArgumentException(t('The saved search must be an instance of %s.', SavedExpressSearch::class));
+        }
+
         return (string) URL::to('/ccm/system/search/express/preset', $search->getEntity()->getID(), $search->getID());
     }
 

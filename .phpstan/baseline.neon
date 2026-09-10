@@ -85,12 +85,6 @@ parameters:
 			path: ../concrete/controllers/dialog/event/advanced_search.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Search\\SavedSearch\:\:getEntity\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/dialog/express/preset/edit.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Controller\\AbstractController\:\:on_start\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
 			count: 1
@@ -379,22 +373,10 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/calendar/events.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\Result\\Result\:\:getEntity\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/express/entries.php
-
-		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityRepository\<Concrete\\Core\\Entity\\Express\\Form\>\:\:findOneById\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/controllers/single_page/dashboard/express/entries.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\Result\\Result\:\:getEntity\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/reports/forms.php
 
 		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityRepository\<Concrete\\Core\\Entity\\Express\\Form\>\:\:findOneById\(\)\.$#'
@@ -2129,12 +2111,6 @@ parameters:
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Page/Container/ContainerExporter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\Result\\Result\:\:getEntity\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Controller/DashboardExpressEntityPageController.php
 
 		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityRepository\<Concrete\\Core\\Entity\\Express\\Form\>\:\:findOneById\(\)\.$#'

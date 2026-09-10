@@ -121,7 +121,7 @@ trait DashboardExpressEntryListTrait
 
     /**
      * @param Query $query
-     * @return Result
+     * @return \Concrete\Core\Express\Entry\Search\Result\Result
      */
     protected function createSearchResult(Entity $entity, Query $query)
     {
@@ -133,7 +133,10 @@ trait DashboardExpressEntryListTrait
         $queryModifier->addModifier(new ItemsPerPageRequestModifier($provider, $this->request, Request::METHOD_GET));
         $query = $queryModifier->process($query);
 
-        return $resultFactory->createFromQuery($provider, $query);
+        /** @var \Concrete\Core\Express\Entry\Search\Result\Result $result the Express search provider creates Express search results */
+        $result = $resultFactory->createFromQuery($provider, $query);
+
+        return $result;
     }
 
     protected function getSearchKeywordsField()
@@ -146,7 +149,7 @@ trait DashboardExpressEntryListTrait
     }
 
     /**
-     * @param Result $result
+     * @param \Concrete\Core\Express\Entry\Search\Result\Result $result
      */
     protected function renderSearchResult(Result $result)
     {
