@@ -13,7 +13,7 @@
         "generate-baseline": "phpstan analyse --memory-limit=-1 --generate-baseline=baseline.neon"
     },
     "scripts-descriptions": {
-        "generate-stubs": "Generate the stubs describing the methods handled by __call/__callStatic (facades, Permission\\Checker)",
+        "generate-stubs": "Generate the stubs describing the methods handled by __call/__callStatic (facades, Permission\\Checker, permission response classes)",
         "phpstan": "Run PHPStan (additional options can be passed after --)",
         "generate-baseline": "Regenerate baseline.neon with the errors detected in the current code base"
     }

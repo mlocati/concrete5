@@ -37,6 +37,11 @@ class CheckerGenerator
     private $methods;
 
     /**
+     * @var array<string, \Concrete\Core\Support\Symbol\CheckerGenerator\Method[]>|null array keys are the fully-qualified names of the permission response classes
+     */
+    private $responseClassMethods;
+
+    /**
      * @var string|null
      */
     private $namespace;
@@ -69,11 +74,37 @@ class CheckerGenerator
 
     public function renderLines(string $padding = '    '): array
     {
+        return $this->renderClassLines('Checker', $this->getMethods(), $padding);
+    }
+
+    /**
+     * Render the classes describing the methods of the permission response classes that are handled by __call().
+     *
+     * @return array<string, string[]> array keys are the fully-qualified names of the permission response classes, array values are the lines
+     */
+    public function renderResponseClassesLines(string $padding = '    '): array
+    {
+        $result = [];
+        foreach ($this->getResponseClassMethods() as $responseClassName => $methods) {
+            $p = strrpos($responseClassName, '\\');
+            $result[$responseClassName] = $this->renderClassLines($p === false ? $responseClassName : substr($responseClassName, $p + 1), $methods, $padding);
+        }
+
+        return $result;
+    }
+
+    /**
+     * @param \Concrete\Core\Support\Symbol\CheckerGenerator\Method[] $methods
+     *
+     * @return string[]
+     */
+    private function renderClassLines(string $shortClassName, array $methods, string $padding): array
+    {
         $lines = [];
-        $lines[] = 'class Checker';
+        $lines[] = "class {$shortClassName}";
         $lines[] = '{';
         $first = true;
-        foreach ($this->getMethods() as $method) {
+        foreach ($methods as $method) {
             if ($first) {
                 $first = false;
             } else {
@@ -113,6 +144,17 @@ class CheckerGenerator
                     $phpDocsLines[] = "@see \\{$see}";
                 }
             }
+            $returnType = $method->getReturnType();
+            if ($returnType === '' || $returnType !== 'mixed' && preg_match('/^\??[A-Za-z_][A-Za-z0-9_\\\\]*$/', $returnType)) {
+                $nativeReturnType = $returnType === '' ? '' : ": {$returnType}";
+            } else {
+                // Types that can't be expressed as native return types are described in the PHPDoc
+                $nativeReturnType = '';
+                if ($phpDocsLines !== []) {
+                    $phpDocsLines[] = '';
+                }
+                $phpDocsLines[] = "@return {$returnType}";
+            }
             if ($method->isDeprecated()) {
                 if ($phpDocsLines !== []) {
                     $phpDocsLines[] = '';
@@ -126,7 +168,7 @@ class CheckerGenerator
                 }
                 $lines[] = "{$padding} */";
             }
-            $lines[] = "{$padding}public function {$method->getName()}({$method->getArguments()}) {}";
+            $lines[] = "{$padding}public function {$method->getName()}({$method->getArguments()}){$nativeReturnType} {}";
         }
         $lines[] = '}';
 
@@ -146,19 +188,47 @@ class CheckerGenerator
     }
 
     /**
+     * Get the methods of the permission response classes that are handled by __call() (they correspond to the permission keys of their categories).
+     *
+     * @return array<string, \Concrete\Core\Support\Symbol\CheckerGenerator\Method[]> array keys are the fully-qualified names of the permission response classes
+     */
+    public function getResponseClassMethods(): array
+    {
+        $this->getMethods();
+
+        return $this->responseClassMethods;
+    }
+
+    /**
      * @return \Concrete\Core\Support\Symbol\CheckerGenerator\Method[]
      */
     private function listMethods(): array
     {
         $all = [];
+        $responseClassMethods = [];
         foreach ($this->classLister->getClassNames() as $className) {
             if (in_array(ObjectInterface::class, class_implements($className), true)) {
-                $all = array_merge($all, $this->analyzeObjectInterfaceClass($className));
+                $all = array_merge($all, $this->analyzeObjectInterfaceClass($className, $responseClassMethods));
             }
         }
         foreach ($this->permissionKeysProvider->getCategoryHandles() as $categoryHandle) {
             $all = array_merge($all, $this->generateMethodsFromCategory($categoryHandle));
         }
+        ksort($responseClassMethods, SORT_STRING);
+        $this->responseClassMethods = array_map([$this, 'mergeMethods'], $responseClassMethods);
+
+        return $this->mergeMethods($all);
+    }
+
+    /**
+     * Merge the compatible methods and sort them.
+     *
+     * @param \Concrete\Core\Support\Symbol\CheckerGenerator\Method[] $all
+     *
+     * @return \Concrete\Core\Support\Symbol\CheckerGenerator\Method[]
+     */
+    private function mergeMethods(array $all): array
+    {
         $merged = [];
         foreach ($all as $item) {
             foreach ($merged as $prev) {
@@ -182,9 +252,11 @@ class CheckerGenerator
     }
 
     /**
+     * @param array<string, \Concrete\Core\Support\Symbol\CheckerGenerator\Method[]> $responseClassMethods the methods handled by __call() of the permission response classes (array keys are the fully-qualified class names) found so far
+     *
      * @return \Concrete\Core\Support\Symbol\CheckerGenerator\Method[]
      */
-    private function analyzeObjectInterfaceClass(string $objectInterfaceClassName): array
+    private function analyzeObjectInterfaceClass(string $objectInterfaceClassName, array &$responseClassMethods): array
     {
         $result = [];
         $objectInterfaceClass = new \ReflectionClass($objectInterfaceClassName);
@@ -216,6 +288,14 @@ class CheckerGenerator
         }
         if ($canonicalResponseClassName !== '') {
             $result = array_merge($result, $this->generateMethodsFromResponseClass($canonicalResponseClassName, $objectInterfaceClassName, $categoryHandle));
+            if ($categoryHandle !== '') {
+                // The permission response classes handle with __call() the methods corresponding to the permission keys of their category
+                foreach ($this->generateMethodsFromCategory($categoryHandle, $objectInterfaceClassName) as $method) {
+                    if (!$responseClass->hasMethod($method->getName())) {
+                        $responseClassMethods[$canonicalResponseClassName][] = $method;
+                    }
+                }
+            }
         }
 
         return $result;

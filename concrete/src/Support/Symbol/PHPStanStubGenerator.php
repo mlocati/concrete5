@@ -14,6 +14,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
  * Generate a stub file for PHPStan, describing (with @method annotations) the methods that are handled with __call/__callStatic:
  * - the facades
  * - the Permission\Checker class
+ * - the permission response classes
  */
 final class PHPStanStubGenerator
 {
@@ -77,6 +78,9 @@ final class PHPStanStubGenerator
             $classes[$facade->getFacadeReflectionClass()->getName()] = $this->renderFacadeLines($facade, $padding);
         }
         $classes[Checker::class] = $this->renderCheckerLines($padding);
+        foreach ($this->symbolGenerator->getCheckerGenerator()->getResponseClassMethods() as $responseClassName => $methods) {
+            $classes[$responseClassName] = $this->renderResponseClassLines($responseClassName, $methods, $padding);
+        }
         $classes += $this->renderReferencedClassesLines($classes, $padding);
         $namespaces = [];
         foreach ($classes as $fqn => $classLines) {
@@ -168,6 +172,28 @@ final class PHPStanStubGenerator
         return $this->renderClassLines(
             new \ReflectionClass(Checker::class),
             'The methods correspond to the permission keys and to the methods of the permission response classes',
+            $annotations,
+            $padding
+        );
+    }
+
+    /**
+     * @param \Concrete\Core\Support\Symbol\CheckerGenerator\Method[] $methods
+     *
+     * @return string[]
+     */
+    private function renderResponseClassLines(string $responseClassName, array $methods, string $padding): array
+    {
+        $class = new \ReflectionClass($responseClassName);
+        // PHPStan ignores the actual PHPDoc block of the class: we need to keep its annotations
+        $annotations = $this->getClassAnnotations($class);
+        foreach ($methods as $method) {
+            $annotations[] = '@method ' . $this->renderCheckerMethodSignature($method);
+        }
+
+        return $this->renderClassLines(
+            $class,
+            'The methods correspond to the permission keys of the category handled by this permission response class',
             $annotations,
             $padding
         );

@@ -140,14 +140,23 @@ class SymbolGenerator
      */
     public function render($eol = "\n", $padding = '    ', $methodFilter = null)
     {
-        $checkerWritten = false;
         $lines = [];
         $lines[] = '<?php';
         $lines[] = '';
         $lines[] = '// Generated on ' . date('c');
+        // The classes describing the methods handled by __call() of the permission checker and of the permission response classes, grouped by namespace
+        $extraClasses = [
+            $this->checkerGenerator->getNamespace() => [$this->checkerGenerator->renderLines($padding)],
+        ];
+        foreach ($this->checkerGenerator->renderResponseClassesLines($padding) as $fqn => $classLines) {
+            $p = strrpos($fqn, '\\');
+            $extraClasses[$p === false ? '' : substr($fqn, 0, $p)][] = $classLines;
+        }
         $namespaces = $this->aliasNamespaces;
-        if (!in_array($this->checkerGenerator->getNamespace(), $namespaces, true)) {
-            $namespaces[] = $this->checkerGenerator->getNamespace();
+        foreach (array_keys($extraClasses) as $namespace) {
+            if (!in_array($namespace, $namespaces, true)) {
+                $namespaces[] = $namespace;
+            }
         }
         foreach ($namespaces as $namespace) {
             $lines[] = '';
@@ -171,11 +180,15 @@ class SymbolGenerator
                     }
                 }
             }
-            if ($checkerWritten === false && $this->checkerGenerator->getNamespace() === $namespace) {
-                foreach ($this->checkerGenerator->renderLines($padding) as $line) {
+            foreach ($extraClasses[$namespace] ?? [] as $classLines) {
+                if ($addNewline === true) {
+                    $lines[] = '';
+                } else {
+                    $addNewline = true;
+                }
+                foreach ($classLines as $line) {
                     $lines[] = "{$padding}{$line}";
                 }
-                $checkerWritten = true;
             }
             $lines[] = '}';
         }
