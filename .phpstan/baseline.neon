@@ -1261,12 +1261,6 @@ parameters:
 			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/AbstractPageStructureRoutine.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:import\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Backup/ContentImporter/Importer/Routine/ImportAttributesRoutine.php
-
-		-
 			message: '#^Method Concrete\\Core\\Backup\\ContentImporter\\Importer\\Routine\\ImportPageStructureRoutine\:\:importAlias\(\) never returns string so it can be removed from the return type\.$#'
 			identifier: return.unusedType
 			count: 1
@@ -1733,18 +1727,6 @@ parameters:
 			identifier: nullCoalesce.variable
 			count: 1
 			path: ../concrete/src/Encryption/PasswordHasher.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:addSet\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/Attribute/Category.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/Attribute/Category.php
 
 		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityManagerInterface\:\:merge\(\)\.$#'
