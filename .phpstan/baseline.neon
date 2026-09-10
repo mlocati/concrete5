@@ -2101,24 +2101,6 @@ parameters:
 			path: ../concrete/src/Express/Form/Validator/Routine/ValidateUniqueAttributesRoutine.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Search/ColumnSet/Column/DateCreatedColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Search/ColumnSet/Column/DateLastModifiedColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Search/ColumnSet/Column/DisplayOrderColumn.php
-
-		-
 			message: '#^Variable \$key in PHPDoc tag @var does not exist\.$#'
 			identifier: varTag.variableNotFound
 			count: 1
@@ -2165,54 +2147,6 @@ parameters:
 			identifier: notIdentical.alwaysTrue
 			count: 1
 			path: ../concrete/src/File/ImportProcessor/ForceImageFormatProcessor.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/DateModifiedColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/DownloadsColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/FileIDColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/FileVersionDateAddedColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/FileVersionFilenameColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/NameColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/SizeColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/File/Search/ColumnSet/Column/TypeColumn.php
 
 		-
 			message: '#^Constant REL_DIR_FILES_THUMBNAILS_LEVEL2 not found\.$#'
@@ -3061,42 +2995,6 @@ parameters:
 			path: ../concrete/src/Page/Page.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/ColumnSet/Column/CollectionVersionColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/ColumnSet/Column/DateLastModifiedColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/ColumnSet/Column/DatePublicColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/ColumnSet/Column/PageIDColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/ColumnSet/Column/RandomColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Page/Search/ColumnSet/Column/SitemapDisplayOrderColumn.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\ItemList\:\:filterByCacheSettings\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3577,76 +3475,10 @@ parameters:
 			path: ../concrete/src/Routing/Router.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/Column/CollectionAttributeKeyColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/Column/ExpressAttributeKeyColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/Column/FileAttributeKeyColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/Column/UserAttributeKeyColumn.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\ItemList\:\:filterByKeywords\(\)\.$#'
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Search/Field/Field/KeywordsField.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getSearchByColumn\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/ItemList/Pager/Manager/AbstractPagerManager.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/ItemList/Pager/Manager/ExpressEntryListPagerManager.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/ItemList/Pager/Manager/FileListPagerManager.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/ItemList/Pager/Manager/FolderItemListPagerManager.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/ItemList/Pager/Manager/LogListPagerManager.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/ItemList/Pager/Manager/PageListPagerManager.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/ItemList/Pager/Manager/UserListPagerManager.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\ItemList\:\:getPagerManager\(\)\.$#'
@@ -3967,18 +3799,6 @@ parameters:
 			path: ../concrete/src/User/Group/Search/ColumnSet/Available.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Group/Search/ColumnSet/Column/GroupIdColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Group/Search/ColumnSet/Column/NameColumn.php
-
-		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityManagerInterface\:\:merge\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3991,52 +3811,10 @@ parameters:
 			path: ../concrete/src/User/Login/LoginAttemptService.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Search/ColumnSet/Column/DateAddedColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Search/ColumnSet/Column/DateLastLoginColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Search/ColumnSet/Column/EmailColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Search/ColumnSet/Column/HomeFolderColumn.php
-
-		-
 			message: '#^Variable \$provider in PHPDoc tag @var does not exist\.$#'
 			identifier: varTag.variableNotFound
 			count: 1
 			path: ../concrete/src/User/Search/ColumnSet/Column/MembershipsColumnFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Search/ColumnSet/Column/NumberOfLoginsColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Search/ColumnSet/Column/UserIDColumn.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\Pager\\PagerProviderInterface\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/User/Search/ColumnSet/Column/UsernameColumn.php
 
 		-
 			message: '#^Method Concrete\\Core\\Permission\\Key\\Key\:\:validate\(\) invoked with 1 parameter, 0 required\.$#'
