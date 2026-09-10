@@ -1933,82 +1933,10 @@ parameters:
 			path: ../concrete/src/Foundation/Runtime/Boot/DefaultBooter.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Control\\ControlInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Finding/Control/Formatter/ButtonFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Control\\ControlInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Finding/Control/Formatter/DropdownItemFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\MessageInterface\:\:getCategoryValue\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Health/Report/Finding/Message/Formatter/Search/AttributeFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\MessageInterface\:\:getDetails\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Finding/Message/Formatter/Search/AttributeFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\MessageInterface\:\:getBlockID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Finding/Message/Formatter/Search/BlockFormatter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\MessageInterface\:\:getContent\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Finding/Message/Formatter/Search/BlockFormatter.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
 			path: ../concrete/src/Health/Report/Message/EmailReportMessageHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\Formatter\\FormatterInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Test/Test/Search/FaqBlockTest.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\Formatter\\FormatterInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Test/Test/Search/GalleryBlockTest.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\Formatter\\FormatterInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Test/Test/Search/ImageSliderBlockTest.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\Formatter\\FormatterInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Test/Test/Search/SimpleAttributeContentTest.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\Formatter\\FormatterInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Test/Test/Search/SimpleBlockContentTest.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Health\\Report\\Finding\\Message\\Formatter\\FormatterInterface\:\:getLocation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Health/Report/Test/Test/Search/SurveyBlockTest.php
 
 		-
 			message: '#^Method Concrete\\Core\\Html\\Image\:\:__construct\(\) with return type void returns false but should not return anything\.$#'

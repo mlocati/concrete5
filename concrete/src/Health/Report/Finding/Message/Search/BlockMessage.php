@@ -56,6 +56,9 @@ class BlockMessage implements MessageInterface
     }
 
 
+    /**
+     * @return \Concrete\Core\Health\Report\Finding\Message\Formatter\Search\BlockFormatter
+     */
     public function getFormatter(): FormatterInterface
     {
         return new BlockFormatter();
