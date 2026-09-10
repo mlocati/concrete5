@@ -1213,42 +1213,6 @@ parameters:
 			path: ../concrete/src/Csv/Export/PageActivityExporter.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\ObjectInterface\:\:getNumLogins\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Csv/Export/UserExporter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\ObjectInterface\:\:getUserDateAdded\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Csv/Export/UserExporter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\ObjectInterface\:\:getUserEmail\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Csv/Export/UserExporter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\ObjectInterface\:\:getUserID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Csv/Export/UserExporter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\ObjectInterface\:\:getUserName\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Csv/Export/UserExporter.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\ObjectInterface\:\:isActive\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Csv/Export/UserExporter.php
-
-		-
 			message: '#^Parameter \#1 \$array \(array\<Concrete\\Core\\Search\\Column\\ColumnInterface\>\) to function array_filter does not contain falsy values, the array will always stay the same\.$#'
 			identifier: arrayFilter.same
 			count: 1
