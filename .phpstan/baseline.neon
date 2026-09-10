@@ -2737,12 +2737,6 @@ parameters:
 			path: ../concrete/src/Permission/Key/Key.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Access\\Access\:\:setWorkflowProgressObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Key/WorkflowKey.php
-
-		-
 			message: '#^Method Concrete\\Core\\Permission\\Key\\Key\:\:validate\(\) invoked with 1 parameter, 0 required\.$#'
 			identifier: arguments.count
 			count: 1
@@ -2789,12 +2783,6 @@ parameters:
 			identifier: method.notFound
 			count: 2
 			path: ../concrete/src/Search/Pagination/PagerPagination.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Search\\ItemList\\ItemList\:\:getQueryObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Search/Pagination/PermissionablePagination.php
 
 		-
 			message: '#^Constructor of class Concrete\\Core\\Search\\Result\\Item has an unused parameter \$result\.$#'
@@ -3149,12 +3137,6 @@ parameters:
 			identifier: booleanAnd.rightAlwaysFalse
 			count: 2
 			path: ../concrete/src/Validator/UserNameValidatorServiceProvider.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\Key\\Key\:\:getCurrentlyActiveUsers\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Workflow/BasicWorkflow.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Workflow\\Request\\Request\:\:approve\(\)\.$#'
