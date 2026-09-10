@@ -2707,24 +2707,6 @@ parameters:
 			path: ../concrete/src/Permission/Access/EditUserPropertiesUserAccess.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:getUserID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Access/Entity/FileUploaderEntity.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:getAreaCollectionObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Access/Entity/PageOwnerEntity.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Permission\\ObjectInterface\:\:getBlockAreaObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Permission/Access/Entity/PageOwnerEntity.php
-
-		-
 			message: '#^Call to Concrete\\Core\\Permission\\Access\\Access\:\:save\(\) on a separate line has no effect\.$#'
 			identifier: staticMethod.resultUnused
 			count: 1
