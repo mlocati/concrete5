@@ -3619,30 +3619,6 @@ parameters:
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20150504000000.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:add\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20160725000000.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20160725000000.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20180609000000.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
-			identifier: method.notFound
-			count: 5
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20180926000000.php
-
-		-
 			message: '#^Call to an undefined method League\\OAuth2\\Server\\Entities\\AccessTokenEntityInterface\:\:getRefreshToken\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -3655,34 +3631,10 @@ parameters:
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20190111181236.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20190422235040.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:associateAttributeKeyType\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20201231153200.php
-
-		-
 			message: '#^Left side of && is always true\.$#'
 			identifier: booleanAnd.leftAlwaysTrue
 			count: 2
 			path: ../concrete/src/Updater/Migrations/Migrations/Version20211020151701.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:add\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20220516191423.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Category\\CategoryInterface\:\:createAttributeKey\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Updater/Migrations/Migrations/Version20220516191423.php
 
 		-
 			message: '#^Strict comparison using \=\=\= between Concrete\\Core\\Permission\\Access\\Entity\\Entity and null will always evaluate to false\.$#'
