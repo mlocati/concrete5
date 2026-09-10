@@ -709,12 +709,6 @@ parameters:
 			path: ../concrete/src/Application/Service/User.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Navigation\\Item\\ItemInterface\:\:getPageID\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Application/UserInterface/Dashboard/Navigation/Navigation.php
-
-		-
 			message: '#^Call to an undefined method Concrete\\Core\\Application\\UserInterface\\OptionsForm\\OptionsFormControllerInterface\:\:render\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -2213,24 +2207,6 @@ parameters:
 			identifier: constructor.unusedParameter
 			count: 1
 			path: ../concrete/src/Navigation/Modifier/AppendHTMLModifier.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Navigation\\Item\\ItemInterface\:\:setChildren\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Navigation/Modifier/FlatChildrenModifier.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Navigation\\Item\\ItemInterface\:\:setChildren\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Navigation/Modifier/TopLevelOnlyModifier.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Navigation\\Item\\ItemInterface\:\:jsonSerialize\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Navigation/Navigation.php
 
 		-
 			message: '#^Method Concrete\\Core\\Notification\\Type\\CoreUpdateType\:\:createNotification\(\) should return Concrete\\Core\\Entity\\Notification\\Notification but return statement is missing\.$#'
