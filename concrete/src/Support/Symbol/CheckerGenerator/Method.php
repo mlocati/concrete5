@@ -188,14 +188,7 @@ class Method
 
     public function isCompatibleWith(self $other): bool
     {
-        if (strcasecmp($this->getName(), $other->getName()) !== 0) {
-            return false;
-        }
-        if ($this->getArguments() !== $other->getArguments()) {
-            return false;
-        }
-
-        return true;
+        return strcasecmp($this->getName(), $other->getName()) === 0;
     }
 
     /**
@@ -203,6 +196,9 @@ class Method
      */
     public function merge(self $other): self
     {
+        if ($other->getArguments() !== $this->arguments) {
+            $this->arguments = self::mergeArguments($this->arguments, $other->getArguments());
+        }
         if (!$other->isDeprecated()) {
             $this->setDeprecated(false);
         }
@@ -223,5 +219,40 @@ class Method
         }
 
         return $this;
+    }
+
+    /**
+     * Merge two different argument lists of the same method: a class can't declare a method twice, so we keep the longest list and we make every argument optional.
+     */
+    private static function mergeArguments(string $arguments1, string $arguments2): string
+    {
+        $list1 = self::splitArguments($arguments1);
+        $list2 = self::splitArguments($arguments2);
+        $longest = count($list2) > count($list1) ? $list2 : $list1;
+        $result = [];
+        foreach ($longest as $argument) {
+            if (strpos($argument, '=') === false && strpos($argument, '...') === false) {
+                if ($argument[0] !== '$' && $argument[0] !== '&' && $argument[0] !== '?') {
+                    // Typed argument: make it nullable
+                    $argument = '?' . $argument;
+                }
+                $argument .= ' = null';
+            }
+            $result[] = $argument;
+        }
+
+        return implode(', ', $result);
+    }
+
+    /**
+     * @return string[]
+     */
+    private static function splitArguments(string $arguments): array
+    {
+        if ($arguments === '') {
+            return [];
+        }
+
+        return preg_split('/,\s*(?=(?:[?A-Za-z_\\\\][A-Za-z0-9_\\\\]*\s+)?&?(?:\.\.\.)?\$)/', $arguments);
     }
 }
