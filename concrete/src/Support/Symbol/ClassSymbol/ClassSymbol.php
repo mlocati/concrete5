@@ -142,7 +142,12 @@ class ClassSymbol
     {
         $methods = $this->reflectionClass->getMethods();
         if ($this->isFacade()) {
-            $methods = array_merge($methods, $this->getFacadeReflectionClass()->getMethods());
+            // The methods defined by the facade class itself take precedence over the ones of the root class (__callStatic is never invoked for them)
+            $facadeClass = $this->getFacadeReflectionClass();
+            $methods = array_filter($methods, static function (\ReflectionMethod $method) use ($facadeClass): bool {
+                return !$facadeClass->hasMethod($method->getName());
+            });
+            $methods = array_merge($methods, $facadeClass->getMethods());
         }
         foreach ($methods as $method) {
             $this->methods[] = new MethodSymbol($this, $method);
