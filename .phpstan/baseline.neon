@@ -1807,42 +1807,6 @@ parameters:
 			path: ../concrete/src/Express/Form/Control/SaveHandler/AttributeKeySaveHandler.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Form/Control/SaveHandler/ManyAssociationSaveHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Express/Form/Control/SaveHandler/ManyToManyAssociationSaveHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
-			identifier: method.notFound
-			count: 3
-			path: ../concrete/src/Express/Form/Control/SaveHandler/ManyToOneAssociationSaveHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
-			identifier: method.notFound
-			count: 3
-			path: ../concrete/src/Express/Form/Control/SaveHandler/OneToManyAssociationSaveHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
-			identifier: method.notFound
-			count: 3
-			path: ../concrete/src/Express/Form/Control/SaveHandler/OneToOneAssociationSaveHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Form/Control/Type/AssociationType.php
-
-		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityRepository\<Concrete\\Core\\Entity\\Express\\Association\>\:\:findOneById\(\)\.$#'
 			identifier: method.notFound
 			count: 1
@@ -1859,18 +1823,6 @@ parameters:
 			identifier: method.notFound
 			count: 2
 			path: ../concrete/src/Express/Form/Control/Type/SaveHandler/TextControlSaveHandler.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAssociation\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Form/Control/Validator/AssociationControlValidator.php
-
-		-
-			message: '#^PHPDoc tag @var does not specify variable name\.$#'
-			identifier: varTag.noVariable
-			count: 1
-			path: ../concrete/src/Express/Form/Control/Validator/AssociationControlValidator.php
 
 		-
 			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Control\\Control\:\:getAttributeKey\(\)\.$#'
