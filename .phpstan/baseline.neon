@@ -841,18 +841,6 @@ parameters:
 			path: ../concrete/src/Attribute/DefaultController.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Form\\Control\\ViewInterface\:\:setObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Form/Renderer.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Form\\Control\\ViewInterface\:\:setValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Form/Renderer.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
@@ -1601,18 +1589,6 @@ parameters:
 			identifier: method.notFound
 			count: 1
 			path: ../concrete/src/Express/Form/Control/Validator/AttributeKeyControlValidator.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Form\\Control\\FormViewInterface\:\:setIsRequired\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Form/Control/View/AttributeKeyFormView.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Form\\Control\\FormViewInterface\:\:setValue\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Form/Control/View/AttributeKeyFormView.php
 
 		-
 			message: '#^Cannot cast Concrete\\Core\\Attribute\\Value\\EmptyRequestAttributeValue\|Concrete\\Core\\Entity\\Attribute\\Value\\Value\\AbstractValue to string\.$#'
