@@ -11,6 +11,9 @@ use Concrete\Core\User\User;
 use Page;
 use Concrete\Core\Support\Facade\Application;
 
+/**
+ * @method void saveAuthenticationType(array $values) Save the settings of the authentication type submitted from the dashboard (every authentication type controller must implement it)
+ */
 abstract class AuthenticationTypeController extends Controller implements LoggerAwareInterface,
     AuthenticationTypeControllerInterface
 {

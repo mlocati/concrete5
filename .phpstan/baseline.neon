@@ -301,18 +301,6 @@ parameters:
 			path: ../concrete/controllers/single_page/dashboard/system/multisite/types.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Captcha\\Controller\:\:saveOptions\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/permissions/captcha.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Authentication\\AuthenticationTypeController\:\:saveAuthenticationType\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/single_page/dashboard/system/registration/authentication.php
-
-		-
 			message: '#^If condition is always false\.$#'
 			identifier: if.alwaysFalse
 			count: 1
