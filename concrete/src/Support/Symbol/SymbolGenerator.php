@@ -48,6 +48,11 @@ class SymbolGenerator
     protected $checkerGenerator;
 
     /**
+     * @var \Concrete\Core\Support\Symbol\AttributedItemListGenerator
+     */
+    protected $attributedItemListGenerator;
+
+    /**
      * @var bool
      */
     protected $isInstalled;
@@ -65,11 +70,17 @@ class SymbolGenerator
         }
         $this->classLister = new ClassLister(app(FileService::class), 'Concrete\Core', DIR_BASE_CORE . '/' . DIRNAME_CLASSES);
         $this->checkerGenerator = app(CheckerGenerator::class, ['isInstalled' => $this->isInstalled, 'classLister' => $this->classLister]);
+        $this->attributedItemListGenerator = app(AttributedItemListGenerator::class, ['isInstalled' => $this->isInstalled, 'classLister' => $this->classLister]);
     }
 
     public function getCheckerGenerator(): CheckerGenerator
     {
         return $this->checkerGenerator;
+    }
+
+    public function getAttributedItemListGenerator(): AttributedItemListGenerator
+    {
+        return $this->attributedItemListGenerator;
     }
 
     /**
@@ -144,11 +155,11 @@ class SymbolGenerator
         $lines[] = '<?php';
         $lines[] = '';
         $lines[] = '// Generated on ' . date('c');
-        // The classes describing the methods handled by __call() of the permission checker and of the permission response classes, grouped by namespace
+        // The classes describing the methods handled by __call() of the permission checker, of the permission response classes and of the attributed item lists, grouped by namespace
         $extraClasses = [
             $this->checkerGenerator->getNamespace() => [$this->checkerGenerator->renderLines($padding)],
         ];
-        foreach ($this->checkerGenerator->renderResponseClassesLines($padding) as $fqn => $classLines) {
+        foreach ($this->checkerGenerator->renderResponseClassesLines($padding) + $this->attributedItemListGenerator->renderClassesLines($padding) as $fqn => $classLines) {
             $p = strrpos($fqn, '\\');
             $extraClasses[$p === false ? '' : substr($fqn, 0, $p)][] = $classLines;
         }

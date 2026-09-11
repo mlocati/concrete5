@@ -15,6 +15,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
  * - the facades
  * - the Permission\Checker class
  * - the permission response classes
+ * - the attributed item lists (filterByXxx/sortByXxx methods for every attribute key)
  */
 final class PHPStanStubGenerator
 {
@@ -79,7 +80,10 @@ final class PHPStanStubGenerator
         }
         $classes[Checker::class] = $this->renderCheckerLines($padding);
         foreach ($this->symbolGenerator->getCheckerGenerator()->getResponseClassMethods() as $responseClassName => $methods) {
-            $classes[$responseClassName] = $this->renderResponseClassLines($responseClassName, $methods, $padding);
+            $classes[$responseClassName] = $this->renderMethodsClassLines($responseClassName, $methods, 'The methods correspond to the permission keys of the category handled by this permission response class', $padding);
+        }
+        foreach ($this->symbolGenerator->getAttributedItemListGenerator()->getListClassMethods() as $listClassName => $methods) {
+            $classes[$listClassName] = $this->renderMethodsClassLines($listClassName, $methods, 'The methods correspond to the attribute keys of the category handled by this item list', $padding);
         }
         $classes += $this->renderReferencedClassesLines($classes, $padding);
         $namespaces = [];
@@ -182,21 +186,16 @@ final class PHPStanStubGenerator
      *
      * @return string[]
      */
-    private function renderResponseClassLines(string $responseClassName, array $methods, string $padding): array
+    private function renderMethodsClassLines(string $className, array $methods, string $description, string $padding): array
     {
-        $class = new \ReflectionClass($responseClassName);
+        $class = new \ReflectionClass($className);
         // PHPStan ignores the actual PHPDoc block of the class: we need to keep its annotations
         $annotations = $this->getClassAnnotations($class);
         foreach ($methods as $method) {
             $annotations[] = '@method ' . $this->renderCheckerMethodSignature($method);
         }
 
-        return $this->renderClassLines(
-            $class,
-            'The methods correspond to the permission keys of the category handled by this permission response class',
-            $annotations,
-            $padding
-        );
+        return $this->renderClassLines($class, $description, $annotations, $padding);
     }
 
     /**

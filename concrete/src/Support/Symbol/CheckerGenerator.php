@@ -74,7 +74,7 @@ class CheckerGenerator
 
     public function renderLines(string $padding = '    '): array
     {
-        return $this->renderClassLines('Checker', $this->getMethods(), $padding);
+        return self::renderMethodsClassLines('Checker', $this->getMethods(), $padding);
     }
 
     /**
@@ -87,18 +87,20 @@ class CheckerGenerator
         $result = [];
         foreach ($this->getResponseClassMethods() as $responseClassName => $methods) {
             $p = strrpos($responseClassName, '\\');
-            $result[$responseClassName] = $this->renderClassLines($p === false ? $responseClassName : substr($responseClassName, $p + 1), $methods, $padding);
+            $result[$responseClassName] = self::renderMethodsClassLines($p === false ? $responseClassName : substr($responseClassName, $p + 1), $methods, $padding);
         }
 
         return $result;
     }
 
     /**
+     * Render a class declaring the specified methods.
+     *
      * @param \Concrete\Core\Support\Symbol\CheckerGenerator\Method[] $methods
      *
      * @return string[]
      */
-    private function renderClassLines(string $shortClassName, array $methods, string $padding): array
+    public static function renderMethodsClassLines(string $shortClassName, array $methods, string $padding = '    '): array
     {
         $lines = [];
         $lines[] = "class {$shortClassName}";
