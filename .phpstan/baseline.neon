@@ -697,12 +697,6 @@ parameters:
 			path: ../concrete/src/Authentication/AuthenticationType.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Page\\Controller\\PageController\:\:finishAuthentication\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Authentication/AuthenticationTypeController.php
-
-		-
 			message: '#^Call to an undefined method OAuth\\Common\\Service\\ServiceInterface\:\:getStorage\(\)\.$#'
 			identifier: method.notFound
 			count: 1
