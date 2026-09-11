@@ -391,18 +391,6 @@ parameters:
 			path: ../concrete/controllers/upgrade.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Workflow\\Request\\Request\:\:getRequestedPageID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/workflow/dialogs/approve_page_preview.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Workflow\\Request\\Request\:\:getRequestedVersionID\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/workflow/dialogs/approve_page_preview.php
-
-		-
 			message: '#^Right side of && is always true\.$#'
 			identifier: booleanAnd.rightAlwaysTrue
 			count: 1
@@ -2495,9 +2483,3 @@ parameters:
 			identifier: booleanAnd.rightAlwaysFalse
 			count: 2
 			path: ../concrete/src/Validator/UserNameValidatorServiceProvider.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Workflow\\Request\\Request\:\:approve\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Workflow/EmptyWorkflow.php
