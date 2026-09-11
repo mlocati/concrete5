@@ -883,12 +883,6 @@ parameters:
 			path: ../concrete/src/Cache/OpCache.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Calendar\\CalendarEventVersionRepetition\:\:getRepetitionObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Calendar/Event/EventOccurrenceFactory.php
-
-		-
 			message: '#^Method Concrete\\Core\\Captcha\\SecurimageController\:\:displayCaptchaPicture\(\) should return Symfony\\Component\\HttpFoundation\\Response but return statement is missing\.$#'
 			identifier: return.missing
 			count: 1
@@ -1445,12 +1439,6 @@ parameters:
 			identifier: return.unusedType
 			count: 1
 			path: ../concrete/src/Filesystem/Twig/CoreExtension.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Filesystem\\Twig\\FluentArea\:\:getTotalBlocksInArea\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Filesystem/Twig/FluentArea.php
 
 		-
 			message: '#^Binary operation "\+" between '' \<span class\="text…'' and string results in an error\.$#'
