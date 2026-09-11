@@ -2275,12 +2275,6 @@ parameters:
 			path: ../concrete/src/Utility/Service/Number.php
 
 		-
-			message: '#^Call to an undefined method ArrayAccess\:\:add\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Validator/String/ReuseValidator.php
-
-		-
 			message: '#^Elseif condition is always false\.$#'
 			identifier: elseif.alwaysFalse
 			count: 4
