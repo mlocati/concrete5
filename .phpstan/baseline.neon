@@ -43,18 +43,6 @@ parameters:
 			path: ../concrete/controllers/backend/user_interface/marketplace_item.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Calendar\\Event\\EventOccurrence\:\:getEvent\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/controllers/calendar_feed.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Calendar\\Event\\EventOccurrence\:\:getStart\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/calendar_feed.php
-
-		-
 			message: '#^Constant BASE_URL not found\.$#'
 			identifier: constant.notFound
 			count: 1
@@ -2231,12 +2219,6 @@ parameters:
 			identifier: property.protected
 			count: 1
 			path: ../concrete/src/StyleCustomizer/Preset/Type/LessFilePresetType.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Summary\\Category\\CategoryMemberInterface\:\:getVersion\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Summary/Data/Extractor/Driver/BasicCalendarEventDriver.php
 
 		-
 			message: '#^Strict comparison using \!\=\= between array\{\} and array\{\} will always evaluate to false\.$#'
