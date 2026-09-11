@@ -547,12 +547,6 @@ parameters:
 			path: ../concrete/src/Attribute/Category/LegacyCategory.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Attribute\\Key\\SearchIndexer\\SearchIndexerInterface\:\:refreshSearchIndexKeyColumns\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Attribute/Category/SearchIndexer/StandardSearchIndexer.php
-
-		-
 			message: '#^Variable \$key in PHPDoc tag @var does not exist\.$#'
 			identifier: varTag.variableNotFound
 			count: 1
