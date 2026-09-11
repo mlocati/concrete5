@@ -1069,12 +1069,6 @@ parameters:
 			path: ../concrete/src/Entity/File/StorageLocation/StorageLocation.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\File\\StorageLocation\\StorageLocation\:\:getTypeObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Entity/File/StorageLocation/Type/Type.php
-
-		-
 			message: '#^Dead catch \- League\\Flysystem\\FileNotFoundException is never thrown in the try block\.$#'
 			identifier: catch.neverThrown
 			count: 2
