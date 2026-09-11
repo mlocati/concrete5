@@ -7,6 +7,7 @@ namespace Concrete\Core\Support\Symbol;
 use Concrete\Core\Permission\Checker;
 use Concrete\Core\Support\Symbol\CheckerGenerator\Method;
 use Concrete\Core\Support\Symbol\ClassSymbol\ClassSymbol;
+use Concrete\Core\User\UserInfo;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
@@ -16,6 +17,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
  * - the Permission\Checker class
  * - the permission response classes
  * - the attributed item lists (filterByXxx/sortByXxx methods for every attribute key)
+ * - the UserInfo class (getUserXxx methods for every user attribute key)
  */
 final class PHPStanStubGenerator
 {
@@ -84,6 +86,9 @@ final class PHPStanStubGenerator
         }
         foreach ($this->symbolGenerator->getAttributedItemListGenerator()->getListClassMethods() as $listClassName => $methods) {
             $classes[$listClassName] = $this->renderMethodsClassLines($listClassName, $methods, 'The methods correspond to the attribute keys of the category handled by this item list', $padding);
+        }
+        if (($methods = $this->symbolGenerator->getUserInfoGenerator()->getMethods()) !== []) {
+            $classes[UserInfo::class] = $this->renderMethodsClassLines(UserInfo::class, $methods, 'The methods correspond to the user attribute keys', $padding);
         }
         $classes += $this->renderReferencedClassesLines($classes, $padding);
         $namespaces = [];
@@ -428,7 +433,7 @@ final class PHPStanStubGenerator
     {
         // Prefix the class names with a backslash, since the arguments are rendered without the leading backslash
         $arguments = preg_replace('/(^|,\s*)([A-Z][A-Za-z0-9_\\\\]*)(\s)/', '$1\\\\$2$3', $method->getArguments());
-        if ($arguments === '' && $method->getSees() === []) {
+        if ($arguments === '' && $method->getCategoryKeyHandles() !== []) {
             // Methods corresponding to permission keys: the arguments are forwarded to the permission key validation
             $arguments = 'mixed ...$args';
         }

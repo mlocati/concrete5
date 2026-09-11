@@ -117,21 +117,20 @@ final class CIFAttributeKeysProvider implements AttributeKeysProviderInterface
         } catch (\Throwable $_) {
             return $result;
         }
-        // Only the searchable attribute keys have a column in the search index tables used by the item lists
         foreach ($elements as $element) {
             $categoryHandle = (string) $element['category'];
             $handle = (string) $element['handle'];
-            if ($categoryHandle === '' || $handle === '' || !$this->isSearchable($element)) {
+            if ($categoryHandle === '' || $handle === '') {
                 continue;
             }
-            $result[] = new AttributeKey($categoryHandle, $handle, (string) $element['name']);
+            $result[] = new AttributeKey($categoryHandle, $handle, (string) $element['name'], $this->isSearchable($element));
         }
         foreach ($expressElements as $element) {
             $handle = (string) $element['handle'];
-            if ($handle === '' || !$this->isSearchable($element)) {
+            if ($handle === '') {
                 continue;
             }
-            $result[] = new AttributeKey('express', $handle, (string) $element['name']);
+            $result[] = new AttributeKey('express', $handle, (string) $element['name'], $this->isSearchable($element));
         }
 
         return $result;

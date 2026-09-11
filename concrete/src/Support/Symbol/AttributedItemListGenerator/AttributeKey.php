@@ -23,11 +23,17 @@ final class AttributeKey
      */
     private $name;
 
-    public function __construct(string $categoryHandle, string $handle, string $name = '')
+    /**
+     * @var bool
+     */
+    private $searchable;
+
+    public function __construct(string $categoryHandle, string $handle, string $name = '', bool $searchable = false)
     {
         $this->categoryHandle = $categoryHandle;
         $this->handle = $handle;
         $this->name = $name;
+        $this->searchable = $searchable;
     }
 
     public function getCategoryHandle(): string
@@ -43,5 +49,13 @@ final class AttributeKey
     public function getName(): string
     {
         return $this->name;
+    }
+
+    /**
+     * Is the attribute key searchable (that is: does it have a column in the search index table used by the item lists)?
+     */
+    public function isSearchable(): bool
+    {
+        return $this->searchable;
     }
 }

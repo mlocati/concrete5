@@ -56,9 +56,8 @@ final class DatabaseAttributeKeysProvider implements AttributeKeysProviderInterf
     {
         if ($this->keys === null) {
             $keys = [];
-            // Only the searchable attribute keys have a column in the search index tables used by the item lists
             $repository = $this->entityManager->getRepository(Key::class);
-            foreach ($repository->findBy(['akIsSearchable' => true], ['akHandle' => 'ASC']) as $key) {
+            foreach ($repository->findBy([], ['akHandle' => 'ASC']) as $key) {
                 $category = $key->getAttributeCategoryEntity();
                 $categoryHandle = $category === null ? '' : (string) $category->getAttributeKeyCategoryHandle();
                 $handle = (string) $key->getAttributeKeyHandle();
@@ -67,7 +66,7 @@ final class DatabaseAttributeKeysProvider implements AttributeKeysProviderInterf
                 }
                 // The same handle may exist more than once in a category (for example the Express attribute keys of different entities)
                 if (!isset($keys[$categoryHandle][$handle])) {
-                    $keys[$categoryHandle][$handle] = new AttributeKey($categoryHandle, $handle, (string) $key->getAttributeKeyName());
+                    $keys[$categoryHandle][$handle] = new AttributeKey($categoryHandle, $handle, (string) $key->getAttributeKeyName(), (bool) $key->isAttributeKeySearchable());
                 }
             }
             ksort($keys, SORT_STRING);

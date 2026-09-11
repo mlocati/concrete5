@@ -71,6 +71,11 @@ final class AttributedItemListGenerator
         $this->classLister = $classLister ?? new ClassLister($fileService, 'Concrete\Core', DIR_BASE_CORE . '/' . DIRNAME_CLASSES);
     }
 
+    public function getAttributeKeysProvider(): AttributeKeysProviderInterface
+    {
+        return $this->attributeKeysProvider;
+    }
+
     /**
      * Get the methods handled by __call() of the attributed item lists.
      *
@@ -103,6 +108,10 @@ final class AttributedItemListGenerator
                 }
                 $methods = [];
                 foreach ($this->attributeKeysProvider->getKeys($categoryHandle) as $key) {
+                    // Only the searchable attribute keys have a column in the search index tables used by the item lists
+                    if (!$key->isSearchable()) {
+                        continue;
+                    }
                     $name = $key->getName() === '' ? $key->getHandle() : $key->getName();
                     $camelcased = camelcase($key->getHandle());
                     $method = new Method('filterBy' . $camelcased, '$value, $comparison = \'=\'');

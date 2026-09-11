@@ -53,6 +53,11 @@ class SymbolGenerator
     protected $attributedItemListGenerator;
 
     /**
+     * @var \Concrete\Core\Support\Symbol\UserInfoGenerator
+     */
+    protected $userInfoGenerator;
+
+    /**
      * @var bool
      */
     protected $isInstalled;
@@ -71,6 +76,7 @@ class SymbolGenerator
         $this->classLister = new ClassLister(app(FileService::class), 'Concrete\Core', DIR_BASE_CORE . '/' . DIRNAME_CLASSES);
         $this->checkerGenerator = app(CheckerGenerator::class, ['isInstalled' => $this->isInstalled, 'classLister' => $this->classLister]);
         $this->attributedItemListGenerator = app(AttributedItemListGenerator::class, ['isInstalled' => $this->isInstalled, 'classLister' => $this->classLister]);
+        $this->userInfoGenerator = app(UserInfoGenerator::class, ['attributeKeysProvider' => $this->attributedItemListGenerator->getAttributeKeysProvider()]);
     }
 
     public function getCheckerGenerator(): CheckerGenerator
@@ -81,6 +87,11 @@ class SymbolGenerator
     public function getAttributedItemListGenerator(): AttributedItemListGenerator
     {
         return $this->attributedItemListGenerator;
+    }
+
+    public function getUserInfoGenerator(): UserInfoGenerator
+    {
+        return $this->userInfoGenerator;
     }
 
     /**
@@ -155,10 +166,13 @@ class SymbolGenerator
         $lines[] = '<?php';
         $lines[] = '';
         $lines[] = '// Generated on ' . date('c');
-        // The classes describing the methods handled by __call() of the permission checker, of the permission response classes and of the attributed item lists, grouped by namespace
+        // The classes describing the methods handled by __call() of the permission checker, of the permission response classes, of the attributed item lists and of UserInfo, grouped by namespace
         $extraClasses = [
             $this->checkerGenerator->getNamespace() => [$this->checkerGenerator->renderLines($padding)],
         ];
+        if ($this->userInfoGenerator->getMethods() !== []) {
+            $extraClasses[$this->userInfoGenerator->getNamespace()][] = $this->userInfoGenerator->renderLines($padding);
+        }
         foreach ($this->checkerGenerator->renderResponseClassesLines($padding) + $this->attributedItemListGenerator->renderClassesLines($padding) as $fqn => $classLines) {
             $p = strrpos($fqn, '\\');
             $extraClasses[$p === false ? '' : substr($fqn, 0, $p)][] = $classLines;
