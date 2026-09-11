@@ -23,6 +23,8 @@ use Concrete\Core\Entity\Site\Site;
  * Class Stack.
  *
  * \@package Concrete\Core\Page\Stack
+ *
+ * @method \Concrete\Core\Page\Stack\Stack duplicate($nc = null, $preserveUserID = false, ?\Concrete\Core\Site\Tree\TreeInterface $site = null)
  */
 class Stack extends Page
 {
