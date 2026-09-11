@@ -205,24 +205,6 @@ parameters:
 			path: ../concrete/controllers/install.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Customizations\\ManagerInterface\:\:getCustomStyleObjectForPage\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/panel/detail/theme/preview_page_legacy.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Preview\\PreviewHandlerInterface\:\:getCustomStylePreviewResponse\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/panel/detail/theme/preview_page_legacy.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\StyleCustomizer\\Skin\\SkinInterface\:\:getPresetStartingPoint\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/controllers/panel/detail/theme/preview_skin.php
-
-		-
 			message: '#^If condition is always true\.$#'
 			identifier: if.alwaysTrue
 			count: 1
