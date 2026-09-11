@@ -2227,22 +2227,10 @@ parameters:
 			path: ../concrete/src/Tree/Node/Node.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:getTreeNodeStorageLocationObject\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Node/Type/File.php
-
-		-
 			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
 			path: ../concrete/src/Tree/Tree.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Tree\:\:setTopicTreeName\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Tree/Type/Topic.php
 
 		-
 			message: '#^Call to an undefined static method Concrete\\Core\\Support\\Facade\\Database\:\:query\(\)\.$#'
@@ -2369,12 +2357,6 @@ parameters:
 			identifier: nullCoalesce.expr
 			count: 1
 			path: ../concrete/src/User/Component/UserSelectInstanceFactory.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Tree\\Node\\Node\:\:getTreeNodeGroupObject\(\)\.$#'
-			identifier: method.notFound
-			count: 4
-			path: ../concrete/src/User/Group/Search/ColumnSet/Available.php
 
 		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityManagerInterface\:\:merge\(\)\.$#'
