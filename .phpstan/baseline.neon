@@ -1123,22 +1123,10 @@ parameters:
 			path: ../concrete/src/Export/Item/Express/Form.php
 
 		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Entry\\Association\:\:setSelectedEntry\(\)\.$#'
-			identifier: method.notFound
-			count: 2
-			path: ../concrete/src/Express/Association/Applier.php
-
-		-
 			message: '#^Parameter &\$controlsMapping by\-ref type of method Concrete\\Core\\Express\\Entity\\Cloner\:\:cloneEntityForms\(\) expects array\<string, string\>, array\<mixed\> given\.$#'
 			identifier: parameterByRef.type
 			count: 1
 			path: ../concrete/src/Express/Entity/Cloner.php
-
-		-
-			message: '#^Call to an undefined method Concrete\\Core\\Entity\\Express\\Entry\\Association\:\:getSelectedEntry\(\)\.$#'
-			identifier: method.notFound
-			count: 1
-			path: ../concrete/src/Express/Entry/Formatter/LabelFormatter.php
 
 		-
 			message: '#^Call to an undefined method Doctrine\\ORM\\EntityRepository\<Concrete\\Core\\Entity\\Express\\Association\>\:\:findOneById\(\)\.$#'
